@@ -73,9 +73,9 @@ require_once 'adminsecure.php';
                  <li><a href="manageuser.php"><i class="fa  fa-cogs"></i> <span>Manage User</span></a></li>
                  
                  
-                 <li><a href="manageevent.php"><i class="fa  fa-cogs"></i> <span>Manage Event</span></a></li>
+                 <!-- <li><a href="manageevent.php"><i class="fa  fa-cogs"></i> <span>Manage Event</span></a></li> -->
                  
-                  <li><a href="managehighlite.php"><i class="fa  fa-cogs"></i> <span>Manage highlite</span></a></li>
+                  <li><a href="managehighlight.php"><i class="fa  fa-cogs"></i> <span>Manage Highlight</span></a></li>
                  
                  <li><a href="managepayment.php"><i class="fa  fa-cogs"></i> <span>Manage Payment Method</span></a></li>
                  

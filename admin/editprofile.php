@@ -76,7 +76,7 @@ if (isset($_REQUEST[send]))
 
                                         <div class="sellerprofile-pic text-center " style="padding: 10px;">
                                             <div class="sellerprofile-pic text-center uppic"style="position:absolute" >
-                                                <input type="file" name="updatepic"class="dpcont" style="width:91%;" onchange="ppp(this);" />
+                                                <input type="file" name="updatepic"class="dpcont" style="width:91%;" onchange="ppp(this);" accept=".png, .jpg, .jpeg"/>
                                             </div>
                                             <?php
                                             $in = mysql_query("select * from user where userid like '$_SESSION[user]' ");
@@ -240,7 +240,7 @@ if (isset($_REQUEST[send]))
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="form-group">
+                                        <!-- <div class="form-group">
                                             <label>Select Security Question</label>
                                             <div class="input-group">
                                                 <select name="sqq" class="form-control" required="" >
@@ -330,14 +330,14 @@ if (isset($_REQUEST[send]))
                                         <div class="form-group">
                                             <label>Security Answer</label>
                                             <div class="input-group">
-                                                <input type="text" class="form-control" name="sqa" required=""  value="<?php echo $inn[11]; ?>" pattern="^[a-z ]+$"/>
+                                                <input type="text" class="form-control" name="sqa" required=""  value="<?php echo $inn[11]; ?>" pattern="^[a-z A-Z]+$"/>
                                                 <div class="input-group-addon">
                                                     <i  class="fa fa-phone"></i>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
                                         <div class="container">
-                                            <button type="submit" name="send" class="btn btn-primary">EDIT</button>
+                                            <button type="submit" name="send" class="btn btn-primary">Save</button>
                                         </div>
                                     </div>
                                 </div>

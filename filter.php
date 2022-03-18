@@ -79,7 +79,7 @@ require_once 'toppati.php';
             <section class="ht-section hs-recipes grid">
                 <header class="hs-header">
                     <div class="container">
-                        <h2 class="heading">Recent recipes</h2>
+                        <h2 class="heading">Recent Recipes</h2>
                        
                     </div>
 <!--                    <ul class="isotope-filter" data-target="#grid-2">

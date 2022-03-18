@@ -11,7 +11,7 @@
                             <?php
                             $in=  mysql_query("select * from user where userid like '$_SESSION[user]' ");
                    $inn=  mysql_fetch_array($in);
-                            if($inn[2]=="male")
+                            if($inn[2]=="Male")
                             {
                                 ?>
                                 <font>Welcome To Our Town : Mr. <?php echo $inn[0]; ?></font>

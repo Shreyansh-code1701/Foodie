@@ -24,7 +24,7 @@ function update(tbl,work,p,pp,id)
 {
     var s=document.getElementById('find').value;
     var v=document.getElementById('val').value;
-    var ptn=/^[a-z ]+$/;
+    var ptn=/^[a-z A-Z]+$/;
     if(v.match(ptn))
     {
         $.ajax({

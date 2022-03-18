@@ -178,27 +178,16 @@ if ($_REQUEST[kona] == "cart") {
                 </div>
 
 
-                <div class="col-md-12 col-xs-12 col-sm-12" style="padding:5px;">
-                    <div  class="cart-info quantity">
-                    <!-- <div class="btn-increment-decrement" onclick="decrement_quantity(<?php echo $ss[6]; ?>)">-</div><input type="tel" class="input-quantity" id="input-quantity<?php echo $ss[6]; ?>" value="<?php echo $ss[6]; ?>">
-                    <div class="btn-increment-decrement" onclick="increment_quantity(<?php echo $ss[6]; ?>)">+</div> -->
-                    <!-- <input type="number" name="qty" class="form-control"  required="" min="1" style="border-radius:5px;" value="<?php echo $ss[6]; ?>" onchange="missprice(this.value,'<?php echo $ss[7]; ?>');misscart('cart','<?php echo $ss[1]; ?>',this.value);"  onkeyup="missprkeyup(this.value,'<?php echo $ss[7]; ?>');" />                                -->
-                    <input type="hidden" value="<?php echo $prITTD; ?>" name="hiddenID">
-                    <input style="font-size:21px;" type="submit" value="-" onclick='javascript: subtractQty();' class="minus">
-                    <input id="number" type="tel" min = "1" value="<?php echo $qtyT; ?>" class="qty" name="picpac" />
-                    <input style="font-size:21px;"  type="submit" value="+" onclick='javascript: document.getElementById("number").value++;' class="plus"> 
+                <div class="col-md-12 col-xs-12 col-sm-12 input-group" style="padding:5px;">
+                    <div class=" input-group" style="margin-bottom: 3%;">
+                        <input type="number" name="qty" class="form-control" id="rs" required="" value="<?php echo $ss[6]; ?>"  min="1" onchange="missprice(this.value,'<?php echo $ss[7]; ?>'); misscart('cart','<?php echo $ss[1]; ?>',this.value);"  onkeyup="missprkeyup(this.value,'<?php echo $prodel1[11]; ?>');" />
+                    </div>
 
-                     <script>
-                        function subtractQty() {
-                            if (document.getElementById("number").value - 1 < 1)
-                                return;
-                            else
-                                document.getElementById("number").value--;
-                        }
-                    </script>
-                
-                </div>
+                    <!-- <input type="number" name="qty" class="form-control" id="rs" required="" value="1" min="1" style="border-radius:5px;" value="<?php echo $ss[6]; ?>" onchange="missprice(this.value,'<?php echo $ss[7]; ?>');misscart('cart','<?php echo $ss[1]; ?>',this.value);"  onkeyup="missprkeyup(this.value,'<?php echo $ss[7]; ?>');" /> -->
 
+                    <!-- <input type="number" name="qty" class="form-control" id="rs" required="" min="1" value="<?php echo $ss[6]; ?>" onchange="missprice(this.value,'<?php echo $ss[7]; ?>');misscart('cart','<?php echo $ss[1]; ?>',this.value);"  onkeyup="missprkeyup(this.value,'<?php echo $ss[7]; ?>');" /> -->
+
+                    </div>
 
 
                 <div class="col-md-12 col-xs-12 col-sm-12" style="padding:5px;">
@@ -206,10 +195,10 @@ if ($_REQUEST[kona] == "cart") {
                         <?php $price = ($ss[6]) * ($ss[7]);
                         echo $price;
                         ?>/-</p>
+
+                    <!-- <p  id="misspr" style="font-size: 14px"> <i class="fa fa-rupee"></i>&nbsp;<?php echo $price ?>&nbsp;/-</p>
+                 -->
                 </div>
-
-
-
             </div>
 
         </div>
@@ -223,13 +212,13 @@ if ($_REQUEST[kona] == "cart") {
 ?>
 
 <div class="col-md-12 text-center " style="padding:5px;">
-    <div class="col-md-6 "></div>
-    <div class="col-md-6 ">
+
+    <div class="col-md-12 ">
         <?php
         if ($nathi[0] != "") {
             $_SESSION[cartche] = 1;
         ?>
-            <a href="confirm.php" class="cartbtn">Confirm</a><i class="fa fa-caret-right" style="font-size:30px;vertical-align: middle; margin-left: 2px;color: #f8a631;"></i>
+            <a href="confirm.php" class="cartbtn">CONFIRM</a> <p style="font-size:30px;vertical-align:middle; margin-left: 2px; color: #f8a631;"></p>   
         <?php
         }
         ?>
@@ -240,11 +229,7 @@ if ($_REQUEST[kona] == "cart") {
 <?php
 }
 ?>
-
-<!--------------------------------------------------confirm cart display--------------------------------------------------->
-
-
-
+<!--------------------------------------------------confirm cart display-------------------------------------->
 <?php
 if ($_REQUEST[kona] == "confirmcart") {
 ?>
@@ -266,8 +251,6 @@ if ($_REQUEST[kona] == "confirmcart") {
                         <?php echo $ss[2]; ?><br />
                         <?php echo $ss[3]; ?>
                     </div>
-
-
                 </div>
 
                 <div class="col-md-12 col-xs-12 col-sm-12">
@@ -279,17 +262,11 @@ if ($_REQUEST[kona] == "confirmcart") {
                     </div>
 
                     <div class="col-md-12 col-xs-12 col-sm-12">
-                        <i class="fa fa-rupee"></i>&nbsp;<font id="misspr"><?php echo $ss[9]; ?></font>&nbsp;/-
+                    <p id="misspr"><i class="fa fa-rupee"></i>&nbsp; <?php echo $ss[9]; ?>&nbsp;/-</p>
                     </div>
-
-
-
                 </div>
 
             </div>
-
-
-
         </div>
 
     <?php
@@ -300,7 +277,6 @@ if ($_REQUEST[kona] == "confirmcart") {
         <div class="col-md-6" style="background: #f8a631;"> <a href="checkout.php"></a></div>
 
     </div>
-
     <div class="col-md-12 " style="padding:5px;">
         <div class="col-md-offset-8 col-md-2"><i class="fa fa-caret-left" style="font-size:30px;vertical-align: middle; margin-right: 2px; color: #f8a631;"></i><a href="filter.php" class="cartbtn">Continue Shopping</a></div>
         <div class="col-md-2">
@@ -309,9 +285,6 @@ if ($_REQUEST[kona] == "confirmcart") {
 
         </div>
     </div>
-
-
-
 <?php
 }
 ?>

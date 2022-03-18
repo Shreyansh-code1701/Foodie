@@ -54,7 +54,7 @@ require_once 'adminpati.php';
                                     <div class="form-group">
                                         <div class="input-group">
                                             
-                                            <input type="text" class="form-control" name="maincategory" required="" pattern="^[a-z ]+$" placeholder="Enter maincategory"/>
+                                            <input type="text" class="form-control" name="maincategory" required="" pattern="^[a-z A-Z]+$" placeholder="Enter maincategory"/>
                                             <div class="input-group-addon">
                                                 <i  class="fa fa-globe"></i>
                                             </div>

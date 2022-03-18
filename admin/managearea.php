@@ -74,7 +74,7 @@ require_once 'adminpati.php';
                                     <div class="form-group">
                                         <div class="input-group" style="margin-top: 2%;">
                                             
-                                            <input type="text" class="form-control" name="area" required="" pattern="^[a-z ]+$" placeholder="Enter area"/>
+                                            <input type="text" class="form-control" name="area" required="" pattern="^[a-z A-Z]+$" placeholder="Enter area"/>
                                             <div class="input-group-addon">
                                                 <i  class="fa fa-globe"></i>
                                             </div>

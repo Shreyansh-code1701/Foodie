@@ -267,7 +267,7 @@ while ($row = mysql_fetch_array($data)) {
                                 <div class="row" >
                                     <div class="col-md-12 cartt" >
                                         &nbsp; &nbsp;<i class="fa fa-briefcase"></i>&nbsp;&nbsp;&nbsp;
-                                        <strong style="color: #232323;">Y</strong>our <strong style="color: #232323;">O</strong>rder
+                                        <strong style="color: #232323;">Your Order</strong>
                                     </div>
                                     <div id="misscartdata"  style="padding: 30px;">
                                     

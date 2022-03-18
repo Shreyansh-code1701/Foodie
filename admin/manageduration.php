@@ -12,7 +12,7 @@ if (isset($_REQUEST[send]))
 
     if ($g[0] == "") {
         $ins = mysql_query("insert into duration values(0,'$_REQUEST[duration]',$_REQUEST[cost],0,$_REQUEST[months])");
-    }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+    }                        
     else
     {
         $er=1;

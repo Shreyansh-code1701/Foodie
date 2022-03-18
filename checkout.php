@@ -108,7 +108,7 @@
                         <div class="col-md-12" style="border: 3px solid #eee;box-shadow: 1px 2px 1px #eee ;">
                             <div class="detailhead">
                                 <?php
-                                if ($uu[2] == "male") {
+                                if ($uu[2] == "Male") {
                                 ?>
                                 <label class="mylbm">Mr.<font class="animated flash " style="color: #232323;">
                                         &nbsp;&nbsp;<?php echo $uu[0]; ?></font>&nbsp;&nbsp;&nbsp;Contact Detail

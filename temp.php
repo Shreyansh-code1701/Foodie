@@ -274,7 +274,7 @@ if(isset($_REQUEST[addcart]))
                                     <div class="detaildekho">
 
                                         <div class=" input-group" style="margin-bottom: 3%;">
-                                            <input type="number" name="qty" class="form-control" required="" value="1" min="1"  max="12"  onchange="missprice(this.value,'<?php echo $prodel1[11]; ?>');"/>                              
+                                            <input type="number" name="qty" class="form-control" required="" value="1" min="1" onchange="missprice(this.value,'<?php echo $prodel1[11]; ?>');"/>                              
                                             <div class="input-group-addon regi">
                                                 <i class="fa fa-unsorted"></i>
                                             </div>

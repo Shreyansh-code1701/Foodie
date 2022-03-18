@@ -110,7 +110,7 @@ $pac = mysql_fetch_array($package);
                         </div>
                     </div>
 
-                    <div class="row">
+                    <!-- <div class="row">
                         <div class="col-md-8">
                             <section class="panel">
                                 <header class="panel-heading">
@@ -171,16 +171,11 @@ $pac = mysql_fetch_array($package);
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-
-                    
-
-                    
+                    </div> -->         
                 </div>
 
                 <?php
-                require_once 'footer.php';
+                #require_once 'footer.php';
                 ?>
 
             </div>

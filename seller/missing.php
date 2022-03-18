@@ -68,7 +68,7 @@ if ($_REQUEST[kona] == "form") {
                     <div class="input-group-addon">
                         <i  class="fa  fa-windows"></i>
                     </div>
-                    <input type="text" class="form-control" name="productname" autofocus="" required="" pattern="^[a-z ]+$" placeholder="Product Name"/>
+                    <input type="text" class="form-control" name="productname" autofocus="" required="" pattern="^[a-z A-Z]+$" placeholder="Product Name"/>
 
                 </div>
             </div>
@@ -154,7 +154,7 @@ if ($_REQUEST[kona] == "form") {
                     <div class="input-group-addon">
                         <i  class="fa  fa-windows"></i>
                     </div>
-                    <input type="text" class="form-control" name="upproductname" value="<?php echo $du[3]; ?>" autofocus="" required="" pattern="^[a-z ]+$" placeholder="Product Name"/>
+                    <input type="text" class="form-control" name="upproductname" value="<?php echo $du[3]; ?>" autofocus="" required="" pattern="^[a-z A-Z]+$" placeholder="Product Name"/>
 
                 </div
             </div>
@@ -537,6 +537,7 @@ if ($_REQUEST[kona] == "recdata") {
 <!----------------------------------------MANAGE PACKAGE BILL----------------------------------------->
 
 <?php
+error_reporting(0);
 if($_REQUEST[konu]=='missuserbill')
 {
    
@@ -1689,7 +1690,7 @@ if($_REQUEST[kona]=="sellerbannerpack")
 
 
 <?php
-
+error_reporting(0);
 if ($_REQUEST[kona] == "data") {
     if ($_REQUEST[konu] == "inquiry") {
 
@@ -2228,7 +2229,7 @@ if ($_REQUEST[kona] == "form") {
 
             <div class="form-group">
                 <div class="input-group">
-                    <input type="text" class="form-control" name="offname"  required="" pattern="^[a-z ]+$" placeholder="Enter Offer Name"/>
+                    <input type="text" class="form-control" name="offname"  required="" pattern="^[a-z A-Z]+$" placeholder="Enter Offer Name"/>
                     <div class="input-group-addon">
                         <i  class="fa fa-globe"></i>
                     </div>
@@ -2357,7 +2358,7 @@ if ($_REQUEST[kona] == "form") {
 
             <div class="form-group">
                 <div class="input-group">
-                    <input type="text" class="form-control" name="upoffname" value="<?php echo $du[3]; ?>" required="" pattern="^[a-z ]+$" placeholder="Enter Offer Name"/>
+                    <input type="text" class="form-control" name="upoffname" value="<?php echo $du[3]; ?>" required="" pattern="^[a-z A-Z]+$" placeholder="Enter Offer Name"/>
                     <div class="input-group-addon">
                         <i  class="fa fa-globe"></i>
                     </div>
@@ -2674,6 +2675,7 @@ if ($_REQUEST[kona] == "data") {
                 }
             }
             ?>
+            
                     </ul>
                 </td>
             </tr>
@@ -2826,7 +2828,7 @@ if ($_REQUEST[kona] == "form") {
 
             <div class="form-group">
                 <div class="input-group">
-                    <input type="text" class="form-control" name="upprice" value="<?php echo $du[3]; ?>" required="" pattern="^[a-z ]+$" placeholder="Enter Price"/>
+                    <input type="text" class="form-control" name="upprice" value="<?php echo $du[3]; ?>" required="" pattern="^[a-z A-Z]+$" placeholder="Enter Price"/>
                     <div class="input-group-addon">
                         <i  class="fa fa-globe"></i>
                     </div>
@@ -3288,7 +3290,7 @@ if ($_REQUEST[kona] == "form") {
              <div class="form-group">
                  <div class="input-group">
 
-                     <input type="text" class="form-control" name="brochure" required="" pattern="^[a-z ]+$" placeholder="Enter Brochure Name"/>
+                     <input type="text" class="form-control" name="brochure" required="" pattern="^[a-z A-Z]+$" placeholder="Enter Brochure Name"/>
                      <div class="input-group-addon">
                          <i  class="fa fa-globe"></i>
                      </div>

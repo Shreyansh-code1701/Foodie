@@ -53,13 +53,13 @@ require_once 'adminpati.php';
                                     <div class="form-group">
                                         <div class="input-group">
                                             
-                                            <input type="text" class="form-control" name="payname" required="" pattern="^[a-z ]+$" placeholder="Enter paymentname"/>
+                                            <input type="text" class="form-control" name="payname" required="" pattern="^[a-z A-Z]+$" placeholder="Enter paymentname"/>
                                             <div class="input-group-addon">
                                                 <i  class="fa fa-globe"></i>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="form-group">
+                                    <!-- <div class="form-group">
                                         <div class="input-group">
                                             
                                             <input type="text" class="form-control" name="url" required="" pattern="^[a-z- ]+$" placeholder="Enter paymenturl"/>
@@ -67,7 +67,7 @@ require_once 'adminpati.php';
                                                 <i  class="fa fa-globe"></i>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> -->
                                     
                                     <button type="submit" name="send" class="btn btn-primary">Submit</button>
                                     <button type="reset" class="btn btn-primary">Reset</button>

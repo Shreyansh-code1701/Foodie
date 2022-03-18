@@ -88,7 +88,7 @@ while ($ss = mysql_fetch_array($sel)) {
             <div class="col-md-6 col-xs-12 col-sm-12" style="padding:5px;">
 
                     
-                <input type="number" name="qty" class="form-control" required="" style="border-radius:5px;" value="<?php echo $ss[5]; ?>" min="1"  max="12" onchange="missprice(this.value,'<?php echo $ss[6]; ?>');misscart('cart','<?php echo $ss[4]; ?>',this.value);" />                              
+                <input type="number" name="qty" class="form-control" required="" style="border-radius:5px;" value="<?php echo $ss[5]; ?>" min="1" onchange="missprice(this.value,'<?php echo $ss[6]; ?>');misscart('cart','<?php echo $ss[4]; ?>',this.value);" />                              
                     
 
                                                     

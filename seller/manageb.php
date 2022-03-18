@@ -84,7 +84,7 @@ require_once 'sellerpati.php';
                                     <div class="form-group">
                                         <div class="input-group">
                                             
-                                            <input type="text" class="form-control" name="brochure" required="" pattern="^[a-z ]+$" placeholder="Enter Brochure Name"/>
+                                            <input type="text" class="form-control" name="brochure" required="" pattern="^[a-z A-Z]+$" placeholder="Enter Brochure Name"/>
                                             <div class="input-group-addon">
                                                 <i  class="fa fa-globe"></i>
                                             </div>

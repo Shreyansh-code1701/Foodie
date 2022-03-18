@@ -131,7 +131,7 @@ require_once 'connection.php';
                                     <li class="menu-item-has-children">
                                        
                                         <ul>
-                                            <?php $cs=  mysql_query("select * from maincategory where del=0 limit 0,4");
+                                            <?php $cs=  mysql_query("select * from maincategory where del=0 limit 0,5");
  while ($ro = mysql_fetch_array($cs)) 
      {                                       ?>
                                             <li style="text-transform: capitalize;"><a href="filter.php?search=<?php echo $ro[1]; ?> "><font class="submenu" style="color: #232323;"><i class="fa fa-cutlery"></i>&nbsp;&nbsp; <?php echo $ro[1]; ?></font></a></li>
@@ -142,7 +142,7 @@ require_once 'connection.php';
                                     </li>
                                     <li class="menu-item-has-children">
                                         <ul>
-                                            <?php $cs=  mysql_query("select * from maincategory where del=0 limit 4,4");
+                                            <?php $cs=  mysql_query("select * from maincategory where del=0 limit 5,5");
  while ($ro1 = mysql_fetch_array($cs)) 
      {                                       ?>
                                             <li style="text-transform: capitalize;"><a href="filter.php?search=<?php echo $ro1[1]; ?> "><font class="submenu" style="color: #232323;"><i class="fa fa-cutlery"></i>&nbsp;&nbsp; <?php echo $ro1[1]; ?></font></a></li>
@@ -154,7 +154,7 @@ require_once 'connection.php';
                                     
                                     <li class="menu-item-has-children">
                                         <ul>
-                                            <?php $cs=  mysql_query("select * from maincategory where del=0 limit 8,4");
+                                            <?php $cs=  mysql_query("select * from maincategory where del=0 limit 10,5");
  while ($ro1 = mysql_fetch_array($cs)) 
      {                                       ?>
                                             <li style="text-transform: capitalize;"><a href="filter.php?search=<?php echo $ro1[1]; ?> "><font class="submenu" style="color: #232323;"><i class="fa fa-cutlery"></i>&nbsp;&nbsp; <?php echo $ro1[1]; ?></font></a></li>
@@ -165,7 +165,7 @@ require_once 'connection.php';
                                     </li>
                                     <li class="menu-item-has-children">
                                         <ul>
-                                            <?php $cs=  mysql_query("select * from maincategory where del=0 limit 12,4");
+                                            <?php $cs=  mysql_query("select * from maincategory where del=0 limit 15,5");
  while ($ro1 = mysql_fetch_array($cs)) 
      {                                       ?>
                                             <li style="text-transform: capitalize;"><a href="filter.php?search=<?php echo $ro1[1]; ?> "><font class="submenu" style="color: #232323;"><i class="fa fa-cutlery"></i>&nbsp;&nbsp; <?php echo $ro1[1]; ?></font></a></li>
@@ -178,7 +178,18 @@ require_once 'connection.php';
                                     
                                     <li class="menu-item-has-children">
                                         <ul>
-                                            <?php $cs=  mysql_query("select * from store where del=0 limit 0,4");
+                                            <?php $cs=  mysql_query("select * from store where del=0 limit 0,5");
+ while ($ro1 = mysql_fetch_array($cs)) 
+     {                                       ?>
+                                            <li style="text-transform: capitalize;"><a href="index.php?search=<?php echo $ro1[4]; ?> "><font class="submenu" style="color: #232323;"><i class="fa fa-cutlery"></i>&nbsp;&nbsp; <?php echo $ro1[4]; ?></font></a></li>
+                                         <?php
+     }
+                                         ?>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <ul>
+                                            <?php $cs=  mysql_query("select * from store where del=0 limit 5,5");
  while ($ro1 = mysql_fetch_array($cs)) 
      {                                       ?>
                                             <li style="text-transform: capitalize;"><a href="index.php?search=<?php echo $ro1[4]; ?> "><font class="submenu" style="color: #232323;"><i class="fa fa-cutlery"></i>&nbsp;&nbsp; <?php echo $ro1[4]; ?></font></a></li>

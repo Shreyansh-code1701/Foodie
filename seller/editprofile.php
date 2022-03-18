@@ -74,7 +74,7 @@ $upp=mysql_query("update login set password='$_REQUEST[password]' where userid l
 
                                         <div class="sellerprofile-pic text-center " style="padding: 10px;">
                                             <div class="sellerprofile-pic text-center uppic"style="position:absolute" >
-                                                <input type="file" name="updatepic"class="dpcont" style="width:91%;" onchange="picc(this);" />
+                                                <input type="file" name="updatepic"class="dpcont" style="width:91%;" accept=".png, .jpg, .jpeg" onchange="picc(this);" />
                                             </div>
                                             <?php
                                             $in = mysql_query("select * from user where userid like '$_SESSION[user]' ");

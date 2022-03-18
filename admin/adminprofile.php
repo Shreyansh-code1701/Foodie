@@ -98,7 +98,7 @@ require_once 'adminsecure.php';
                                             <div class="title">Mobile</div>
                                             <div class="desk"><?php echo $inn[7]; ?></div>
                                         </li>
-                                        <li>
+                                        <!-- <li>
                                             <div class="title">Security Question</div>
                                           
                                             <div class="desk"><?php echo $inn[10]; ?></div>
@@ -106,7 +106,7 @@ require_once 'adminsecure.php';
                                         <li>
                                             <div class="title">Security Answer</div>
                                             <div class="desk"><?php echo $inn[11]; ?></div>
-                                        </li>
+                                        </li> -->
                                     </ul>
                                 </div>
                             </div>

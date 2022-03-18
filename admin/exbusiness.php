@@ -57,7 +57,7 @@ $d=date('Y-m-d' , strtotime('+5, days'));
                     <div class="col-md-12">
                         <section class="panel state">
                             <header class="panel-heading" style="background: #e0e1e7 !important;">
-                                BELOW BUSINESS WHO EXPIRE IN TODY
+                                BELOW BUSINESS WHO EXPIRE IN TODAY
                             </header>
                             <div class="panel-body">
 

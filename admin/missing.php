@@ -2286,7 +2286,7 @@ if ($_REQUEST[tbl] == "paymethod") {
 ?>
 
 
-<!----------------------------------------MANAGE PACKAGE BILL----------------------------------------->
+<!----------------------------------------MANAGE PACKAGE BILL------------------------------------->
     
 <?php
 if ($_REQUEST[konu] == 'missbill') {
@@ -2306,11 +2306,11 @@ if ($_REQUEST[konu] == 'missbill') {
         
       $up = mysql_query("update store set active=1,startingdate='$bdate',endingdate='$dd' where storeid=$_REQUEST[stid]");
     }
-
+    error_reporting(0);
     if ($_REQUEST[kona] == 'today') {
         $bdate = date('Y-m-d');
         $sel = mysql_query("select st.statename,c.cityname,a.areaname,s.* from state st,city c,area a,store s where st.stateid=s.stateid and c.cityid=s.cityid and a.areaid=s.areaid and s.regdate like '$bdate'");
-       
+        
         $su = mysql_query("select count(storeid) from store where regdatedate like '$bdate'");
         $sell = mysql_fetch_array($su);
     } else {
@@ -2337,7 +2337,7 @@ if ($_REQUEST[konu] == 'missbill') {
              <div  class="col-md-12 col-sm-12 col-xs-12" style="padding:5px">
                 <div class="col-md-4" style="padding:10px 5px 5px 5px; text-align: center;">Store Owner :  &nbsp;<?php echo $bbsel[0]; ?></div>
                 <div class="col-md-4 text-center" ><img src="images/ganpatiji.png" style="max-width:8%;"/></div>
-               <div class="col-md-offset-2 col-md-2" style="padding:10px 5px 5px 5px;">BIll NO. <?php echo $packbill[0]; ?></div>
+               <div class="col-md-offset-2 col-md-2" style="padding:10px 5px 5px 5px;">Bill NO. <?php echo $packbill[0]; ?></div>
              </div>                                     
                                                 
             <tr>
@@ -2356,11 +2356,11 @@ if ($_REQUEST[konu] == 'missbill') {
             <?php
             if ($row[19] == 0) {
                 ?>
-                        <i class="fa fa-thumbs-o-down" style="color:red;" title="unactive"></i>
+                        <i class="fa fa-thumbs-down" style="color:red;" title="unactive"></i>
                         <?php
                     } else {
                         ?>
-                        <i class="fa fa-thumbs-o-up" style="color: green;" title="active"></i>
+                        <i class="fa fa-thumbs-up" style="color: green;" title="active"></i>
                         <?php
                     }
                     ?>
@@ -2479,7 +2479,7 @@ if ($_REQUEST[konu] == 'missbill') {
             ?>
     
     
-<!----------------------------------------MANAGE BANNER----------------------------------------->    
+<!----------------------------------------MANAGE BANNER-------------------------------------->    
 
     
 <?php
@@ -2574,11 +2574,11 @@ if ($_REQUEST[kona] == "data") {
             <?php
             if ($row[8] == 0) {
                 ?>
-                            <i class="fa fa-thumbs-o-down" style="color:red;" ></i>
+                            <i class="fa fa-thumbs-down" style="color:red;" ></i>
                             <?php
                         } else {
                             ?>
-                            <i class="fa fa-thumbs-o-up" style="color:green;" ></i>
+                            <i class="fa fa-thumbs-up" style="color:green;" ></i>
                             <?php
                         }
                         ?>
@@ -2642,7 +2642,7 @@ if ($_REQUEST[kona] == "data") {
 ?>
 
 
-<!----------------------------------------MANAGE BANNER BILL----------------------------------------->
+<!----------------------------------------MANAGE BANNER BILL------------------------------------>
     
 <?php
 if ($_REQUEST[konu] == 'missbannerbill') {
@@ -3061,7 +3061,7 @@ if($_REQUEST[kona]=="seapack")
 
 
 
-<!----------------------------------------MANAGE  BUSINESS PROFILE----------------------------------------->
+<!----------------------------------------MANAGE SELLER BUSINESS PROFILE--------------------------------------->
 
 
 
@@ -3119,7 +3119,7 @@ if ($_REQUEST[tbl] == "sellerbusiness") {
         <th>User Id</th>
         <th>Store Name</th>
         <th>Address</th>
-        <th>Store Map</th>
+        <!-- <th>Store Map</th> -->
         <th>Email</th>
         <th>Mobile</th>
         <th>Web Site</th>
@@ -3134,6 +3134,7 @@ if ($_REQUEST[tbl] == "sellerbusiness") {
         <th>End Date</th>
         <th>Food Type</th>
         <th>Cover</th>
+        <th>Block</th>
     </thead>
     <?php
     $c = $st;
@@ -3446,11 +3447,11 @@ if ($_REQUEST[tbl] == "sreview") {
             
             if ($row[6] == 0) {
                 ?>
-                        <i class="fa fa-thumbs-down" style="cursor:pointer;"></i>
+                        <i class="fa fa-thumbs-up" style="cursor:pointer;"></i>
                 <?php
             } else {
                 ?>
-                        <i class="fa fa-thumbs-up" style="cursor:pointer;"></i>
+                        <i class="fa fa-thumbs-down" style="cursor:pointer;"></i>
 
                 <?php
             }
@@ -3601,11 +3602,11 @@ if ($_REQUEST[tbl] == "preview") {
             
             if ($row[6] == 0) {
                 ?>
-                        <i class="fa fa-thumbs-down" style="cursor:pointer;"></i>
+                        <i class="fa fa-thumbs-up" style="cursor:pointer;"></i>
                 <?php
             } else {
                 ?>
-                        <i class="fa fa-thumbs-up" style="cursor:pointer;"></i>
+                        <i class="fa fa-thumbs-down" style="cursor:pointer;"></i>
 
                 <?php
             }

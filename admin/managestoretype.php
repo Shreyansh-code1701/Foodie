@@ -52,7 +52,7 @@ require_once 'adminpati.php';
                                     <div class="form-group">
                                         <div class="input-group">
                                             
-                                            <input type="text" class="form-control" name="storetype" required="" pattern="^[a-z ]+$" placeholder="Enter storetype"/>                                            <div class="input-group-addon">
+                                            <input type="text" class="form-control" name="storetype" required="" pattern="^[a-z A-Z]+$" placeholder="Enter storetype"/>                                            <div class="input-group-addon">
                                                 <i  class="fa fa-globe"></i>
                                             </div>
                                         </div>

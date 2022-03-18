@@ -94,7 +94,7 @@ if(isset($_REQUEST[addcart]))
             </div>
 
 
-            <div class="container " ><BR></br>
+            <div class="container " ><br></br>
                 <?php
                 $prodel = mysql_query("select m.mcatname,s.storename,s.address,ss.statename,c.cityname,a.areaname,i.* from maincategory m,store s,state ss,city c,area a,item i where m.mcatid=i.mcatid and s.storeid=i.storeid and ss.stateid=c.stateid and c.cityid=a.cityid and ss.stateid=s.stateid and c.cityid=s.cityid and a.areaid=s.areaid and i.productid=$_SESSION[proid]");
                 $prodel1 = mysql_fetch_array($prodel);
@@ -274,7 +274,7 @@ if(isset($_REQUEST[addcart]))
                                     <div class="detaildekho fffont">
 
                                         <div class=" input-group" style="margin-bottom: 3%;">
-                                            <input type="number" name="qty" class="form-control" id="rs" required="" value="1" min="1"  max="12"  onchange="missprice(this.value,'<?php echo $prodel1[11]; ?>');" onkeyup="missprkeyup(this.value,'<?php echo $prodel1[11]; ?>');" />                              
+                                            <input type="number" name="qty" class="form-control" id="rs" required="" value="1" min="1"  onchange="missprice(this.value,'<?php echo $prodel1[11]; ?>');" onkeyup="missprkeyup(this.value,'<?php echo $prodel1[11]; ?>');" />                              
                                             <div class="input-group-addon regi">
                                                 <i class="fa fa-user-plus"></i>
                                             </div>

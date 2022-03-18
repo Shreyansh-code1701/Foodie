@@ -123,7 +123,7 @@ function login()
     }
     if(cn==1)
     {
-        setInterval(inte,1000);
+        setInterval(inte,10000);
     }
 }
 

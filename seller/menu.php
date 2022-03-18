@@ -5,7 +5,7 @@ require_once 'sellersecure.php';
 <div class="left-side sticky-left-side">
 
 
-        <div class=" logo col-md-12">
+        <div class=" logo">
             <a href="../index.php"><img src="../images/tablogo.png" alt="" width="30%" class="img img-responsive text-center"/></a>
         </div>
 
@@ -49,10 +49,10 @@ require_once 'sellersecure.php';
                    
                 <li class="menu-list"><a href="#"><i class="fa  fa-briefcase"></i> <span>Business</span></a>
                     <ul class="sub-menu-list">
-                        <li><a href="store.php"> Post Store</a></li>
+                        <li><a href="store.php"> Create Store</a></li>
                         <li><a href="additem.php">Add Items</a></li>
-                        <li><a href="postbanner.php"> Post Banner</a></li>
-                        <li><a href="manageoffer.php"> Post Offer</a></li>
+                        <li><a href="postbanner.php"> Create Banner</a></li>
+                        <li><a href="manageoffer.php"> Create Offer</a></li>
                         
                     </ul>
                 </li>
