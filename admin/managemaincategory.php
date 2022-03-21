@@ -107,7 +107,7 @@ if ($er == 1)
                                                             <option>20</option>
                                                         </select>
                                                     </div>
-                                                    <input type="text" name="search" placeholder="Search here.." id="find" class="form-control" onkeyup="display('maincategory','display','1','10');"/>
+                                                    <input type="text" name="search" placeholder="Search Main-Category Name" id="find" class="form-control" onkeyup="display('maincategory','display','1','10');"/>
                                                     <div class="input-group-addon">
                                                         <i  class="fa fa-search"></i>
                                                     </div>

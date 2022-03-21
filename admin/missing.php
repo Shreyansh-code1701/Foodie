@@ -1913,7 +1913,7 @@ if ($_REQUEST[tbl] == "seller") {
         <th>Sque</th>
         <th>Sans</th>
         <th>Profile</th>
-        <th>Agree</th>
+        <!-- <th>Agree</th> -->
         <th>Block</th>
         <th></th>
 
@@ -1943,6 +1943,7 @@ if ($_REQUEST[tbl] == "seller") {
                 <td><?php echo $row[0]; ?></td>
                 <td><?php echo $row[1]; ?></td>
                 <td><?php echo $row[2]; ?></td>
+                <!--  -->
                 <td><?php echo $row[3]; ?></td>
                 <td><?php echo $row[4]; ?></td>
                 <td><?php echo $row[5]; ?></td>
@@ -1955,7 +1956,8 @@ if ($_REQUEST[tbl] == "seller") {
                 <td>
                     <div><img src="../<?php echo $row[12]; ?>" style="width:200%; height:200%; border-radius:200%; "  class="img img-responsive" /></div>
                 </td>
-                <td><?php echo $row[13]; ?></td>
+                
+                <td><?php #echo $row[13]; ?></td>
                 <td  onclick="blk('seller','block','<?php echo $p; ?>','<?php echo $pp; ?>','<?php echo $row[8]; ?>');">
             <?php
             $g = mysql_query("select * from login where userid like '$row[8]'");

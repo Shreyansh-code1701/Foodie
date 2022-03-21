@@ -60,7 +60,7 @@ require_once 'adminsecure.php';
                 
                 <li><a href="managemaincategory.php"><i class="fa fa-cutlery"></i> <span>Manage Category</span></a></li>
                
-                <li><a href="manageduration.php"><i class="fa  fa-cogs"></i> <span>Manage Duration</span></a></li>
+                <!-- <li><a href="manageduration.php"><i class="fa  fa-cogs"></i> <span>Manage Duration</span></a></li> -->
                 
                 <li><a href="managesubscriber.php"><i class="fa  fa-cogs"></i> <span>Manage Email Subscriber</span></a></li>
                 
@@ -68,10 +68,11 @@ require_once 'adminsecure.php';
                 
                  <li><a href="managefeedback.php"><i class="fa  fa-cogs"></i> <span>Manage Feedback</span></a></li>
                
-                 <li><a href="managetimeperiod.php"><i class="fa  fa-cogs"></i> <span>Manage Time Period</span></a></li>
+                 <!-- <li><a href="managetimeperiod.php"><i class="fa  fa-cogs"></i> <span>Manage Time Period</span></a></li> -->
                 
-                 <li><a href="manageuser.php"><i class="fa  fa-cogs"></i> <span>Manage User</span></a></li>
+                 <!-- <li><a href="manageuser.php"><i class="fa  fa-cogs"></i> <span>Manage User</span></a></li> -->
                  
+                 <!-- Manageuser will be added soon -->
                  
                  <!-- <li><a href="manageevent.php"><i class="fa  fa-cogs"></i> <span>Manage Event</span></a></li> -->
                  
@@ -87,7 +88,7 @@ require_once 'adminsecure.php';
                   
                   <li><a href="managebannerbill.php"><i class="fa  fa-cogs"></i> <span>Manage Banner Bill</span></a></li>
                   
-                  <li><a href="exbusiness.php"><i class="fa  fa-cogs"></i> <span>Expire business alert</span></a></li>
+                  <!-- <li><a href="expbusiness.php"><i class="fa  fa-cogs"></i> <span>Expire business alert</span></a></li> -->
                   
                   
                   

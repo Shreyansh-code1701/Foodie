@@ -53,7 +53,7 @@ require_once 'adminsecure.php';
                                             
                                                     <div class="form-group">
                                                 <div class="input-group">
-                                                    <input type="text" name="search" id="find" placeholder="Search here.." class="form-control" onkeyup="dis('data','addbanner',0,this.value,'vachhe',0);"/>
+                                                    <input type="text" name="search" id="find" placeholder="Search Banner Name" class="form-control" onkeyup="dis('data','addbanner',0,this.value,'vachhe',0);"/>
                                                     <div class="input-group-addon">
                                                         <i  class="fa fa-search"></i>
                                                     </div>

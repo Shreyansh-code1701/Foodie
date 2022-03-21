@@ -44,7 +44,7 @@ require_once 'sellersecure.php';
                 </a>
                 <ul class="dropdown-menu dropdown-menu-usermenu pull-right">
                     <li><a href="seller.php"><i class="fa fa-user"></i>  Profile</a></li>
-                    <li><a href="editprofile.php"><i class="fa fa-cog"></i>  Settings</a></li>
+                    <!-- <li><a href="editprofile.php"><i class="fa fa-cog"></i>  Settings</a></li> -->
                     <li><a href="../logout.php"><i class="fa fa-sign-out"></i> Log Out</a></li>
                 </ul>
             </li>

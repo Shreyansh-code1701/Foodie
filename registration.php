@@ -263,13 +263,7 @@ if(isset($_REQUEST[send]))
                 
                     <div class="row" >
                         
-                         <div class="col-md-6 col-sm-12 col-xs-12 ht-widget hw-popular-categories" >
-                            <h3 class="widget-title" style="font-size: 15px;">JOIN US NOW</h3>
-                         </div>
-                        
-                        
-                        
-                        <div class="col-md-6 col-sm-12 col-xs-12 ht-widget hw-popular-categories" >
+                        <div class="col-md-6 col-sm-6 col-xs-6 ht-widget hw-popular-categories" >
                             <h3 class="widget-title" style="font-size: 15px;">CREATE ACCOUNT</h3>
                             
                                 
@@ -508,6 +502,9 @@ if(isset($_REQUEST[send]))
                             
                     </div>
                      
+                    <div class="col-md-6 col-sm-12 col-xs-12 ht-widget hw-popular-categories" >
+                            <h3 class="widget-title" style="font-size: 15px;">JOIN WITH US NOW</h3>
+                         </div>
             </div>
 
         </div>
