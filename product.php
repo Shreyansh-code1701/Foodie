@@ -1,6 +1,6 @@
 <?php
     require_once 'connection.php';
-
+    unset($_SESSION[ch]);
     if($_REQUEST[stid]!="")
     {
         $_SESSION[stid]=$_REQUEST[stid];
@@ -27,16 +27,19 @@
         $dis=ceil(($tot*$_SESSION[offrate])/(100)); 
         $grand=$tot-$dis;
         
-        $z=mysql_query(("select * from cart where productid=$_SESSION[cid] and userid like '$_SESSION[user]'"));
-        $zz=mysql_fetch_array($z);
+        $z=mysql_query(("select * from cart where productid=$_SESSION[cid] and userid=$_SESSION[user]"));
+        $zz = mysql_fetch_array($z);
         
         if($zz[1]=="")
         {
+                   
              $in=mysql_query("insert into cart values('$_SESSION[user]',$_SESSION[cid],0,$_SESSION[qty],$pricee[0],$tot,$dis,$grand)");
         }
         else
         {
+           
             $_SESSION[ch]=1;
+
         }
         
      
@@ -57,6 +60,7 @@ require_once 'head.php';
     <body class="smooth-scroll" onload="avgrate('ratedekho');misscart('cart',0,0);">
 
         <script type="text/javascript">
+            
             $(document).ready(function()
             {
                 $('[data-toggle="tooltip"]').tooltip({
@@ -87,6 +91,8 @@ require_once 'toppati.php';
                 <header class="hs-header">
                     <div class="container">
                         <h2 class="heading">Recent recipes</h2>
+                       
+                     
                       
                     </div>
 <!--                    <ul class="isotope-filter" data-target="#grid-2">
@@ -272,6 +278,7 @@ while ($row = mysql_fetch_array($data)) {
                                     <div id="misscartdata"  style="padding: 30px;">
                                     
                                     <form action="" method="post" name="qtyform">
+                                        
                                         
                                     </form>
                                     

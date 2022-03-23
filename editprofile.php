@@ -336,7 +336,7 @@ if (isset($_REQUEST[send]))
                                             </div>
                                         </div>
                                       <div>
-                                          <button type="submit"  name="send" class="btn sendbtn">EDIT</button>
+                                          <button type="submit"  name="send" class="btn sendbtn">Save</button>
                                       </div>
                                   </div>
                             </div>

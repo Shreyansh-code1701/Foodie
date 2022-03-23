@@ -1,14 +1,14 @@
 .btn-increment-decrement {
     display: inline-block;
-    padding: 5px 0px;
+    padding: 5px;
     background: #e2e2e2;
-    width: 26px;
+    width: 27px;
     text-align: center;
     cursor:pointer;
 }
 .input-quantity {
 	border: 0px;
-    width: 30px;
+    width: 20px;
     display: inline-block;
     margin: 0;
     box-sizing: border-box;

@@ -1904,7 +1904,7 @@ if($_REQUEST[kona]=="sellbill")
                     
                        <tr>
                            <td colspan="2" style="text-align: center; border: 1px dotted #f8a631 !important;">
-                               348,Royal Squre, VIP Circle,Utran,Surat
+                               S V Patel College , Sumul Dairy Road, near I C Gandhi school, Tunki, Patel Nagar, Surat, Gujarat 395008
                            </td>
                        </tr>
                        
@@ -3301,7 +3301,7 @@ if ($_REQUEST[kona] == "form") {
                  <div class="input-group">
 
                      <!-- <input type="file" class="form-control" name="bpath" required="" /> -->
-                     <input type="file" name="bpath" class="form-control" required="" accept=".png, .jpg, .jpeg"/>
+                     <input type="file" name="bpath" class="form-control" required="" accept=".pdf"/>
                      <div class="input-group-addon">
                          <i  class="fa fa-globe"></i>
                      </div>

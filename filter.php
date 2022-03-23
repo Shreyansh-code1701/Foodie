@@ -48,7 +48,7 @@ require_once 'head.php';
 
 ?>
 
-    <body class="smooth-scroll" onload="avgrate('ratedekho'); misscart('cart',0,0);<?php  if($_REQUEST[search]!="") {?> mainsearch('misssearch','3','list','<?php echo $state; ?>','<?php echo $city; ?>','<?php echo $area; ?>','<?php echo $_REQUEST[search]; ?>');<?php }else{?> misssearch('misssearch','3','list');<?php } ?>">
+    <body class="smooth-scroll" onload="avgrate('ratedekho'); misscart('cart',0,0);<?php  if($_REQUEST[search]!="") {?> mainsearch('misssearch','3','list','<?php echo $state; ?>','<?php echo $city; ?>','<?php echo $area; ?>','<?php echo $_REQUEST[search]; ?>');<?php }else{?> misssearch('misssearch','6','list');<?php } ?>">
 
         <script type="text/javascript">
             $(document).ready(function()
@@ -102,7 +102,6 @@ require_once 'toppati.php';
                     
                             <div class="col-md-2 selectbox">
                                 <select name="filtersearch" onchange="misssearch('misssearch',this.value,'list');" id="perpage">
-                                    <option value="3">3</option>
                                     <option value="6">6</option>
                                     <option value="9">9</option>
                                     <option value="12">12</option>

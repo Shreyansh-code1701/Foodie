@@ -57,7 +57,7 @@ require_once 'usersecure.php';
                     ?>
                      <div class="detailhead">
                         
-                         <label class="mylbm ffont"><?php echo $ugg[0]; ?>&nbsp;,Your Total Bill  Available Here..  &nbsp;&nbsp;&nbsp;<i class="fa fa-caret-down"></i></label>    
+                         <label class="mylbm ffont"><?php echo $ugg[0]; ?>&nbsp;, Your Total Bill  Available Here..  &nbsp;&nbsp;&nbsp;</label>    
                        </div>
                     <br/>
                     <div class="col-md-4">
@@ -74,9 +74,9 @@ require_once 'usersecure.php';
                             ?>
                         </select>
                      </div>
-                    <div class="col-md-offset-4 col-md-4">
+                    <!-- <div class="col-md-offset-4 col-md-4">
                         <input type="date" name="fdate" onchange="missuserbill('missbill','fdate',this.value)" />
-                     </div>
+                     </div> -->
                 </div>
                 
                 <div id="printbill">

@@ -665,7 +665,7 @@ if($_REQUEST[kona]=="productrate")
                                      
                                      
                                      
-<!--------------------------------------------------SHIPPING MISSING FORM--------------------------------------------->
+<!---------------------------------------SHIPPING MISSING FORM----------------------------------------------------------------------->
                                      
                                      
                                      
@@ -765,7 +765,7 @@ if($_REQUEST[kona]=="productrate")
                              <div class="form-group">
                                 <label class="mylbm">Contact</label>
                                 <div class="input-group">
-                                    <input type="text" name="contact" placeholder="Fill Your Mobile No" style="padding: 15px;" value="<?php echo $ss[6]; ?>"  required="" pattern='^[0-9]{10}$'   class="form-control"/>
+                                    <input type="tel" name="contact" placeholder="Fill Your Mobile No" style="padding: 15px;" minlength="10" value="<?php echo $ss[6]; ?>"  required="" pattern='^[0-9]{10}$'   class="form-control"/>
                                     <div class="input-group-addon regi">
                                         <i class="fa fa-home"></i>
                                     </div>
@@ -847,7 +847,7 @@ if($_REQUEST[kona]=="productrate")
                         
                         <tr style="text-align: center;">
                             <td colspan="2">
-                                348,Royal Squre, VIP Circle,Utran,Surat
+                                S V Patel College , Sumul Dairy Road, near I C Gandhi school, Tunki, Patel Nagar, Surat, Gujarat 395008
                             </td>
                         </tr>
                         

@@ -286,10 +286,10 @@ function opencart()
     $("#food").css("display","block");
 }
 
-function misscart(kona,id,q)
+function misscart(kona,id,q,op)
 {
      $.ajax({
-        url:'cart.php?kona='+kona+'&id='+id+'&q='+q,
+        url:'cart.php?kona='+kona+'&id='+id+'&q='+q+'&op='+op,
         type:'POST',
         success :function(data){
             $("#misscartdata").html(data);

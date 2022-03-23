@@ -91,6 +91,7 @@
         {
         ?>
         <!-- <a href="cart.php"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;CART(0)</a>&nbsp;&nbsp;&nbsp;&nbsp; -->
+        <a href="product.php"><i class="fa fa-shopping-cart "></i>&nbsp;&nbsp;Cart</a>&nbsp;&nbsp;&nbsp;&nbsp;
          <a href="myaccount.php"><i class="fa fa-user "></i>&nbsp;&nbsp;My Account</a>&nbsp;&nbsp;&nbsp;&nbsp;
         <a href="logout.php"><i class="fa fa-power-off "></i>&nbsp;&nbsp;Sign out</a>
         <?php

@@ -8,37 +8,7 @@ if ($cmt[0] == "") {
 }
 ?>
 
-<head>
-    <!-- <script>
-        function increment_quantity(cartid) {
-            var inputQuantityElement = $("#input-quantity-" + cartid);
-            var qty = parseInt($(inputQuantityElement).val()) + 1;
-            save_to_db(cartid, qty);
-            console.log("Increase");
 
-        }
-
-        function decrement_quantity(cartid) {
-            var inputQuantityElement = $("#input-quantity-" + cartid);
-            if ($(inputQuantityElement).val() > 1) {
-                var newQuantity = parseInt($(inputQuantityElement).val()) - 1;
-                save_to_db(cartid, newQuantity);
-            }
-            console.log('Decrease');
-        }
-
-        function save_to_db(cartid, qty) {
-            var inputQuantityElement = $("#input-quantity-" + cartid);
-            $.ajax({
-                data: "cartid=" + cartid + "&qty=" + qty,
-                type: 'post',
-                success: function(response) {
-                    $(inputQuantityElement).val(qty);
-                }
-            });
-        }
-    </script> -->
-</head>
 
 <!--------------------------------------------MISS CART------------------------------------------>
 
@@ -76,8 +46,18 @@ if ($_REQUEST[kona] == "cart") {
         if ($ss[0] == "") {
             $in = mysql_query("insert into cart values('$_SESSION[user]',$_SESSION[id],0,1,$pp[0],$tot,$disc,$grand)");
         } else {
-            $q = $ss[3] + 1;
-
+            if($_REQUEST[op] == 1){
+                $q = $ss[3] + 1;
+            }
+            else{
+                
+                if($ss[3] > 1){
+                    $q = $ss[3] - 1;
+                }
+                
+            }
+            
+           
             $total = (($q) * ($pp[0]));
 
             if ($offer[8] != "") {
@@ -178,27 +158,35 @@ if ($_REQUEST[kona] == "cart") {
                 </div>
 
 
-                <div class="col-md-12 col-xs-12 col-sm-12 input-group" style="padding:5px;">
+                <!-- <div class="col-md-12 col-xs-12 col-sm-12 input-group" style="padding:5px;">
                     <div class=" input-group" style="margin-bottom: 3%;">
-                        <input type="number" name="qty" class="form-control" id="rs" required="" value="<?php echo $ss[6]; ?>"  min="1" onchange="missprice(this.value,'<?php echo $ss[7]; ?>'); misscart('cart','<?php echo $ss[1]; ?>',this.value);"  onkeyup="missprkeyup(this.value,'<?php echo $prodel1[11]; ?>');" />
-                    </div>
+                        <input type="number" name="qty" class="form-control" id="rs" required="" value="<?php echo $ss[6]; ?>"  min="1" onchange="missprice(this.value,'<?php echo $ss[7]; ?>'); misscart('cart','<?php echo $ss[1]; ?>',this.value);"  onkeyup="missprkeyup(this.value,'<?php echo $ss[7]; ?>');" />
+                    </div> -->
 
-                    <!-- <input type="number" name="qty" class="form-control" id="rs" required="" value="1" min="1" style="border-radius:5px;" value="<?php echo $ss[6]; ?>" onchange="missprice(this.value,'<?php echo $ss[7]; ?>');misscart('cart','<?php echo $ss[1]; ?>',this.value);"  onkeyup="missprkeyup(this.value,'<?php echo $ss[7]; ?>');" /> -->
+                <div class="cart-info quantity">
+                    <div class="btn-increment-decrement" onclick="decrement_quantity(<?php echo $ss[6]; ?>); missprice(this.value,'<?php echo $ss[7]; ?>'); misscart('cart','<?php echo $ss[1]; ?>',this.value,0);">-</div>
+                    <input class="input-quantity" id="input-quantity-<?php echo $ss[6]; ?>" min=1  value="<?php echo $ss[6] ?>">
+                    <div class="btn-increment-decrement" onclick="increment_quantity(<?php echo $ss[6]; ?>); missprice(this.value,'<?php echo $ss[7]; ?>'); misscart('cart','<?php echo $ss[1]; ?>',this.value,1);">+</div>
+                </div> <br> 
+                <div class="cart-info price">
+                    <p id="misspr">
+                            <?php $price = ($ss[6]) * ($ss[7]);
+                            echo "₹".$price;
+                            ?>
+                    </p>
+                </div>
 
-                    <!-- <input type="number" name="qty" class="form-control" id="rs" required="" min="1" value="<?php echo $ss[6]; ?>" onchange="missprice(this.value,'<?php echo $ss[7]; ?>');misscart('cart','<?php echo $ss[1]; ?>',this.value);"  onkeyup="missprkeyup(this.value,'<?php echo $ss[7]; ?>');" /> -->
 
-                    </div>
-
-
-                <div class="col-md-12 col-xs-12 col-sm-12" style="padding:5px;">
+                <!-- <div class="col-md-12 col-xs-12 col-sm-12" style="padding:5px;">
                     <p id="misspr"><i class="fa fa-rupee"></i>
                         <?php $price = ($ss[6]) * ($ss[7]);
-                        echo $price;
+                        #echo $price;
                         ?>/-</p>
 
-                    <!-- <p  id="misspr" style="font-size: 14px"> <i class="fa fa-rupee"></i>&nbsp;<?php echo $price ?>&nbsp;/-</p>
-                 -->
-                </div>
+                    <p  id="misspr" style="font-size: 14px"> <i class="fa fa-rupee"></i>&nbsp;<?php #echo $price 
+                                                                                                ?>&nbsp;/-</p>
+                 
+                </div> -->
             </div>
 
         </div>
@@ -218,7 +206,8 @@ if ($_REQUEST[kona] == "cart") {
         if ($nathi[0] != "") {
             $_SESSION[cartche] = 1;
         ?>
-            <a href="confirm.php" class="cartbtn">CONFIRM</a> <p style="font-size:30px;vertical-align:middle; margin-left: 2px; color: #f8a631;"></p>   
+            <a href="confirm.php" class="cartbtn">CONFIRM</a>
+            <p style="font-size:30px;vertical-align:middle; margin-left: 2px; color: #f8a631;"></p>
         <?php
         }
         ?>
@@ -262,7 +251,7 @@ if ($_REQUEST[kona] == "confirmcart") {
                     </div>
 
                     <div class="col-md-12 col-xs-12 col-sm-12">
-                    <p id="misspr"><i class="fa fa-rupee"></i>&nbsp; <?php echo $ss[9]; ?>&nbsp;/-</p>
+                        <p id="misspr"><i class="fa fa-rupee"></i>&nbsp; <?php echo $ss[9]; ?>&nbsp;/-</p>
                     </div>
                 </div>
 
@@ -288,3 +277,30 @@ if ($_REQUEST[kona] == "confirmcart") {
 <?php
 }
 ?>
+<script>
+    function increment_quantity(cartid) {
+        var inputQuantityElement = $("#input-quantity-" + cartid);
+        var qty = parseInt($(inputQuantityElement).val()) + 1;
+        save_to_db(cartid, qty);
+    }
+
+    function decrement_quantity(cartid) {
+        var inputQuantityElement = $("#input-quantity-" + cartid);
+        var temp = parseInt($(inputQuantityElement).val())
+        
+        var qty = parseInt($(inputQuantityElement).val()) - 1;
+        save_to_db(cartid, qty);
+         
+    }
+
+    function save_to_db(cartid, qty) {
+        var inputQuantityElement = $("#input-quantity-" + cartid);
+        $.ajax({
+            data: "&cartid=" + cartid + "&qty=" + qty,
+            type: 'post',
+            success: function(response) {
+                $(inputQuantityElement).val(qty);
+            }
+        });
+    }
+</script>
