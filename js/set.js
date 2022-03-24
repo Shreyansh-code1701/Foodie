@@ -505,4 +505,4 @@ function eventbook(str,idd)
     });        
 }
 
-
+fu

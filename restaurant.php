@@ -42,7 +42,7 @@ $gak=  mysql_fetch_array($ak);
                 <div class="container">
                     <div class="inner">
                         <div class="col-md-12 col-sm-12 col-xs- text-center " >
-                            <i class="fa fa-star" ></i>&nbsp;&nbsp;<font style="font-size:30px;">F</font><b style="color:#F8A631;"><i class="fa fa-circle" ></i><i class="fa fa-circle" ></i>D</b>&nbsp;<font style="font-size:30px;">L</font><b style="color: #F8A631;">OCKER</b>&nbsp;<font style="font-size:30px;">R</font><b style="color: #F8A631;">ESTAURANT</b>&nbsp; &nbsp;&nbsp;<i class="fa fa-star"></i> 
+                           <p style="font-size:30px;">Food Locker Restaurant</p> 
                         </div>
 
                     </div>
@@ -105,7 +105,7 @@ $gak=  mysql_fetch_array($ak);
                                     <span class="sale-label">More Info</span>
                                   
                                 </span>
-                            <img src="seller/<?php echo $sell[13]; ?>" class="img-responsive img-circle" style="height: 171px;width: 171px;margin-top: -120px;border: 3px solid #f8a631;"></img>
+                            <img src="seller<?php echo $sell[13]; ?>" class="img-responsive img-circle" style="height: 171px;width: 171px;margin-top: -120px;border: 3px solid #f8a631;"></img>
 				</a>
 				<div class="living_desc desc1">
 				<h3 style="text-transform: capitalize;font-size: 12px;"><?php echo $sell[4]; ?> , <?php echo $sell[8]; ?></h3>

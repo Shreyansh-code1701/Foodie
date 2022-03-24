@@ -3,29 +3,29 @@ require_once 'connection.php';
 require_once 'sellersecure.php';
 
 
-$pr=mysql_query("select storeimage from store where storeid=$row[8]");
+$pr=mysql_query("select storeimage from store where storeid=$up[8]");
 $prr=mysql_fetch_array($pr);
 $oldpath=$prr[0];
 
 if (isset($_REQUEST[send])) 
     {
     
-    if (strlen($_FILES[updatepic][name]) > 0) 
+    if (strlen($_FILES['updatepic']['name']) > 0) 
      {
         unlink($oldpath);
-        $name = $_FILES[updatepic][name];
-        $ex = "." . substr($_FILES[updatepic][type], 6);
+        $name = $_FILES['updatepic']['name'];
+        $ex = "." . substr($_FILES['updatepic']['type'], 6);
 
         if ($ex == ".png" || $ex == ".jpg" || $ex == ".jpeg" || $ex == ".PNG" || $ex == ".JPG" || $ex == ".JPEG") 
          {
-            $siz = $_FILES[updatepic][size] / 1024;
+            $siz = $_FILES['updatepic']['size'] / 1024;
             $siz = $siz / 1024;
             if ($siz <= 10) 
             {
                 $name = $_SESSION[user] . $ex;
                 $path1 ="profile/" . $name;
                  $oldpath=$path1;
-                $path2 =dirname(__FILE__).  $oldpath;
+                $path2 = $oldpath;
                
         
             } 
@@ -36,7 +36,7 @@ if (isset($_REQUEST[send]))
    
     }
   $up =("update store set storename='$_REQUEST[name]',address='$_REQUEST[address]',state='$_REQUEST[state]',city='$_REQUEST[city]',area='$_REQUEST[area]',storemap='$_REQUEST[storemap]',email='$_REQUEST[email]',mobile='$_REQUEST[mobile]',website='$_REQUEST[website]',storeimage='$oldpath',timeduration='$_REQUEST[timeduration]',regno='$_REQUEST[regno]',since='$_REQUEST[since]',fax='$_REQUEST[fax]',foodtype='$_REQUEST[foodtype]' where userid like '$_SESSION[user]' ");
-    move_uploaded_file($_FILES[updatepic][tmp_name], $path2);
+    move_uploaded_file($_FILES['updatepic']['tmp_name'], $path2);
     //header("location:businessprofile.php");  
 }
 
@@ -104,7 +104,7 @@ if (isset($_REQUEST[send]))
                                             </div>
                                     <div class="profilepic text-center">
                                         
-                                        <img class="img-rsponsive " id="picc" src="<?php echo $row[19]; ?>"  />
+                                        <img class="img-rsponsive " id="picc" src="<?php echo $row[18]; ?>"  />
                                            <img class="img-rsponsive " id="picc1" src=""  />
                          
                                     </div>
@@ -258,7 +258,7 @@ while ($aa = mysql_fetch_array($area)) {
                                             <div class="form-group">
                                                 <label>Time Duration</label>
                                                 <div class="input-group">
-                                                    <input type="text" class="form-control" name="timeduration" required="" value="<?php echo $row[23]; ?>" pattern="^[a-z0-9: ]+$"/>
+                                                    <input type="text" class="form-control" name="timeduration" required="" value="<?php echo $row[23]; ?>" pattern="^[0-9: ]+$"/>
                                                     <div class="input-group-addon">
                                                         <i  class="fa fa-phone"></i>
                                                     </div>
@@ -268,7 +268,7 @@ while ($aa = mysql_fetch_array($area)) {
                                             <div class="form-group">
                                                 <label>Reg No.</label>
                                                 <div class="input-group">
-                                                    <input type="text" class="form-control" name="regno" required="" value="<?php echo $row[24]; ?>" pattern="^[a-z0-9.- ]+$"/>
+                                                    <input type="text" class="form-control" name="regno" required="" value="<?php echo $row[24]; ?>" pattern="^[a-z A_Z 0-9.- ]+$"/>
                                                     <div class="input-group-addon">
                                                         <i  class="fa fa-phone"></i>
                                                     </div>
@@ -352,7 +352,7 @@ while ($aa = mysql_fetch_array($area)) {
                                     </div>
                             </div>
                            <div class="container">
-                               <button type="submit" name="send" class="btn btn-primary"><a href="#">Edit&nbsp;&nbsp;&nbsp;<i class="fa fa-pencil"></i></a></button>
+                               <button type="submit" name="send" class="btn btn-primary"><a href="#">Save&nbsp;&nbsp;&nbsp;<i class="fa fa-pencil"></i></a></button>
                           </div>
                         </div>
                              

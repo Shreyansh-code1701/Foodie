@@ -25,7 +25,7 @@
                 <div class="container">
                     <div class="inner">
                         <div class="col-md-12 col-sm-12 col-xs-12 " style="margin-bottom: 3%;">
-                            <i class="fa fa-star" ></i>&nbsp;&nbsp;<font style="font-size:30px;">B</font><b style="color: #F8A631;">EST</b>&nbsp; <font style="font-size:30px;">S</font><b style="color:#F8A631;">ELLER</b>&nbsp;&nbsp;&nbsp;<i class="fa fa-star"></i> 
+                            <p style="font-size:30px;">BEST SELLER </p> 
                         </div>
 
                     </div>
@@ -58,7 +58,7 @@
                                 <div class="entry col-xs-12 col-sm-4 animated zoomInDown col-xs-4 filter-food filter-pudding">
                                     <div class="entry-inner">
                                         <div class="entry-media">
-                                            <img src="seller/<?php echo $row[18]; ?>" alt="" style="width: 100%;height:255px;"/>
+                                            <img src="seller/ <?php echo $row[18]; ?>" alt="" style="width: 100%;height:255px;"/>
                                             <div class="entry-action">
                                                 <div class="entry-action-inner">
                                                     <span>

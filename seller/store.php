@@ -7,19 +7,19 @@ require_once 'sellersecure.php';
 if(isset($_REQUEST[send]))
 {
     
-     if ($_SESSION[cap] != $_REQUEST[capcha]) 
-    {
-        $er2 = 1;
+    //  if ($_SESSION[cap] != $_REQUEST[capcha]) 
+    // {
+    //     $er2 = 1;
         
-    }
+    // }
    
-    if (strlen($_FILES[storeimage][name]) > 0) {
+    if (strlen($_FILES['storeimage']['name']) > 0) {
 
-        $name = $_FILES[storeimage][name];
-        $ex = "." . substr($_FILES[storeimage][type], 6);
+        $name = $_FILES['storeimage']['name'];
+        $ex = "." . substr($_FILES['storeimage']['type'], 6);
 
         if ($ex == ".png" || $ex == ".jpg" || $ex == ".jpeg" || $ex == ".PNG" || $ex == ".JPG" || $ex == ".JPEG") {
-            if (round($siz = $_FILES[storeimage][size] / 1024) >= 0) {
+            if (round($siz = $_FILES['storeimage']['size'] / 1024) >= 0) {
 
                 $get = mysql_query("select max(storeid) from store");
 
@@ -33,6 +33,7 @@ if(isset($_REQUEST[send]))
                 }
 
                 $path1 = "profile/" . $name;
+                
 
                 $path2 = dirname(__FILE__) . "/" . $path1;
             } else {
@@ -45,13 +46,13 @@ if(isset($_REQUEST[send]))
     }
 
     
-    if (strlen($_FILES[visitingcard][name]) > 0) {
+    if (strlen($_FILES['visitingcard']['name']) > 0) {
 
-        $name = $_FILES[visitingcard][name];
-        $ex = "." . substr($_FILES[visitingcard][type], 6);
+        $name = $_FILES['visitingcard']['name'];
+        $ex = "." . substr($_FILES['visitingcard']['type'], 6);
 
         if ($ex == ".png" || $ex == ".jpg" || $ex == ".jpeg" || $ex == ".PNG" || $ex == ".JPG" || $ex == ".JPEG") {
-            if (round($siz = $_FILES[visitingcard][size] / 1024) >= 0) {
+            if (round($siz = $_FILES['visitingcard']['size'] / 1024) >= 0) {
 
                 $get = mysql_query("select max(storeid) from store");
 
@@ -64,9 +65,9 @@ if(isset($_REQUEST[send]))
                     $name = "storevisiting_" . $gett[0] . $ex;
                 }
 
-                $path1 = "visitingcard/" . $name;
+                $path3 = "visitingcard/" . $name;
 
-                $path2 = dirname(__FILE__) . "/" . $path1;
+                $path4 = dirname(__FILE__) . "/" . $path3;
             } else {
 
                 $er6 = 1;
@@ -77,13 +78,13 @@ if(isset($_REQUEST[send]))
     }
     
     
-    if (strlen($_FILES[coverphoto][name]) > 0) {
+    if (strlen($_FILES['coverphoto']['name']) > 0) {
 
-        $name = $_FILES[coverphoto][name];
-        $ex = "." . substr($_FILES[coverphoto][type], 6);
+        $name = $_FILES['coverphoto']['name'];
+        $ex = "." . substr($_FILES['coverphoto']['type'], 6);
 
         if ($ex == ".png" || $ex == ".jpg" || $ex == ".jpeg" || $ex == ".PNG" || $ex == ".JPG" || $ex == ".JPEG") {
-            if (round($siz = $_FILES[coverphoto][size] / 1024) >= 0) {
+            if (round($siz = $_FILES['coverphoto']['size'] / 1024) >= 0) {
 
                 $get = mysql_query("select max(storeid) from store");
 
@@ -96,9 +97,9 @@ if(isset($_REQUEST[send]))
                     $name = "storecover_" . $gett[0] . $ex;
                 }
 
-                $path1 = "cover/" . $name;
+                $path5 = "cover/" . $name;
 
-                $path2 = dirname(__FILE__) . "/" . $path1;
+                $path6 = dirname(__FILE__) . "/" . $path5;
             } else {
 
                 $er8 = 1;
@@ -109,10 +110,10 @@ if(isset($_REQUEST[send]))
     }
                        
   
-  if($er2!=1 && $er3!= 1 && $er4!= 1 && $er5!= 1 && $er6!= 1&& $er7!= 1 && $er8!= 1)
+  if($er3!= 1 && $er4!= 1 && $er5!= 1 && $er6!= 1&& $er7!= 1 && $er8!= 1)
     {
      
-      $ins =mysql_query("insert into store values($_REQUEST[storetype],$_REQUEST[duration],'$_SESSION[user]',0,'$_REQUEST[name]',$_REQUEST[state],$_REQUEST[city],$_REQUEST[area],'$_REQUEST[address]','$_REQUEST[storemap]','$_REQUEST[email]','$_REQUEST[mobile]','$_REQUEST[website]','$path1','$path3',0,0,0,'$_REQUEST[timeduration]','$_REQUEST[registration]',0,'$_REQUEST[since]','$_REQUEST[fax]','$_REQUEST[regdate]','0000-00-00','0000-00-00','$_REQUEST[foodtype]','$path5')");
+      $ins =mysql_query("insert into store values($_REQUEST[storetype],$_REQUEST[duration],'$_SESSION[user]',0,'$_REQUEST[name]',$_REQUEST[state],$_REQUEST[city],$_REQUEST[area],'$_REQUEST[address]','$_REQUEST[storemap]','$_REQUEST[email]','$_REQUEST[mobile]','$_REQUEST[website]','$path1','$path3',0,0,0,'$_REQUEST[timeduration]','$_REQUEST[registration]',0,'$_REQUEST[since]','$_REQUEST[fax]','$_REQUEST[regdate]','2022-03-24','2022-03-24','$_REQUEST[foodtype]','$path5')");
          
       
          $smx=mysql_query("select max(storeid) from store");
@@ -124,9 +125,9 @@ if(isset($_REQUEST[send]))
                      $hia=mysql_query("insert into  highlightassign values($val,$smxx[0],0,0)");
                  }
          }
-       move_uploaded_file($_FILES[storeimage][tmp_name], $path2);
-       move_uploaded_file($_FILES[visitingcard][tmp_name], $path4);
-       move_uploaded_file($_FILES[coverphoto][tmp_name], $path6);
+       move_uploaded_file($_FILES['storeimage']['tmp_name'], $path2);
+       move_uploaded_file($_FILES['visitingcard']['tmp_name'], $path4);
+       move_uploaded_file($_FILES['coverphoto']['tmp_name'], $path6);
        
      header("location:packagebill.php");
        
@@ -343,7 +344,7 @@ if(isset($_REQUEST[send]))
                                                 <div class="form-group">
                                                     <label>Web site</label>
                                                     <div class="input-group">
-                                                        <input type="text" class="form-control" name="website"  required="" pattern="^[a-zA-Z0-9@.-_ ]+$" placeholder="Enter Website"/>
+                                                        <input type="text" class="form-control" name="website"   pattern="^[a-zA-Z0-9@.-_ ]+$" placeholder="Enter Website"/>
                                                         <div class="input-group-addon">
                                                             <i  class="fa fa-globe"></i>
                                                         </div>
@@ -384,7 +385,7 @@ if(isset($_REQUEST[send]))
                                                     <label>Visiting Card</label>
                                                     <div class="input-group">
                                                         <!-- <input type="file" name="visitingcard" required="" class="form-control" title="visitingcard" /> -->
-                                                        <input type="file" name="Visitingcard" class="form-control" required="" accept=".png, .jpg, .jpeg"/>
+                                                        <input type="file" name="visitingcard" class="form-control" required="" accept=".png, .jpg, .jpeg"/>
                                                     <div class="input-group-addon">
                                                             <i  class="fa fa-globe"></i>
                                                         </div>
@@ -510,7 +511,7 @@ if(isset($_REQUEST[send]))
                                                 </div>
                                                     
                                             <div class="col-md-5">
-                                                <div  style="background: #f8a631;background-repeat: no-repeat;padding:2px; color:#fff;" name="dekocapcha" id="capcha">
+                                                <!-- <div  style="background: #f8a631;background-repeat: no-repeat;padding:2px; color:#fff;" name="dekocapcha" id="capcha">
                                                 </div>
 
                                             </div>
@@ -525,11 +526,11 @@ if(isset($_REQUEST[send]))
                                                     <i class="fa fa-pencil "></i>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
                                                 
                                                 <?php
                                                 if ($er2 == 1) {
-                                                    echo '<font color=red size=2>not match..!</font>';
+                                                    #echo '<font color=red size=2>not match..!</font>';
                                                 }
                                                 ?>
                                             </div>

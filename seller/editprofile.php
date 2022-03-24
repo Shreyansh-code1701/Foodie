@@ -328,7 +328,7 @@ $upp=mysql_query("update login set password='$_REQUEST[password]' where userid l
                                         <div class="form-group">
                                             <label>Security Answer</label>
                                             <div class="input-group">
-                                                <input type="text" class="form-control" name="sqa" required=""  value="<?php echo $inn[11]; ?>" pattern="^[a-z]+$"/>
+                                                <input type="text" class="form-control" name="sqa" required=""  value="<?php echo $inn[11]; ?>" pattern="^[a-z A-Z]+$"/>
                                                 <div class="input-group-addon">
                                                     <i  class="fa fa-phone"></i>
                                                 </div>

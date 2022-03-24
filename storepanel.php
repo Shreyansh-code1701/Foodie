@@ -183,7 +183,7 @@ require_once 'connection.php';
                 
                 <div class="col-md-6 raterev">
                             <div class="ht-widget hw-popular-categories" >
-                            <font class="sitemapline">Review For <?php echo $sell[0]; ?></font>
+                            <font class="sitemapline">Review For <?php echo $sell[0] ?></font>
                         </div>
                         <div class="col-md-10">
                             <form  action="" method="post" name="contact" class="form-group maru"  >
@@ -199,7 +199,7 @@ require_once 'connection.php';
                                     else
                                     {
                                     ?>
-                                    <input type="text" name="revmsg" placeholder="Review For <?php echo $sell[0]; ?>"  style="padding: 20px;" required=""  class="form-control "  />
+                                    <input type="text" name="revmsg" placeholder="Review For" style="padding: 20px;" required=""  class="form-control "  />
                                     
                                     
                                     <?php

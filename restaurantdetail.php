@@ -79,14 +79,14 @@ if(isset($_REQUEST[event]))
                 <div class="container">
                     <div class="inner">
                         <div class="col-md-12 col-sm-12 col-xs- text-center " >
-                            <i class="fa fa-star" ></i>&nbsp;&nbsp;<font style="font-size:30px;">R</font><b style="color: #F8A631;">ESTAURANT</b>&nbsp;<font style="font-size:30px;">D</font><b style="color: #F8A631;">ETAIL</b>&nbsp;&nbsp;<i class="fa fa-star"></i> 
+                           <p style="font-size:30px;">RESTAURANT DETAIL</p>
                         </div>
 
                     </div>
                 </div>
             </div>    
             
-    <div class="mainn" style="padding: 20px;margin-top: -13px;background: white">
+    <!-- <div class="mainn" style="padding: 20px;margin-top: -13px;background: white">
         <div class="sub1">
             <h2>Food Locker</h2>
         </div>
@@ -96,7 +96,7 @@ if(isset($_REQUEST[event]))
         <div style="clear: both;">
             
         </div>
-    </div>
+    </div> -->
       <div class="content_middle wow bounceInRight" data-wow-delay="0.4s" style="background: #f3f1f2">
         <div class="container" style="margin-left: 50px;">
         

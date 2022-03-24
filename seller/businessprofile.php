@@ -45,7 +45,7 @@ require_once 'sellersecure.php';
                                 </div>
                                     <div class="profilepic text-center">
                                         
-                                        <img src="<?php echo $row[19]; ?>" />
+                                        <img src="<?php echo $row[18]; ?>" />
                          
                                     </div>
                                     
@@ -83,10 +83,10 @@ require_once 'sellersecure.php';
                                                     <div class="title">Email</div>
                                                     <div class="desk"><?php echo $row[15]; ?></div>
                                                 </li>
-                                                <li>
+                                                <!-- <li>
                                                     <div class="title">Store Map</div>
                                                     <div class="desk"><iframe src="<?php echo $row[14]; ?>" frameborder="0"></iframe></div>
-                                                </li>
+                                                </li> -->
                                                
                                             </ul>
                                             
