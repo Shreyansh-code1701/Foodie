@@ -7,10 +7,10 @@ ob_start();
 <?php
 if ($_REQUEST[konuma] == "misscuisine") {
     echo "<option>-- Select Cuisine --</option>";
-    $mc = mysql_query("select c.*,m.mcatname from cuisine c,maincategory m where m.mcatid = c.mcatid and c.storeid =$_REQUEST[id]");
+    $mc = mysql_query("select * from maincategory where del=0");
                         while ($mcc = mysql_fetch_array($mc)) {
                             ?>
-                            <option value="<?php echo $mcc[0]; ?>"><?php echo $mcc[3]; ?></option>
+                            <option value="<?php echo $mcc[0]; ?>"><?php echo $mcc[1]; ?></option>
                             <?php
                         }
 }
@@ -72,16 +72,24 @@ if ($_REQUEST[kona] == "form") {
 
                 </div>
             </div>
-
+            
+           
  <div class="form-group">
                 <div class="input-group">
                     <div class="input-group-addon">
                         <i  class="fa fa-cutlery"></i>
                     </div>
+                    
                     <select name="maincategory" required="" class="form-control" id="misscuisine">
-                        
-                        <option value="">--Select Cuisine--</option>                                               
-                        
+                    <option value="">--Select Cuisine--</option>                                               
+                    <?php
+                        $mc = mysql_query("select * from maincategory where del=0");
+                        while ($mcc = mysql_fetch_array($mc)) {
+                            ?>
+                            <option value="<?php echo $mcc[0]; ?>"><?php echo $mcc[1]; ?></option>
+                            <?php
+                        }
+                        ?>
                     </select>
                 </div>
             </div>
@@ -125,7 +133,7 @@ if ($_REQUEST[kona] == "form") {
                     <div class="input-group-addon">
                         <i  class="fa  fa-picture-o"></i>
                     </div>
-                    <input type="file" class="form-control" name="productpic" required="" />
+                    <input type="file" class="form-control" name="productpic" required="" accept=".png, .jpg, .jpeg" />
                 </div>
                 <?php
                    if($er4==1)
@@ -2175,9 +2183,6 @@ if($_REQUEST[kona]=="sellerusemis")
                 
 <!----------------------------------------MANAGE OFFER----------------------------------------->
 
-
-
-
 <?php
 if ($_REQUEST[kona] == "form") {
     if ($_REQUEST[konu] == "offer") {
@@ -2188,14 +2193,12 @@ if ($_REQUEST[kona] == "form") {
                     <select name="mcat" class="form-control">
                         <option>--Select Main Category--</option>
                         <?php
-                            $mcat=  mysql_query("select m.mcatname,m.mcatid,s.storeid,s.userid from maincategory m,store s,cuisine c where m.mcatid=c.mcatid and s.storeid=c.storeid and s.userid like '$_SESSION[user]'");
-                        while($mm=  mysql_fetch_array($mcat))
-                        {
-                        ?>
+                        $mc = mysql_query("select * from maincategory where del=0");
+                        while ($mcc = mysql_fetch_array($mc)) {
+                            ?>
                         
-                        <option value="<?php echo $mm[1]; ?>"><?php echo $mm[0]; ?></option>
-                        
-                        <?php
+                        <option value="<?php echo $mcc[0]; ?>"><?php echo $mcc[1]; ?></option>
+                            <?php
                         }
                         ?>
                     </select>

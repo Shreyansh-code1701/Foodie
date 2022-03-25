@@ -139,7 +139,7 @@ $bdate=date('Y-m-d');
                 
                 <div class="wrapper">
                     
-                         <div class="col-md-6 ol-sm-12 col-xs-12">
+                         <div class="col-md-5 ol-sm-12 col-xs-12">
                         <section class="panel state">
                             <header class="panel-heading" style="background: #e0e1e7 !important;">
                                 ADD ITEM
@@ -157,7 +157,7 @@ $bdate=date('Y-m-d');
                         </section>
                             </div>
                     
-                       <div class="col-md-12 col-sm-12 col-xs-12">
+                       <div class="col-md-7 col-sm-12 col-xs-12">
                         <section class="panel state">
                             <header class="panel-heading custom-tab tab-right ">
                                 <ul class="nav nav-tabs pull-right">

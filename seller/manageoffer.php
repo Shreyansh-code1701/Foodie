@@ -98,7 +98,7 @@ require_once 'sellerpati.php';
                             </div>
                         </section>
                     </div>
-                    <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-md-6 col-sm-12 col-xs-12">
                         <section class="panel state">
                             <header class="panel-heading custom-tab tab-right ">
                                 <ul class="nav nav-tabs pull-right">

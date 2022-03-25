@@ -40,7 +40,6 @@ if (isset($_REQUEST[send])) {
     if ($er3 != 1 && $er4 != 1) {
         $int = mysql_query("insert into item values($_REQUEST[maincategory],$_REQUEST[sellerid],0,'$_REQUEST[productname]','$_REQUEST[foodtype]',$_REQUEST[price],'$_REQUEST[dis]','$path1',0)");
         move_uploaded_file($_FILES[productpic][tmp_name], $path2);
-        
     }
 }
 
@@ -96,153 +95,153 @@ if (isset($_REQUEST[upsend])) {
 require_once 'head.php';
 ?>
 
-    <body class="sticky-header" onload="form('form','item','insert',0);dis('data','item',1,'all','vachhe',0,0);recdis('recdata','item',1,'all','vachhe',0,0,0);">
+<body class="sticky-header" onload="form('form','item','insert',0);dis('data','item',1,'all','vachhe',0,0);recdis('recdata','item',1,'all','vachhe',0,0,0);">
 
-        <section>
-<?php
-require_once 'menu.php';
-?>
+    <section>
+        <?php
+        require_once 'menu.php';
+        ?>
 
-            <div class="main-content" >
+        <div class="main-content">
 
-<?php
-require_once 'toppati.php';
-require_once 'sellerpati.php';
-?>
+            <?php
+            require_once 'toppati.php';
+            require_once 'sellerpati.php';
+            ?>
 
 
-                <div class="wrapper">
+            <div class="wrapper">
 
-                    <div class="col-md-7 ol-sm-12 col-xs-12">
-                        <form action="" method="post" name="addproduct" enctype="multipart/form-data"> 
-                            <section class="panel state">
+                <div class="col-md-5 ol-sm-12 col-xs-12">
+                    <form action="" method="post" name="addproduct" enctype="multipart/form-data">
+                        <section class="panel state">
 
-                                <header class="panel-heading" style="background: #e0e1e7 !important;">
-                                    <div style="float: left;">
-                                        SELLER  BANNER  BILL
-                                    </div>
+                            <header class="panel-heading" style="background: #e0e1e7 !important;">
+                                <div style="float: left;">
+                                    SELLER BANNER BILL
+                                </div>
 
-                                    <div class="col-md-offset-3 col-md-5 col-sm-10 col-xs-10">
-                                        <div class="form-group">
-                                            <div class="input-group">
-                                                <div class="input-group-addon">
-                                                    <i  class="fa fa-cutlery"></i>
-                                                </div>
-                                                <select style="padding: 8px;" required="" name="sellerid" class="form-control" onchange="misscuis('misscuisine',this.value); ">
-                                                    <option value="">--Select Store Name--</option>
-<?php
-$get = mysql_query("select * from store where del=0 and userid like '$_SESSION[user]' ");
-while ($row = mysql_fetch_array($get)) {
-    ?>                                        
-                                                        <option value="<?php echo $row[3]; ?>"><?php echo $row[4]; ?></option>
-                    <?php
-                }
-                
-                ?>
-                                                </select>
+                                <div class="col-md-offset-3 col-md-5 col-sm-10 col-xs-10">
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-cutlery"></i>
                                             </div>
+                                            <select style="padding: 8px;" required="" name="sellerid" class="form-control" onchange="misscuis('misscuisine',this.value); ">
+                                                <option value="">--Select Store Name--</option>
+                                                <?php
+                                                $get = mysql_query("select * from store where del=0 and userid like '$_SESSION[user]' ");
+                                                while ($row = mysql_fetch_array($get)) {
+                                                ?>
+                                                    <option value="<?php echo $row[3]; ?>"><?php echo $row[4]; ?></option>
+                                                <?php
+                                                }
+
+                                                ?>
+                                            </select>
                                         </div>
-
-                                    </div>
-                                   
-
-                                    <div style="clear: both;"></div>
-                                </header>
-                                <div class="panel-body">
-
-                                    <div id="itemform">
-
-
-
                                     </div>
 
                                 </div>
 
 
-                            </section>
-                        </form>        
-                    </div>
- 
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <section class="panel state">
-                            <header class="panel-heading custom-tab tab-right ">
-                                <ul class="nav nav-tabs pull-right">
-                                    <li class="active">
-                                        <a href="#home-3" data-toggle="tab">
-                                            <i class="fa fa-laptop" ondblclick="dis('data','item',1,'all','vachhe',0,'badhurec');recdis('recdata','item',1,'all','vachhe',0,0,0);"></i>
-                                            DISPLAY
-                                        </a>
-                                    </li>
-                                    <li class="">
-                                        <a href="#about-3" data-toggle="tab">
-                                            <i class="fa fa-bitbucket"  ondblclick="recdis('recdata','item',1,'all','vachhe',0,0,'badhu');"></i>
-                                            RECYCLE
-                                        </a>
-                                    </li>
-
-                                </ul>
+                                <div style="clear: both;"></div>
                             </header>
                             <div class="panel-body">
-                                <div class="tab-content">
-                                    <div class="tab-pane active" id="home-3">
-                                        <form action="" method="post" name="searchproduct">
 
-                                            <div class="form-group">
-                                                <div class="input-group">
-                                                    <input type="text" name="search" placeholder="Search here.." class="form-control" onkeyup="dis('data','item',0,this.value,'vachhe',0);"/>
-                                                    <div class="input-group-addon">
-                                                        <i  class="fa fa-search"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </form>
-                                        <div id="itemdata">
+                                <div id="itemform">
 
 
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane" id="about-3">
-                                        <div id="itemrecdata">
-
-                                        </div>
-                                    </div>
 
                                 </div>
-                            </div>
-                        </section>
 
-                    </div>
+                            </div>
+
+
+                        </section>
+                    </form>
+                </div>
+
+                <div class="col-md-7 col-sm-12 col-xs-12">
+                    <section class="panel state">
+                        <header class="panel-heading custom-tab tab-right ">
+                            <ul class="nav nav-tabs pull-right">
+                                <li class="active">
+                                    <a href="#home-3" data-toggle="tab">
+                                        <i class="fa fa-laptop" ondblclick="dis('data','item',1,'all','vachhe',0,'badhurec');recdis('recdata','item',1,'all','vachhe',0,0,0);"></i>
+                                        DISPLAY
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#about-3" data-toggle="tab">
+                                        <i class="fa fa-bitbucket" ondblclick="recdis('recdata','item',1,'all','vachhe',0,0,'badhu');"></i>
+                                        RECYCLE
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </header>
+                        <div class="panel-body">
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="home-3">
+                                    <form action="" method="post" name="searchproduct">
+
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <input type="text" name="search" placeholder="Search here.." class="form-control" onkeyup="dis('data','item',0,this.value,'vachhe',0);" />
+                                                <div class="input-group-addon">
+                                                    <i class="fa fa-search"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div id="itemdata">
+
+
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="about-3">
+                                    <div id="itemrecdata">
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
 
                 </div>
-<?php
-require_once 'footer.php';
-?>
+
             </div>
+            <?php
+            require_once 'footer.php';
+            ?>
+        </div>
 
-        </section>
-
-
-        <script src="js/jquery-1.10.2.min.js"></script>
-        <script src="js/jquery-ui-1.9.2.custom.min.js"></script>
-        <script src="js/jquery-migrate-1.2.1.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/modernizr.min.js"></script>
-        <script src="js/jquery.nicescroll.js"></script>
+    </section>
 
 
-        <script src="js/sparkline/jquery.sparkline.js"></script>
-        <script src="js/sparkline/sparkline-init.js"></script>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/jquery-ui-1.9.2.custom.min.js"></script>
+    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/modernizr.min.js"></script>
+    <script src="js/jquery.nicescroll.js"></script>
 
 
-        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;AMP;sensor=false"></script>
+    <script src="js/sparkline/jquery.sparkline.js"></script>
+    <script src="js/sparkline/sparkline-init.js"></script>
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;AMP;sensor=false"></script>
 
 
 
-        <script src="js/scripts.js"></script>
+    <script src="js/scripts.js"></script>
 
 
 
-    </body>
+</body>
 
 
 </html>

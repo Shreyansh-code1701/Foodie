@@ -130,16 +130,16 @@ if(isset($_REQUEST[send]))
             $mail->SMTPAuth = true;
 
             //Username to use for SMTP authentication - use full email address for gmail
-            $mail->Username = "Email";
+            $mail->Username = "projectSMTP.server.007@gmail.com";
 
             //Password to use for SMTP authentication
-            $mail->Password = "Password";
+            $mail->Password = "Project@1337";
 
             //Set who the message is to be sent from
-            $mail->setFrom('Email', 'Foodlocker');
+            $mail->setFrom('projectSMTP.server.007@gmail.com', 'Foodlocker');
 
             //Set an alternative reply-to address
-            $mail->addReplyTo('Email', 'Foodlocker');
+            $mail->addReplyTo('projectSMTP.server.007@gmail.com', 'Foodlocker');
 
             //Set who the message is to be sent to
             $mail->addAddress($email, 'Foodlocker');
