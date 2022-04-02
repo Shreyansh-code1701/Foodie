@@ -77,17 +77,9 @@ $gak=  mysql_fetch_array($ak);
         }
          
     </script>
-    <div class="mainn" style="padding: 20px;margin-top: -13px;background: white">
-        <div class="sub1">
-            <h2>Food Locker</h2>
-        </div>
-        <div class="sub2">
-            We are a small team of problem solvers, designers, thinkers and tinkers, working around the clock to make StreetFood the most powerful online tool for food delivery in the universe. We believe that ordering food should be easy, fast and definitely fun! We wanted something simpler, so we made it.
-        </div>
-        <div style="clear: both;">
-            
-        </div>
-    </div>
+    <br>
+    <br>
+    <br>
     <div class="content_middle wow bounceInRight" data-wow-delay="0.4s" style="background: #f3f1f2">
         <div class="container">
         
@@ -100,12 +92,12 @@ $gak=  mysql_fetch_array($ak);
                     ?>
             <div class="col-md-6">
                 <div class="living_box"><a href="restaurantdetail.php?id=<?php echo $sell[3]; ?>">
-			    <img src="seller/<?php echo $sell[27]; ?>" style="width: 500px;height: 220px;"  class="img-responsive " alt=""/>
+			    <img src="seller/<?php echo $sell[27]; ?>" style="width: 500px;border-radius: 10px; height: 220px;"  class="img-responsive " alt=""/>
 				<span class="sale-box">
                                     <span class="sale-label">More Info</span>
-                                  
-                                </span>
-                            <img src="seller<?php echo $sell[13]; ?>" class="img-responsive img-circle" style="height: 171px;width: 171px;margin-top: -120px;border: 3px solid #f8a631;"></img>
+                </span>
+
+                            <img src="seller/<?php echo $sell[13]; ?>" class="img-circle" style="height: 200px;width: 200px;margin-top: -120px;border: 3px solid #f8a631;"alt=""></img>
 				</a>
 				<div class="living_desc desc1">
 				<h3 style="text-transform: capitalize;font-size: 12px;"><?php echo $sell[4]; ?> , <?php echo $sell[8]; ?></h3>

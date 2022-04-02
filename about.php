@@ -54,21 +54,21 @@ require_once 'head.php';
                         <div class="aboutborder">
                             <div><i class="fa fa-map-marker aboutimg" style="font-size: 50px; "></i></div>
                             <div class="aboutdes"> 1.Search</div>
-                            <p style="font-size: 18px;">Find restaurants that deliver to you by entering your address</p>
+                            <p style="font-size: 18px;">Find restaurants that deliver to you by entering your address.</p>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-12 col-xs-12 text-center">
                         <div class="aboutborder">
                             <div><i class="fa fa-cutlery aboutimg" style="font-size: 50px; "></i></div>
                             <div class=" aboutdes "> 2. Choose</div>
-                            <p style="font-size: 18px;">Browse hundreds of menus to find the food you like</p>
+                            <p style="font-size: 18px;">Browse hundreds of menus to find the food you like.</p>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-12 col-xs-12 text-center">
                         <div class="aboutborder">
                             <div><i class="fa fa-money aboutimg" style="font-size: 50px;"></i></div>
                             <div class="aboutdes"> 3. Pay</div>
-                            <p style="font-size: 18px;"> Pay fast & secure online with credit card or simply with cash on delivery</p>
+                            <p style="font-size: 18px;"> Pay fast or simply with cash on delivery.</p>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-12 col-xs-12 text-center ">

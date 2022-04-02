@@ -16,13 +16,13 @@ require_once 'adminsecure.php';
         <div class="left-side-inner">
 
 
-            <div class="visible-xs hidden-sm hidden-md hidden-lg">
+            <!-- <div class="visible-xs hidden-sm hidden-md hidden-lg">
                 <div class="media logged-user">
-                    <img alt="" src="images/photos/user-avatar.png" class="media-object">
-                    <div class="media-body">
+                     <img alt="" src="images/photos/user-avatar.png" class="media-object">
+                    <div class="media-body"> 
                         <h4><a href="#">John Doe</a></h4>
                         <span>"Hello There..."</span>
-                    </div>
+                    </div> 
                 </div>
 
                 <h5 class="left-nav-title">Account Information</h5>
@@ -30,8 +30,8 @@ require_once 'adminsecure.php';
                   <li><a href="#"><i class="fa fa-user"></i> <span>Profile</span></a></li>
                   <li><a href="#"><i class="fa fa-cog"></i> <span>Settings</span></a></li>
                   <li><a href="#"><i class="fa fa-sign-out"></i> <span>Sign Out</span></a></li>
-                </ul>
-            </div>
+                </ul> 
+            </div> -->
 
             <ul class="nav nav-pills nav-stacked custom-nav">
                 <li class="active"><a href="index.php"><i class="fa fa-home"></i> <span>Dashboard</span></a>

@@ -107,7 +107,7 @@ if(isset($_REQUEST[event]))
                     $k=  mysql_query("select * from store where storeid='$_SESSION[id]'");
                     $kk=  mysql_fetch_array($k);
                 ?>
-                <div class="living_box" style="height: 631px;">
+                <div class="living_box" style="height: 631px; border-radius: 10px;">
 			    <img src="seller/<?php echo $kk[27]; ?>" style="width: 100%;height: 300px;"  class="" alt=""/>
 			
                             <img src="seller/<?php echo $kk[13]; ?>" class="img-circle" style="height: 200px;width: 200px;margin-top: -120px;border: 3px solid #f8a631;" alt=""/>

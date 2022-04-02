@@ -41,16 +41,15 @@ $pb=  mysql_query("select count(*) from bannerbill");
                                 <div class="panel-body">
                                     <div class="row">
                                         <?php
-                                        $pack=  mysql_query("select count(packagebillid) from packagebill where userid like '$_SESSION[user]'");
-                                        // $pp=  mysql_fetch_array($pack);
+                                        $pk= mysql_query("SELECT count(packagebillid) from packagebill where userid like '$_SESSION[user]'");
+                                        $pp= mysql_fetch_array($pk);
                                         ?>
                                         <div class="col-xs-4">
                                             <i class="fa fa-money"></i>
                                         </div>
                                         <div class="col-xs-8">
                                             <span class="state-title"> Total Package Bill </span>
-                                            <!-- <h4><?php echo $pp[0]; ?></h4> -->
-                                            <h4>0</h4>
+                                            <h4><?php echo $pp[0]; ?></h4>
                                         </div>
                                     </div>
                                 </div>

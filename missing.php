@@ -310,7 +310,7 @@ if($_REQUEST[konu]=='misscontactstore')
                                         <div class="input-group-addon" style="background:#f8a631;"><i class="fa fa-pencil"></i></div>
                                     </div>
                                     <div class="co-md-12 text-center" >
-                                        <button type="submit" name="sendcontact" class="btn sendbtn">Send &nbsp;&nbsp;<i  class="fa fa-rocket"></i></button>
+                                        <button type="submit" name="sendcontact" class="btn sendbtn">Submit &nbsp;&nbsp;<i  class="fa fa-rocket"></i></button>
                                         <button type="reset" class="btn sendbtn">Reset &nbsp;&nbsp;<i class="fa fa-trash-o"></i></button>
                                     </div>
                                 
@@ -403,20 +403,20 @@ if($_REQUEST[konu]=='missfeedbackstore')
                         <div class="row">
                            
                                 <div class="col-md-12 input-group" style="margin-bottom: 3%;">
-                                    <div class="input-group-addon" style="background:#f8a631;"><i class="fa fa-user"></i></div>
+                                    <div class="input-group-addon"><i class="fa fa-user"></i></div>
                                     <input type="text" name="name" placeholder="Name" style="padding: 20px;" required=""  pattern='^[a-zA-Z ]+$'  class="form-control "  />
 
                                 </div>
                                 
                                 <div class="col-md-12 input-group" style="margin-bottom: 3%;">
-                                    <div class="input-group-addon" style="background:#f8a631;"><i class="fa fa-keyboard-o"></i></div>
-                                    <textarea  class="form-control"  rows="5" name="sms" placeholder="Sms" required=""  ></textarea>
+                                    <div class="input-group-addon" ><i class="fa fa-keyboard-o"></i></div>
+                                    <textarea  class="form-control"  rows="5" name="sms" placeholder="Your Message" required=""  ></textarea>
 
                                 </div>
 
                                 <div class="co-md-12 text-center" >
-                                    <button type="submit" name="send" class="btn sendbtn">Send &nbsp;&nbsp;<i  class="fa fa-rocket"></i></button>
-                                    <button type="reset" class="btn sendbtn">Reset &nbsp;&nbsp;<i class="fa fa-trash-o"></i></button>
+                                    <button type="submit" name="send" class="btn sendbtn">Submit</button>
+                                    <button type="reset" class="btn sendbtn">Reset</button>
                                 </div>
                             
                         </div>
@@ -439,7 +439,7 @@ if($_REQUEST[konu]=='missfeedbackstore')
 
 
 <?php
-if ($_REQUEST[kona] == "rate") 
+if ($_REQUEST[kona] == "storerate") 
 {
     $k=mysql_query("select * from ratestore where userid like '$_SESSION[user]' and storeid=$_SESSION[id] ");
     $kk=mysql_fetch_array($k);
@@ -467,7 +467,7 @@ if ($_REQUEST[kona] == "rate")
         for ($i = 1; $i <= 5; $i++) 
         {
             ?>
-            <i class="fa fa-star-o srate" title="Give Rate After Login"></i>
+            <i style="color:#f8a631;cursor: pointer;"  class="fa fa-star-o srate" title="Give Rate After Login"></i>
             <?php
         }
     } 
@@ -486,16 +486,18 @@ if ($_REQUEST[kona] == "rate")
             if($i<=$haa[0])
             {
             ?>
-            <i class="fa fa-star srate"  onclick="grate('rate','<?php echo $i; ?>');avgrate('sratedekho');"></i>
+            <i style="color:#f8a631;cursor: pointer;" class="fa fa-star srate"  onclick="grate('rate','<?php echo $i; ?>');avgrate('sratedekho');"></i>
             <?php
             }
             else
             {
                 ?>
             
-             <i class="fa fa-star-o srate" onclick="grate('rate','<?php echo $i; ?>');avgrate('sratedekho');"></i>
+             <i style="color:#f8a631;cursor: pointer;"  class="fa fa-star-o srate" onclick="grate('rate','<?php echo $i; ?>');avgrate('sratedekho');"></i>
             <?php
             }
+            ?>
+        <?php
         }
     }
     ?>

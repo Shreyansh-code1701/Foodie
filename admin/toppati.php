@@ -68,7 +68,6 @@ require_once 'adminsecure.php';
                 </div>
             </li>
            
-    
             <li>
                 <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                     <?php
@@ -91,4 +90,3 @@ require_once 'adminsecure.php';
     </div>
 
 </div>
-

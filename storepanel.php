@@ -177,11 +177,11 @@ require_once 'connection.php';
             <div class="row">
 
                 <?php
-                $st=  mysql_query("select storename from store where active=1");
+                $st=  mysql_query("select storename from store where active=1 and storeid=$_SESSION[id]");
                 $sell= mysql_fetch_array($st);
                 ?>
                 
-                <div class="col-md-6 raterev">
+                <div class="col-md-5 raterev">
                             <div class="ht-widget hw-popular-categories" >
                             <font class="sitemapline">Review For <?php echo $sell[0] ?></font>
                         </div>
@@ -209,7 +209,7 @@ require_once 'connection.php';
                                 
                                     
                                 <div class="co-md-12 text-center" >
-                                    <button type="submit" name="send" class="btn sendbtn" style="outline: 0;">Send &nbsp;&nbsp;<i  class="fa fa-rocket"></i></button>
+                                    <button type="submit" name="send" class="btn sendbtn" style="outline: 0;">Submit &nbsp;&nbsp;<i  class="fa fa-rocket"></i></button>
                                     <button type="reset" class="btn sendbtn" style="outline: 0;">Reset &nbsp;&nbsp;<i class="fa fa-trash-o"></i></button>
                                 </div>
                                 </br>
@@ -217,10 +217,25 @@ require_once 'connection.php';
                             </form>
                         </div>
                 </div>
+
+                <div class="col-md-3 ">
+                          <!-- review star   -->
+                          <div class=" ht-widget hw-popular-categories" >
+                            <font class="widget-title" style="font-size: 15px; text-transform: capitalize;">Review  <?php echo $sell[0]; ?></font>
+                        </div>
+                          <div>
+
+                                <div id="sratedekho">
+
+                                </div>
+
+                            </div> 
+                        
+                </div>
                 
-                <div class="col-md-6">
+                <div class="col-md-4">
                             <div class=" ht-widget hw-popular-categories" >
-                            <h3 class="widget-title" style="font-size: 15px; text-transform: capitalize;">Review For Seller <?php echo $sell[0]; ?></h3>
+                            <font class="widget-title" style="font-size: 15px; text-transform: capitalize;">Review  <?php echo $sell[0]; ?></font>
                         </div>
                     <div class="col-md-10">
                             <table class="table table-responsive">
@@ -270,6 +285,7 @@ require_once 'connection.php';
                     </div>
                 
             </div>
+            
         </div>
   
        

@@ -33,14 +33,14 @@ if (isset($_REQUEST[send]))
                 <div class="container">
                     <div class="inner">
                         <div class="col-md-12 col-sm-12 col-xs-12 " style="margin-bottom: 3%;">
-                            <i class="fa fa-star" ></i>&nbsp;&nbsp;<font style="font-size:30px;">F</font><b style="color: #F8A631;">EEDBACK</b>&nbsp; <font style="font-size:30px;">S</font><b style="color:#F8A631;">T<i class="fa fa-circle" ></i>RE</b>&nbsp;&nbsp;<i class="fa fa-star"></i> 
+                            <p style="font-size:30px;">FEEDBACK STORE</p> 
                         </div>
 
                     </div>
                 </div>
             </div>
 
-            <div class="container " ><BR></br>
+            <div class="container " ></br>
                  <form  action="" method="post" name="feedbackstore" class="form-group maru"  >
         <div class="col-md-4 col-sm-12 col-xs-12">
                     

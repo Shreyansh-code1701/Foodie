@@ -67,7 +67,7 @@ if (isset($_REQUEST[send])) {
                                             $sel = mysql_query("select * from user where userid like '$row[2]'");
                                             $sell = mysql_fetch_array($sel);
                                             ?>                                        
-                                            <option value="<?php echo $row[3]; ?>"><?php echo $row[4]; ?> (<?php echo $sell[0]; ?>)</option>
+                                            <option value="<?php echo $row[3]; ?>"><?php echo $row[4]; ?></option>
                                             <?php
                                         }
                                         ?>

@@ -96,7 +96,7 @@
 
                 <div class="col-xs-12 col-sm-3">
                     <div class="ht-widget hw-posts">
-                        <h3 class="widget-title" style="font-size: 15px;">FEEDBACK CONTAINT</h3>
+                        <h3 class="widget-title" style="font-size: 15px;">FEEDBACK CONTACT</h3>
                         <?php
                         $fdd =  mysql_query("SELECT * FROM feedback order by feedbackid desc LIMIT 0,5");
                         while ($fd = mysql_fetch_array($fdd)) {
@@ -104,7 +104,7 @@
                             <article class="post">
                                 <font style="text-transform: capitalize;"><a href="feedback.php"><?php echo $fd[4]; ?></a></font>
                                 <div class="meta">
-                                    <span style="text-transform: capitalize;"><?php echo $fd[2]; ?></span> <span style="text-transform: capitalize;"><?php echo $fd[3]; ?></span>
+                                    <span style="text-transform: capitalize;"><?php echo $fd[1]; ?></span> <span style="text-transform: capitalize;"><?php echo $fd[3]; ?></span>
                                 </div>
                             </article>
                         <?php

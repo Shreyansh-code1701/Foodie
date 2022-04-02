@@ -142,7 +142,7 @@ $bdate=date('Y-m-d');
                          <div class="col-md-5 ol-sm-12 col-xs-12">
                         <section class="panel state">
                             <header class="panel-heading" style="background: #e0e1e7 !important;">
-                                ADD ITEM
+                                CREATE BANNER
                               
                             </header>
                             <div class="panel-body">

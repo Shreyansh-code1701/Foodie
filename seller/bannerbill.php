@@ -142,7 +142,7 @@ $gg = mysql_fetch_array($g);
                                     </tr>
                                     <tr>
                                         <td colspan="4" style="background-color: #65CEA7;color:#FFFFFF;">
-                                            <div class="col-md-7">348,Royal Square,VIP cercle,Utran-Kapodara Road,Surat. </div>
+                                            <div class="col-md-7">Shri Shambhubhai V. Patel College of Computer Science and Business Management , Sumul Dairy Road Near I.C. Gandhi High School, Surat, Gujarat 395008</div>
                                             <div class="col-md-offset-2 col-md-2">THANK YOU...</div>
                                         </td>
                                     </tr>

@@ -58,7 +58,7 @@ require_once 'sellerpati.php';
                                 </div>
                             <div class="col-md-12">
                                 
-                                <div class="col-md-2 sea">
+                                <div class="col-md-3 sea">
                                     <select  name="billid" onchange="sellbill('sellbill','user',this.value);" class="form-control">
                                         <option value="" style="color: #f8a631;">--Select User--</option>
                                         <?php
@@ -73,7 +73,7 @@ require_once 'sellerpati.php';
                                     </select>
                                 </div>
                                 
-                                        <div class="col-md-2 sea">
+                                        <div class="col-md-3 sea">
                                                 <select  name="sellbillno" onchange="sellbill('sellbill','billno',this.value);" class="form-control">
                                         <option value="" style="color: #f8a631;">--Select Bill no--</option>
                                         <?php
@@ -87,7 +87,7 @@ require_once 'sellerpati.php';
                                     </select>
                                         </div>
                                 
-                                        <div class="col-md-2 sea">
+                                        <div class="col-md-3 sea">
                                             <select  name="payname" onchange="sellbill('sellbill','payname',this.value);" class="form-control">
                                         <option value="" style="color: #f8a631;">--Select Pay name--</option>
                                         <?php
@@ -102,15 +102,8 @@ require_once 'sellerpati.php';
                                         </div>
                             
                                 
-                                        <div class="col-md-2 sea">
+                                        <div class="col-md-3 sea">
                                                     <input type="date" name="date" onchange="sellbill('sellbill','date',this.value);" placeholder="Ex : 2016-3-20" class="form-control ptx"/>
-                                        </div>
-                                
-                                        <div class="col-md-2 sea ">
-                                            <input type="text"  placeholder="Low" id="low"  onkeyup="sellbill('sellbill','lprice',this.value);"  class="form-control" />
-                                        </div>
-                                        <div class="col-md-2 sea">
-                                            <input type="text"  placeholder="High" id="high"  onkeyup="sellbill('sellbill','hprice',this.value);"  class="form-control" />
                                         </div>
                                 
                                         

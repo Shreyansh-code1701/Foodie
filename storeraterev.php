@@ -62,7 +62,7 @@ if (isset($_REQUEST[send])) {
                 </div>
         
             </div>
-            <div class="container " ><BR></br>
+            <div class="container " ><br></br>
                 
                 <div class="row" style="background-color: #eee;">
                     
@@ -95,7 +95,7 @@ if (isset($_REQUEST[send])) {
                                 
                                     
                                 <div class="co-md-12 text-center" >
-                                    <button type="submit" name="send" class="btn sendbtn">Send &nbsp;&nbsp;<i  class="fa fa-rocket"></i></button>
+                                    <button type="submit" name="send" class="btn sendbtn">Submit &nbsp;&nbsp;<i  class="fa fa-rocket"></i></button>
                                     <button type="reset" class="btn sendbtn">Reset &nbsp;&nbsp;<i class="fa fa-trash-o"></i></button>
                                 </div>
                                 </br>

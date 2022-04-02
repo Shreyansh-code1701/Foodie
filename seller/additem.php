@@ -112,13 +112,13 @@ require_once 'head.php';
 
             <div class="wrapper">
 
-                <div class="col-md-5 ol-sm-12 col-xs-12">
+                <div class="col-md-8 ol-sm-12 col-xs-12">
                     <form action="" method="post" name="addproduct" enctype="multipart/form-data">
                         <section class="panel state">
 
                             <header class="panel-heading" style="background: #e0e1e7 !important;">
                                 <div style="float: left;">
-                                    SELLER BANNER BILL
+                                    ADD ITEMS
                                 </div>
 
                                 <div class="col-md-offset-3 col-md-5 col-sm-10 col-xs-10">
@@ -162,7 +162,7 @@ require_once 'head.php';
                     </form>
                 </div>
 
-                <div class="col-md-7 col-sm-12 col-xs-12">
+                <div class="col-md-12 col-sm-12 col-xs-12">
                     <section class="panel state">
                         <header class="panel-heading custom-tab tab-right ">
                             <ul class="nav nav-tabs pull-right">

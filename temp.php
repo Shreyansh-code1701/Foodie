@@ -446,7 +446,7 @@ if(isset($_REQUEST[addcart]))
                                 </div> 
                                 
                                 <div class="col-md-12 text-center"    input-group text-center">
-                                     <button type="submit" name="inquiry" title="Send" class="btn inquirybtn">Send &nbsp;&nbsp;<i class="fa fa-rocket" ></i></button>&nbsp;&nbsp;
+                                     <button type="submit" name="inquiry" title="Send" class="btn inquirybtn">Submit &nbsp;&nbsp;<i class="fa fa-rocket" ></i></button>&nbsp;&nbsp;
                                     <button type="reset" title="clear" name="clear"class="btn inquirybtn">Reset &nbsp;&nbsp;<i class="fa fa-trash-o" ></i></button>
                                 </div>
                                 
@@ -573,7 +573,7 @@ if(isset($_REQUEST[addcart]))
 
 
                                     <div class="co-md-12 text-center" >
-                                        <button type="submit" name="send" class="btn sendbtn">Send &nbsp;&nbsp;<i  class="fa fa-rocket"></i></button>
+                                        <button type="submit" name="send" class="btn sendbtn">Submit &nbsp;&nbsp;<i  class="fa fa-rocket"></i></button>
                                         <button type="reset" class="btn sendbtn">Reset &nbsp;&nbsp;<i class="fa fa-trash-o"></i></button>
                                     </div>
                                     </br>

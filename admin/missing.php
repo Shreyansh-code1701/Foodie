@@ -1058,7 +1058,7 @@ if ($_REQUEST[tbl] == "subscriber") {
     if ($start != 1) {
         ?>
 
-                    <li onclick="display('subscriber','display','<?php echo $p - 1; ?>','<?php echo $pp; ?>');"><i class="fa fa-angle-double-left" ></i></li>
+                    <li onclick="display('subscriber','display','<?php echo $p - 1; ?>','<?php echo $pp; ?>');"><i class="fa fa-angle-left" ></i></li>
         <?php
     }
     for ($i = $start; $i <= $end; $i++) {
@@ -1072,7 +1072,7 @@ if ($_REQUEST[tbl] == "subscriber") {
     }
     if ($page != $end) {
         ?>
-                    <li onclick="display('subscriber','display','<?php echo $p + 1; ?>','<?php echo $pp; ?>');"><i class="fa fa-angle-double-right"></i></li>
+                    <li onclick="display('subscriber','display','<?php echo $p + 1; ?>','<?php echo $pp; ?>');"><i class="fa fa-angle-right"></i></li>
         <?php
     }
     ?>
@@ -2337,7 +2337,7 @@ if ($_REQUEST[konu] == 'missbill') {
         ?>
         <table class="table table-responsive" style="background:url(../seller/images/food.png) no-repeat 50% 50%;" >
              <div  class="col-md-12 col-sm-12 col-xs-12" style="padding:5px">
-                <div class="col-md-4" style="padding:10px 5px 5px 5px; text-align: center;">Store Owner :  &nbsp;<?php echo $bbsel[0]; ?></div>
+                <div class="col-md-4" style="padding:10px 5px 5px 5px; text-align: center;">Store Owner :   &nbsp;<?php echo $bbsel[0]; ?></div>
                 <div class="col-md-4 text-center" ><img src="images/ganpatiji.png" style="max-width:8%;"/></div>
                <div class="col-md-offset-2 col-md-2" style="padding:10px 5px 5px 5px;">Bill NO. <?php echo $packbill[0]; ?></div>
              </div>                                     
@@ -2468,7 +2468,7 @@ if ($_REQUEST[konu] == 'missbill') {
             </tr>
                  <tr>
                 <td colspan="4" style="background-color: #65CEA7;color:#FFFFFF;">
-                    <div class="col-md-7">348,Royal Square,VIP cercle,Utran-Kapodara Road,Surat. </div>
+                    <div class="col-md-7">Shri Shambhubhai V. Patel College of Computer Science and Business Management , Sumul Dairy Road Near I.C. Gandhi High School, Surat, Gujarat 395008</div>
                     <div class="col-md-offset-3 col-md-2">THANK YOU..<i class=""></i></div>
                 </td>
             </tr>                                   
@@ -2647,6 +2647,7 @@ if ($_REQUEST[kona] == "data") {
 <!----------------------------------------MANAGE BANNER BILL------------------------------------>
     
 <?php
+error_reporting(0);
 if ($_REQUEST[konu] == 'missbannerbill') {
 
     if ($_REQUEST[stid] != 0) {
@@ -2673,6 +2674,7 @@ if ($_REQUEST[konu] == 'missbannerbill') {
         $sell = mysql_fetch_array($su);
         
     } else {
+        
         
         $sel = mysql_query("select u.username,s.storename,s.address,a.* from user u,store s,addbanner a where a.storeid = s.storeid and u.userid=s.userid and  a.storeid =$_REQUEST[kona]");
         
@@ -2828,7 +2830,7 @@ if ($_REQUEST[konu] == 'missbannerbill') {
             
             <tr>
                 <td colspan="4" style="background-color: #65CEA7;color:#FFFFFF;">
-                    <div class="col-md-7">348,Royal Square,VIP cercle,Utran-Kapodara Road,Surat. </div>
+                    <div class="col-md-7">Shri Shambhubhai V. Patel College of Computer Science and Business Management , Sumul Dairy Road Near I.C. Gandhi High School, Surat, Gujarat 395008</div>
                     <div class="col-md-offset-3 col-md-2">THANK YOU..<i class=""></i></div>
                 </td>
             </tr>
@@ -3363,7 +3365,7 @@ if($_REQUEST[kona]=="seabanner")
 
 
 
-<!----------------------------------------MANAGE SELLER REVIEW----------------------------------------->
+<!----------------------------------------MANAGE SELLER REVIEW(store)----------------------------------------->
 
 
 <?php
@@ -3449,11 +3451,11 @@ if ($_REQUEST[tbl] == "sreview") {
             
             if ($row[6] == 0) {
                 ?>
-                        <i class="fa fa-thumbs-up" style="cursor:pointer;"></i>
+                        <i class="fa fa-thumbs-down" style="cursor:pointer;"></i>
                 <?php
             } else {
                 ?>
-                        <i class="fa fa-thumbs-down" style="cursor:pointer;"></i>
+                        <i class="fa fa-thumbs-up" style="cursor:pointer;"></i>
 
                 <?php
             }
@@ -3518,7 +3520,7 @@ if ($_REQUEST[tbl] == "sreview") {
 
 
 
-<!----------------------------------------MANAGE SELLER REVIEW----------------------------------------->
+<!----------------------------------------MANAGE SELLER REVIEW(product)----------------------------------------->
 
 
 <?php
@@ -3604,11 +3606,11 @@ if ($_REQUEST[tbl] == "preview") {
             
             if ($row[6] == 0) {
                 ?>
-                        <i class="fa fa-thumbs-up" style="cursor:pointer;"></i>
+                        <i class="fa fa-thumbs-down" style="cursor:pointer;"></i>
                 <?php
             } else {
                 ?>
-                        <i class="fa fa-thumbs-down" style="cursor:pointer;"></i>
+                        <i class="fa fa-thumbs-up" style="cursor:pointer;"></i>
 
                 <?php
             }
@@ -3733,7 +3735,7 @@ if ($_REQUEST[tbl] == "preview") {
                         </div>
                             
                         <div class="text-center">
-                           348,Royal Squre, VIP Circle,Utran,Surat
+                           Shri Shambhubhai V. Patel College of Computer Science and Business Management ,Sumul Dairy Road Near I.C. Gandhi High School, Surat, Gujarat 395008
                         </div>
                         <div class="text-center">
                             <strong>Mo :</strong><font>7874259262 , 8758722336</font>
@@ -3996,7 +3998,7 @@ if($_REQUEST[olkhan]=="reviewid")
 {
   ?>
 
-<h5 class="title">You have <?php echo $p[0]; ?> Review Product </h5>
+<h5 class="title">You have <?php echo $r[0]; ?> Review Product </h5>
                     <ul class="dropdown-list normal-list">
                         <?php
                      $rpp=  mysql_query("select u.url,u.username,r.* from user u,reviewproduct r where u.userid=r.userid and r.notification=0  order by r.reviewid desc");
@@ -4051,7 +4053,7 @@ if($_REQUEST[olkhan]=="reviewstoreid")
 {
   ?>
 
-<h5 class="title">You have 5 Mails </h5>
+<h5 class="title">You have <?php echo $s[0]; ?> Store review </h5>
                     <ul class="dropdown-list normal-list">
                         <?php
                      $rss=  mysql_query("select u.url,u.username,r.* from user u,reviewstore r where u.userid=r.userid and r.notification=0  order by r.reviewstoreid desc");

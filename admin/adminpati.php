@@ -14,14 +14,14 @@
                             if($inn[2]=="Male")
                             {
                                 ?>
-                                <font>Welcome To Our Town : Mr. <?php echo $inn[0]; ?></font>
+                                <font>Welcome To Our Town : Hello Mr. <?php echo $inn[0]; ?></font>
                            
                               <?php
                             }
                             else
                             {
                                 ?>
-                                 <font>Welcome To Our Town : Mrs. <?php echo $inn[0]; ?> </font>
+                                 <font>Welcome To Our Town :Hello  Mrs. <?php echo $inn[0]; ?> </font>
                            <?php
                                  }
                                     ?>

@@ -1,4 +1,5 @@
 <?php
+error_reporting(0);
 session_start();
 ob_start();
     $con=  mysql_connect("localhost","root","");
@@ -7,4 +8,4 @@ ob_start();
         die ("not connect"). mysql_error();
     }
     mysql_select_db("foodlocker",$con);
-?>
+?>  

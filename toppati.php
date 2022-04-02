@@ -43,7 +43,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-12 text-center  input-group text-center">
-                                     <button type="button" name="login" title="Send" class="btn loginbtn" onclick="loginerr();" style="outline: 0;">Send &nbsp;&nbsp;<i class="fa fa-rocket" ></i></button>&nbsp;&nbsp;
+                                     <button type="button" name="login" title="Send" class="btn loginbtn" onclick="loginerr();" style="outline: 0;">Submit &nbsp;&nbsp;<i class="fa fa-rocket" ></i></button>&nbsp;&nbsp;
                                     <button type="reset" title="clear" name="clear"class="btn loginbtn" style="outline: 0;">Reset &nbsp;&nbsp;<i class="fa fa-trash-o" ></i></button>
                                 </div>
                             </div>

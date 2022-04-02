@@ -242,7 +242,7 @@
                                 </div>
                             </div>
                             <div class="co-md-12 text-center" >
-                                        <button type="submit" name="sendforget" class="btn sendbtn">Send &nbsp;&nbsp;<i  class="fa fa-rocket"></i></button>
+                                        <button type="submit" name="sendforget" class="btn sendbtn">Submit &nbsp;&nbsp;<i  class="fa fa-rocket"></i></button>
                                         <button type="reset" class="btn sendbtn">Reset &nbsp;&nbsp;<i class="fa fa-trash-o"></i></button>
                                     </div>
 

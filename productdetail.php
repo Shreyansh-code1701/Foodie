@@ -255,7 +255,7 @@ if(isset($_REQUEST[addcart]))
 
 
                                     <div class="col-md-12">
-                                        <img src="seller/<?php echo $prodel1[13]; ?>"  class="img img-responsive animated tada pulse"/>
+                                        <img src="seller/<?php echo $prodel1[13]; ?>"style="width: 300px;border-radius: 10px; height: 220px;" class="img img-responsive animated tada pulse"/>
                                     </div>
 
 
@@ -331,7 +331,7 @@ if(isset($_REQUEST[addcart]))
                                         {
                                             $tot=  mysql_query("select sum(finalamount) from bill where userid like '$_SESSION[user]' ");
                                             $t=  mysql_fetch_array($tot);
-                                            echo $_SESSION[user].",Your purchase amount is :&#8377;".$t[0]."/-";
+                                            echo $_SESSION[user].",Your Total Purchase Amount is :&#8377;".$t[0]."/-";
                                             ?>
                                         <?php
                                         }
@@ -341,8 +341,8 @@ if(isset($_REQUEST[addcart]))
                                         if($t[0]>2000)
                                         {
                                         ?>
-                                          <input type="radio" id="code" style=" margin-left: 167px;margin-top: 35px;cursor: pointer;" onchange="fillcode('fillcode');"/> 
-                                        <img src="images/discount.png" width="50%" style=""  class="img img-responsive" />
+                                          <p><input type="radio" id="code" style="cursor: pointer;" onchange="fillcode('fillcode');"/> <img src="images/discount.png"  style="height:50px; width:50px"  class="img img-responsive" /></p>
+                                        
                                   <div id="fillcode">
                                             
                                         </div>
@@ -403,16 +403,13 @@ if(isset($_REQUEST[addcart]))
                                 </div> 
                                 
                                 <div class="col-md-12 text-center"    input-group text-center">
-                                     <button type="submit" name="inquiry" title="Send" class="btn inquirybtn">Send &nbsp;&nbsp;<i class="fa fa-rocket" ></i></button>&nbsp;&nbsp;
+                                     <button type="submit" name="inquiry" title="Send" class="btn inquirybtn">Submit &nbsp;&nbsp;<i class="fa fa-rocket" ></i></button>&nbsp;&nbsp;
                                     <button type="reset" title="clear" name="clear"class="btn inquirybtn">Reset &nbsp;&nbsp;<i class="fa fa-trash-o" ></i></button>
                                 </div>
                                 
                             </div>
 
                         </form>
-                   
-                        
-                        
                         
                     </div>
                         
@@ -513,6 +510,7 @@ if(isset($_REQUEST[addcart]))
                                 <form  action="" method="post" name="contact" class="form-group maru"  >
                                     <div class=" input-group" style="margin-bottom: 3%;">
                                         <?php
+                                        
                                         if ($_SESSION[user] == "") {
                                             ?>
                                             <input type="text" name="revmsg" placeholder="Review For <?php echo $prodel1[9]; ?>" disabled="" title="give review after login" style="padding: 20px;" required=""  class="form-control "  />
@@ -530,8 +528,8 @@ if(isset($_REQUEST[addcart]))
 
 
                                     <div class="co-md-12 text-center" >
-                                        <button type="submit" name="sendreview" class="btn sendbtn">Send &nbsp;&nbsp;<i  class="fa fa-rocket"></i></button>
-                                        <button type="reset" class="btn sendbtn">Reset &nbsp;&nbsp;<i class="fa fa-trash-o"></i></button>
+                                        <button type="submit" name="sendreview" class="btn sendbtn">Submit &nbsp;&nbsp;</button>
+                                        <button type="reset" class="btn sendbtn">Reset &nbsp;&nbsp;</button>
                                     </div>
                                     </br>
 
@@ -588,7 +586,7 @@ while ($infodata = mysql_fetch_array($info)) {
                                             Post : <?php echo $infodata[6]; ?>
                                             </br>
                                             </br>
-                                            Review : </br><?php echo $infodata[5]; ?>
+                                            Review : <?php echo $infodata[5]; ?>
                                         </td>
                                     </tr>
 

@@ -132,7 +132,7 @@ require_once 'connection.php';
                                        
                                         <ul>
                                             <?php $cs=  mysql_query("select * from maincategory where del=0 limit 0,5");
- while ($ro = mysql_fetch_array($cs)) 
+ while ($ro = mysql_fetch_array($cs))
      {                                       ?>
                                             <li style="text-transform: capitalize;"><a href="filter.php?search=<?php echo $ro[1]; ?> "><font class="submenu" style="color: #232323;"><i class="fa fa-cutlery"></i>&nbsp;&nbsp; <?php echo $ro[1]; ?></font></a></li>
                                          <?php

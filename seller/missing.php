@@ -685,7 +685,7 @@ if($_REQUEST[konu]=='missuserbill')
                                         </tr>
                                         <tr>
                                         <td colspan="4" style="background-color: #65CEA7;color:#FFFFFF;">
-                                          <div class="col-md-7">  <!-- 348,Royal Square,VIP cercle,Utran-Kapodara Road,Surat. --> </div>
+                                          <div class="col-md-7">  <!-- Shri Shambhubhai V. Patel College of Computer Science and Business Management , Sumul Dairy Road Near I.C. Gandhi High School, Surat, Gujarat 395008--> </div>
                                             <div class="col-md-offset-2 col-md-2">THANK YOU...</div>
                                         </td>
                                     </tr>
@@ -1427,9 +1427,9 @@ if ($_REQUEST[konu] == "feedbackstore") {
     }
     ?>
     <table class="table table-responsiv hale">
-        <th>StoRe Name</th>
-        <th>MemBer Name</th>
-        <th>MesSage</th>
+        <th>Store Name</th>
+        <th>Member Name</th>
+        <th>Message</th>
         <th></th>
     <?php
     $se = mysql_query("select storeid from store where userid like '$_SESSION[user]'");
@@ -1467,11 +1467,11 @@ if ($_REQUEST[konu] == "contactstore") {
     }
     ?>
     <table class="table table-responsive hale">
-        <th>StoRe Name</th>
-        <th>MemBer Name</th>
-        <th>EmAil</th>
-        <th>SubJect</th>
-        <th>MesSage</th>
+        <th>Store Name</th>
+        <th>Member Name</th>
+        <th>Email</th>
+        <th>Subject</th>
+        <th>Message</th>
     <?php
     $se = mysql_query("select storeid from store where userid like '$_SESSION[user]'");
     while ($see = mysql_fetch_array($se)) {
@@ -1994,12 +1994,12 @@ if($_REQUEST[kona]=="sellbill")
                                         <td style="  border: 1px dotted #f8a631 !important;text-transform: capitalize; font-size: 13px;"><?php echo $c; ?></td>
                                          <td style=" border: 1px dotted #f8a631 !important;text-transform: capitalize;font-size: 13px;"><?php echo $spp[2]; ?></td>
                                          <td style=" border: 1px dotted #f8a631 !important;text-transform: capitalize;font-size: 13px;"><?php echo $spp[0]; ?></td>
-                                         <td style="width:10%; border: 1px dotted #f8a631 !important;text-transform: capitalize;font-size: 13px;">
-                                        <?php echo $spp[10]; ?>&#8377;
+                                         <td style="width:10%; border: 1px dotted #f8a631 !important;text-transform: capitalize;font-size: 13px;">&#8377;
+                                        <?php echo $spp[10]; ?>
                                          </td>
                                          <td style=" border: 1px dotted #f8a631 !important;text-transform: capitalize;font-size: 13px;"><?php echo $spp[7]; ?></td>
-                                         <td style=" border: 1px dotted #f8a631 !important;text-transform: capitalize;font-size: 13px;"><?php echo $spp[8]; ?>&#8377;</td>
-                                         <td style=" border: 1px dotted #f8a631 !important;text-transform: capitalize;font-size: 13px;"><?php echo ($spp[7])*($spp[8]); ?>&#8377;</td>
+                                         <td style=" border: 1px dotted #f8a631 !important;text-transform: capitalize;font-size: 13px;">&#8377;<?php echo $spp[8]; ?></td>
+                                         <td style=" border: 1px dotted #f8a631 !important;text-transform: capitalize;font-size: 13px;">&#8377;<?php echo ($spp[7])*($spp[8]); ?></td>
                                     </tr>
                                     <?php
                                     
@@ -2012,16 +2012,16 @@ if($_REQUEST[kona]=="sellbill")
                        <tr>
                            <td style="border:none;">
                                <strong> Total QTY : </strong><font><?php echo $q; ?></font><br/>
-                               <strong> Services Charge Text consultant 2% : </strong><font><?php echo $chupay=ceil(($pb*2)/(100));?>&#8377;</font><br/>
-                               <strong> Shipping charge : </strong><font>100 &#8377;</font><br/>
+                               <strong> Services Charge Text consultant 2% : </strong><font>&#8377;<?php echo $chupay=ceil(($pb*2)/(100));?></font><br/>
+                               <strong> Delivery charge :</strong><font>&#8377; 100</font><br/>
                            </td>
                            <?php 
                            $np=($chupay+$pb+100)-$dis;
                            ?>
                            <td style="border:none;">
-                                 <strong> Payable Amount : </strong><font><?php echo $np; ?>&#8377;</font>
-                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                 <div onclick="printbill();" style="cursor: pointer;">Print</div>
+                                 <strong> Payable Amount :</strong><font>&#8377; <?php echo $np; ?></font>
+                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+                                 <div onclick="printbill();" style="cursor: pointer;"><strong>Print</strong></div>
                                      
                            </td>
                        </tr>
@@ -3597,7 +3597,7 @@ if ($_REQUEST[kona] == "recdata") {
 
              
              
-<!-- --------------------------------------------------------  Inquiry Notification  ------------------------------------------------->
+<!-- --------------------------------------------------------  Inquiry Notification(seller)  ------------------------------------------------->
              
              
              
@@ -3618,8 +3618,8 @@ if($_REQUEST[konu]=="inquiryin")
     $un=mysql_query("update inquiry set notification=1 where inid=$_REQUEST[id]");
 
     $inn=  mysql_query("select count(*) from inquiry where notification=0");
-          $in=  mysql_fetch_array($inn);
-          echo $in[0];
+          $in1=  mysql_fetch_array($inn1);
+          echo $in1[0];
     }
 }
 
@@ -3628,7 +3628,7 @@ if($_REQUEST[olkhan]=="inquiryid")
 {
   ?>
 
-<h5 class="title">You have 5 Mails </h5>
+<h5 class="title">New Notification</h5>
                     <ul class="dropdown-list normal-list">
                              <?php
                      $pin=  mysql_query("select u.url,u.proname,r.* from item u,inquiry r where u.productid=r.productid and r.notification=0 order by r.inid desc");
@@ -3646,10 +3646,94 @@ if($_REQUEST[olkhan]=="inquiryid")
                                 </span>
                             </a>
                         </li>
+                        <li class="new" onclick="notification('reviewstoreid',<?php echo $in[4]; ?>,0);noti('reviewstoreid');">
+                            <a href="#">
+                                <span class="thumb"><img src="../seller/<?php echo $in[0]; ?>" style="height: 55px;" class="img img-responsive" alt="" /></span>
+                                <span class="desc">
+                                    <span class="name"><?php echo $in[5]; ?> <span class="badge badge-success">new</span></span>
+                                   
+                                    <span class="msg"><?php echo $in[8]; ?></span>
+                                 &nbsp;<em class="small"><?php echo $in[6];  ?></em>&nbsp;&nbsp;<em class="small"><?php echo $in[7];  ?></em>
+                                </span>
+                            </a>
+                        </li>
                         <?php
                      }
                         ?>
                         <li class="new" onclick="notification('inquiryin',0,'all');"><a href="manageinquiry.php">Read All Inquiry</a></li>
+                    </ul>
+
+<?php
+}
+?>
+
+
+
+
+<!-- --------------------------------------------------------  review Notification(seller)  ------------------------------------------------->
+             
+             
+             
+<?php
+
+if($_REQUEST[konu]=="reviews")
+{
+    if($_REQUEST[badhu]=="all")
+    {
+  
+          $un=mysql_query("update reviewstore set notification=1");
+
+    echo "0";
+        
+    }
+    else
+    {
+    $un1=mysql_query("update reviewstore set notification=1 where reviewstoreid=$_REQUEST[id]");
+
+    $inn1=  mysql_query("select count(*) from reviewstore where notification=0");
+          $in1=  mysql_fetch_array($inn1);
+          echo $in1[0];
+    }
+}
+
+
+if($_REQUEST[olkhan]=="reviewstoreid")
+{
+  ?>
+
+<h5 class="title">New Notification</h5>
+                    <ul class="dropdown-list normal-list">
+                             <?php
+                     $pin1=  mysql_query("select u.url,u.proname,r.* from item u,inquiry r where u.productid=r.productid and r.notification=0 order by r.inid desc");
+                     while ($in1=  mysql_fetch_array($pin1))
+                     {
+                    ?>
+                        <li class="new" onclick="notification('reviews',<?php echo $in1[4]; ?>,0);noti('reviewstoreid');">
+                            <a href="#">
+                                <span class="thumb"><img src="../seller/<?php echo $in1[0]; ?>" style="height: 55px;" class="img img-responsive" alt="" /></span>
+                                <span class="desc">
+                                    <span class="name"><?php echo $in1[5]; ?> <span class="badge badge-success">new</span></span>
+                                   
+                                    <span class="msg"><?php echo $in1[8]; ?></span>
+                                 &nbsp;<em class="small"><?php echo $in1[6];  ?></em>&nbsp;&nbsp;<em class="small"><?php echo $in1[7];  ?></em>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="new" onclick="notification('inquiryid',<?php echo $in1[4]; ?>,0);noti('inquiryid');">
+                            <a href="#">
+                                <span class="thumb"><img src="../seller/<?php echo $in1[0]; ?>" style="height: 55px;" class="img img-responsive" alt="" /></span>
+                                <span class="desc">
+                                    <span class="name"><?php echo $in1[5]; ?> <span class="badge badge-success">new</span></span>
+                                   
+                                    <span class="msg"><?php echo $in1[8]; ?></span>
+                                 &nbsp;<em class="small"><?php echo $in1[6];  ?></em>&nbsp;&nbsp;<em class="small"><?php echo $in1[7];  ?></em>
+                                </span>
+                            </a>
+                        </li>
+                        <?php
+                     }
+                        ?>
+                        <li class="new" onclick="notification('reviews',0,'all');"><a href="manageinquiry.php">Read All Store Reviews</a></li>
                     </ul>
 
 <?php
