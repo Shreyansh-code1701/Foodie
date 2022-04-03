@@ -158,7 +158,8 @@
                         </div><br /><br />
                         <div class="col-md-12" style="margin-top: 30px; border: 3px solid #eee;box-shadow: 1px 2px 1px #eee ;">
                             <div class="detailhead">
-                                <label class="mylbm"><i class="fa fa-car" style="color: #232323;"></i> Your Shipping Detail &nbsp;&nbsp;&nbsp;<i class="fa fa-caret-down"></i></label>
+                                <label class="mylbm"><i class="fa fa-car" style="color: #232323;"></i> Your Shipping
+                                    Detail &nbsp;&nbsp;&nbsp;<i class="fa fa-caret-down"></i></label>
                             </div>
                             <table class="table table-responsive">
                                 <?php
@@ -180,9 +181,9 @@
                                    {
                                     ?>
                                 <tr>
-                                    <td style="text-transform: capitalize; border: none;"><input type="checkbox"
+                                    <td style="text-transform: capitalize; border: none;"><input type="radio"
                                             name="shippingadd" value="<?php echo $ass[3]; ?>"
-                                            
+                                            onchange="addform('addform',this.value);" required=""
                                             style="cursor: pointer" /></td>
                                     <td style="text-transform: capitalize; border: none;">
                                         <p>
