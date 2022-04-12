@@ -53,9 +53,9 @@ require_once 'adminpati.php';
                                     <div class="form-group">
                                         <div class="input-group">
                                             
-                                            <input type="text" class="form-control" name="payname" required="" pattern="^[a-z A-Z]+$" placeholder="Enter paymentname"/>
+                                            <input type="text" class="form-control" name="payname" required="" pattern="^[a-z A-Z]+$" placeholder="Enter Payment name"/>
                                             <div class="input-group-addon">
-                                                <i  class="fa fa-globe"></i>
+                                            <i class="fal fa-credit-card"></i>
                                             </div>
                                         </div>
                                     </div>
@@ -89,13 +89,13 @@ if ($er == 1)
                                 <ul class="nav nav-tabs pull-right">
                                     <li class="active">
                                         <a href="#home-3" data-toggle="tab">
-                                            <i class="fa fa-laptop" ondblclick="del('paymethod','delete','<?php echo $p; ?>','<?php echo $pp; ?>','all');recycle('paymethod','display','1','10');"></i>
+                                            <i class="fas fa-laptop" ondblclick="del('paymethod','delete','<?php echo $p; ?>','<?php echo $pp; ?>','all');recycle('paymethod','display','1','10');"></i>
                                             DISPLAY
                                         </a>
                                     </li>
                                     <li class="">
                                         <a href="#about-3" data-toggle="tab">
-                                            <i class="fa fa-bitbucket" ondblclick="fdel('paymethod','delete','<?php echo $p; ?>','<?php echo $pp; ?>','all');"></i>
+                                            <i class="fas fa-recycle" ondblclick="fdel('paymethod','delete','<?php echo $p; ?>','<?php echo $pp; ?>','all');"></i>
                                             RECYCLE
                                         </a>
                                     </li>
@@ -118,7 +118,7 @@ if ($er == 1)
                                                     </div>
                                                     <input type="text" name="search" placeholder="Search Paymethod Name" id="find" class="form-control" onkeyup="display('paymethod','display','1','10');"/>
                                                     <div class="input-group-addon">
-                                                        <i  class="fa fa-search"></i>
+                                                        <i  class="fas fa-search"></i>
                                                     </div>
                                                 </div>
                                             </div>

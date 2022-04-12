@@ -36,32 +36,31 @@ $pb=  mysql_query("select count(*) from bannerbill");
 
                 <div class="wrapper">
                     <div class="row states-info">
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             <div class="panel red-bg">
                                 <div class="panel-body">
                                     <div class="row">
                                         <?php
-                                        $pk= mysql_query("SELECT count(packagebillid) from packagebill where userid like '$_SESSION[user]'");
+                                        $pk= mysql_query("SELECT count(cuisineid) from cuisine where storeid=$_SESSION[id]");
                                         $pp= mysql_fetch_array($pk);
                                         ?>
                                         <div class="col-xs-4">
-                                            <i class="fa fa-money"></i>
+                                        <i class="fas fa-utensils-alt"></i>
                                         </div>
                                         <div class="col-xs-8">
-                                            <span class="state-title"> Total Package Bill </span>
-                                            <h4><?php echo $pp[0]; ?></h4>
+                                            <span class="state-title"> Total Cuisine </span>
+                                            <h4> <?php echo $pp[0] ?></h4>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             <div class="panel blue-bg">
                                 <div class="panel-body">
                                     <div class="row">
                                         <div class="col-xs-4">
-                                            <i class="fa fa-tag"></i>
-                                        </div>
+                                        <i class="fas fa-burger-soda"></i>                                        </div>
                                         <div class="col-xs-8">
                                             <span class="state-title">  Copy Sold Today  </span>
                                             <h4>0</h4>
@@ -70,36 +69,25 @@ $pb=  mysql_query("select count(*) from bannerbill");
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             <div class="panel green-bg">
                                 <div class="panel-body">
                                     <div class="row">
+                                    <!-- <?php
+                                    $cs = mysql_query("select count(s.userid,s.storeid,t.*) from bill b,transaction t,store s where  s.storeid=p.storeid and b.billid=t.billid and s.userid like $_SESSION[user] ");
+                                    $bdd = mysql_fetch_array($cs);
+                                    ?> -->
                                         <div class="col-xs-4">
-                                            <i class="fa fa-gavel"></i>
-                                        </div>
+                                        <i class="fas fa-bags-shopping"></i>                                        </div>
                                         <div class="col-xs-8">
-                                            <span class="state-title">  New Order  </span>
-                                            <h4>0</h4>
+                                            <span class="state-title"> Total Order  </span>
+                                            <h4 <?php echo $bdd[2]; ?>></h4>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
-                            <div class="panel yellow-bg">
-                                <div class="panel-body">
-                                    <div class="row">
-                                        <div class="col-xs-4">
-                                            <i class="fa fa-eye"></i>
-                                        </div>
-                                        <div class="col-xs-8">
-                                            <span class="state-title">  Unique Visitors  </span>
-                                            <h4>0</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                       
                     </div>
 
                     <div class="row">

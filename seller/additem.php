@@ -125,7 +125,7 @@ require_once 'head.php';
                                     <div class="form-group">
                                         <div class="input-group">
                                             <div class="input-group-addon">
-                                                <i class="fa fa-cutlery"></i>
+                                            <i class="fas fa-utensils-alt"></i>
                                             </div>
                                             <select style="padding: 8px;" required="" name="sellerid" class="form-control" onchange="misscuis('misscuisine',this.value); ">
                                                 <option value="">--Select Store Name--</option>
@@ -168,13 +168,13 @@ require_once 'head.php';
                             <ul class="nav nav-tabs pull-right">
                                 <li class="active">
                                     <a href="#home-3" data-toggle="tab">
-                                        <i class="fa fa-laptop" ondblclick="dis('data','item',1,'all','vachhe',0,'badhurec');recdis('recdata','item',1,'all','vachhe',0,0,0);"></i>
+                                        <i class="fas fa-laptop" ondblclick="dis('data','item',1,'all','vachhe',0,'badhurec');recdis('recdata','item',1,'all','vachhe',0,0,0);"></i>
                                         DISPLAY
                                     </a>
                                 </li>
                                 <li class="">
                                     <a href="#about-3" data-toggle="tab">
-                                        <i class="fa fa-bitbucket" ondblclick="recdis('recdata','item',1,'all','vachhe',0,0,'badhu');"></i>
+                                    <i class="fas fa-recycle" ondblclick="recdis('recdata','item',1,'all','vachhe',0,0,'badhu');"></i>
                                         RECYCLE
                                     </a>
                                 </li>
@@ -190,7 +190,7 @@ require_once 'head.php';
                                             <div class="input-group">
                                                 <input type="text" name="search" placeholder="Search here.." class="form-control" onkeyup="dis('data','item',0,this.value,'vachhe',0);" />
                                                 <div class="input-group-addon">
-                                                    <i class="fa fa-search"></i>
+                                                    <i class="fas fa-search"></i>
                                                 </div>
                                             </div>
                                         </div>

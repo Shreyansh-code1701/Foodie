@@ -2373,7 +2373,7 @@ if ($_REQUEST[konu] == 'missbill') {
             <tr>
                 <td colspan="2">Start Date : <?php echo $row[26]; ?></td>
                 <td colspan="1">End Date : <?php echo $row[27]; ?></td>
-                <td >Mobile : 8758722336</td>
+                <td >Mobile : 1234567890</td>
             </tr>
                                                     
             <tr>
@@ -2740,7 +2740,7 @@ if ($_REQUEST[konu] == 'missbannerbill') {
             <tr>
                 <td colspan="2">Start Date : &nbsp;&nbsp;&nbsp;<?php echo $row[9]; ?></td>
                 <td colspan="1">End Date : &nbsp;&nbsp;&nbsp;<?php echo $row[10]; ?></td>
-                 <td >Mobile : 8758722336</td>
+                 <td >Mobile : 1234567890</td>
             </tr>
                                                     
             <tr>
@@ -2885,7 +2885,7 @@ if ($_REQUEST[tbl] == "highlight") {
     <table class="table table-responsive table-hover mytable">
         <thead >
         <th>No</th>
-        <th>highlight Name</th>
+        <th>Services Name</th>
         <th></th>
 
     </thead>
@@ -3738,7 +3738,7 @@ if ($_REQUEST[tbl] == "preview") {
                            Shri Shambhubhai V. Patel College of Computer Science and Business Management ,Sumul Dairy Road Near I.C. Gandhi High School, Surat, Gujarat 395008
                         </div>
                         <div class="text-center">
-                            <strong>Mo :</strong><font>7874259262 , 8758722336</font>
+                            <strong>Mo :</strong><font>1234567890</font>
                         </div>
                         <div style="border-bottom: 1px solid #000;padding: 5px;">
                             

@@ -42,31 +42,42 @@ require_once 'head.php';
                 <div class="col-md-4">
                     <img src="images/feed.png" style="max-width:80%; margin-top:20%;" class="img img-responsive animated  bounceInLeft" />
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-5">
                     <div class="row ht-widget hw-popular-categories">
                         <h3 class="widget-title" style="font-size: 15px;">SEND YOUR FEEDBACK</h3>
                     </div>
-                    <p style="font-size: 15px;"><i class="fa fa-hand-o-right"></i>&nbsp;&nbsp;If you are satisfy a experience? Give us Feedback. </p><br><br>
+                    <p style="font-size: 15px;"><i class="far fa-hand-point-right"></i>&nbsp;&nbsp;If you are satisfy a experience? Give us Feedback. </p><br><br>
                     <div class="row">
                         <form action="" method="post" name="contact" class="form-group maru">
                             <div class="col-md-12 input-group" style="margin-bottom: 3%;">
-                                <div class="input-group-addon"></div>
+                                
                                 <input type="text" name="name" placeholder="Name" style="padding: 20px;" required="" pattern='^[a-zA-Z ]+$' class="form-control " />
+                                <div class="input-group-addon">
+                                    <i class="fas fa-user"></i>
+                                </div>
 
                             </div>
                             <div class="col-md-12 input-group" style="margin-bottom: 3%;">
-                                <div class="input-group-addon "></div>
+                                
                                 <input type="email" name="email" style="padding: 20px;" placeholder="Email" class="form-control" />
+                                <div class="input-group-addon ">
+                                <i class="fas fa-envelope"></i>
+                                </div>
 
                             </div>
                             <div class="col-md-12 input-group" style="margin-bottom: 3%;">
-                                <div class="input-group-addon "></div>
+                                
                                 <input type="text" name="subject" style="padding: 20px;" placeholder="Subject" required="" pattern='^[a-zA-Z ]+$' class="form-control" />
-
+                                <div class="input-group-addon ">
+                                <i class="fas fa-grip-lines"></i>
+                                </div>
                             </div>
                             <div class="col-md-12 input-group" style="margin-bottom: 3%;">
-                                <div class="input-group-addon"></div>
+                               
                                 <textarea class="form-control" rows="5" name="sms" placeholder="Your Message" required=""></textarea>
+                                <div class="input-group-addon">
+                                <i class="fas fa-book"></i> 
+                                </div>
 
                             </div>
 
@@ -79,7 +90,7 @@ require_once 'head.php';
                     </div>
 
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <li class="contactstore"style="font-size:30px;list-style: none;"><a href="feedbackstore.php">
                             <p style="text-align:center;">Feedback To Store ?</p>
                         </a></li>

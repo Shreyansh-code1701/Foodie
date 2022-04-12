@@ -67,7 +67,7 @@ require_once 'adminpati.php';
                                                  ?>
                                             </select>
                                             <div class="input-group-addon">
-                                                <i  class="fa fa-globe"></i>
+                                            <i class="fas fa-city"></i>
                                             </div>
                                         </div>
                                     </div>
@@ -76,7 +76,7 @@ require_once 'adminpati.php';
                                             
                                             <input type="text" class="form-control" name="area" required="" pattern="^[a-z A-Z]+$" placeholder="Enter area"/>
                                             <div class="input-group-addon">
-                                                <i  class="fa fa-globe"></i>
+                                            <i class="fas fa-map-marker-alt"></i>
                                             </div>
                                         </div>
                                     </div>
@@ -100,13 +100,13 @@ if ($er == 1)
                                 <ul class="nav nav-tabs pull-right">
                                     <li class="active">
                                         <a href="#home-3" data-toggle="tab">
-                                            <i class="fa fa-laptop" ondblclick="del('area','delete','<?php echo $p; ?>','<?php echo $pp; ?>','all');recycle('area','display','1','10');"></i>
+                                            <i class="fas fa-laptop" ondblclick="del('area','delete','<?php echo $p; ?>','<?php echo $pp; ?>','all');recycle('area','display','1','10');"></i>
                                             DISPLAY
                                         </a>
                                     </li>
                                     <li class="">
                                         <a href="#about-3" data-toggle="tab">
-                                            <i class="fa fa-bitbucket" ondblclick="fdel('area','delete','<?php echo $p; ?>','<?php echo $pp; ?>','all');"></i>
+                                            <i class="fas fa-recycle" ondblclick="fdel('area','delete','<?php echo $p; ?>','<?php echo $pp; ?>','all');"></i>
                                             RECYCLE
                                         </a>
                                     </li>
@@ -129,7 +129,7 @@ if ($er == 1)
                                                     </div>
                                                     <input type="text" name="search" placeholder="Search Area Name" id="find" class="form-control" onkeyup="display('area','display','1','10');"/>
                                                     <div class="input-group-addon">
-                                                        <i  class="fa fa-search"></i>
+                                                        <i  class="fas fa-search"></i>
                                                     </div>
                                                 </div>
                                             </div>

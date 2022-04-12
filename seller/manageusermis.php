@@ -52,7 +52,7 @@ require_once 'sellerpati.php';
                         <section class="state">
                             <div class="col-md-12">
                             <header class="panel-heading" style="background: #e0e1e7 !important; ">
-                               SEARCHING PANEL
+                               MANAGE TRANSACTION
                                 
                             </header>
                                 </div>

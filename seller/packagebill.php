@@ -79,7 +79,7 @@ require_once 'sellersecure.php';
                                     <tr>
                                         <td colspan="2">Start Date : <?php echo $row[26]; ?></td>
                                         <td colspan="1">End Date : <?php echo $row[27]; ?></td>
-                                        <td>Mobile : 8758722336</td>
+                                        <td>Mobile : 1234567890</td>
                                     </tr>
                                     
                                     <tr>

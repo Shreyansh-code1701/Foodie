@@ -45,16 +45,16 @@ require_once 'adminpati.php';
                     <div class="col-md-6 col-sm-12 col-xs-12">
                         <section class="panel highlight">
                             <header class="panel-heading" style="background: #e0e1e7 !important;">
-                                ADD highlight
+                                ADD SERVICES
                             </header>
                             <div class="panel-body">
                                 <form action="" method="post" name="highlightform" class="form-group">
                                     <div class="form-group">
                                         <div class="input-group">
                                             
-                                            <input type="text" class="form-control" name="highlight" required="" pattern="^[a-z0-9-,/& ]+$" placeholder="Enter highlight"/>
+                                            <input type="text" class="form-control" name="highlight" required="" pattern="^[a-z0-9-,/& ]+$" placeholder="Enter Service"/>
                                             <div class="input-group-addon">
-                                                <i  class="fa fa-globe"></i>
+                                            <i class="fas fa-concierge-bell"></i>
                                             </div>
                                         </div>
                                     </div>
@@ -78,13 +78,13 @@ if ($er == 1)
                                 <ul class="nav nav-tabs pull-right">
                                     <li class="active">
                                         <a href="#home-3" data-toggle="tab">
-                                            <i class="fa fa-laptop" ondblclick="del('highlight','delete','<?php echo $p; ?>','<?php echo $pp; ?>','all');recycle('highlight','display','1','10');"></i>
+                                            <i class="fas fa-laptop" ondblclick="del('highlight','delete','<?php echo $p; ?>','<?php echo $pp; ?>','all');recycle('highlight','display','1','10');"></i>
                                             DISPLAY
                                         </a>
                                     </li>
                                     <li class="">
                                         <a href="#about-3" data-toggle="tab">
-                                            <i class="fa fa-bitbucket" ondblclick="fdel('highlight','delete','<?php echo $p; ?>','<?php echo $pp; ?>','all');"></i>
+                                            <i class="fas fa-recycle" ondblclick="fdel('highlight','delete','<?php echo $p; ?>','<?php echo $pp; ?>','all');"></i>
                                             RECYCLE
                                         </a>
                                     </li>
@@ -105,7 +105,7 @@ if ($er == 1)
                                                             <option>20</option>
                                                         </select>
                                                     </div>
-                                                    <input type="text" name="search" placeholder="Search Highlight Name" id="find" class="form-control" onkeyup="display('highlight','display','1','10');"/>
+                                                    <input type="text" name="search" placeholder="Search Service Name" id="find" class="form-control" onkeyup="display('highlight','display','1','10');"/>
                                                     <div class="input-group-addon">
                                                         <i  class="fa fa-search"></i>
                                                     </div>

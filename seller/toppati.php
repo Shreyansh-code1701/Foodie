@@ -20,20 +20,20 @@ require_once 'sellersecure.php';
             <?php
             $in =  mysql_query("select count(*) from inquiry where notification=0");
             $i =  mysql_fetch_array($in);
-            $rs =  mysql_query("select count(*) from reviewstore where notification=0 storeid=$_SESSION[id] ");
-            $r =  mysql_fetch_array($rs);
+            // $rs =  mysql_query("select count(*) from reviewstore where  storeid like $_SESSION[id] ");
+            // $r =  mysql_fetch_array($rs);
             ?>
 
             <li>
                 <a href="#" class="btn btn-default dropdown-toggle info-number" data-toggle="dropdown">
-                    <i class="fa fa-envelope-o"></i>
-                    <span class="badge" id="inquiryin"><?php echo $i[0]; ?></span>
+                <i class="fas fa-question-circle"></i>
+                    <span class="badge" title="Inquiry" id="inquiryin"><?php echo $i[0]; ?></span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-head pull-right" id="inquiryid">
 
                 </div>
             </li>
-            <li>
+            <!-- <li>
                 <a href="#" class="btn btn-default dropdown-toggle info-number" data-toggle="dropdown">
                     <i class="fa fa-star "></i>
                     <span class="badge" id="reviews"><?php echo $r[0]; ?></span>
@@ -41,7 +41,7 @@ require_once 'sellersecure.php';
                 <div class="dropdown-menu dropdown-menu-head pull-right" id="reviews">
 
                 </div>
-            </li>
+            </li> -->
 
             <li>
                 <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
@@ -55,9 +55,9 @@ require_once 'sellersecure.php';
                     <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-usermenu pull-right">
-                    <li><a href="seller.php"><i class="fa fa-user"></i> Profile</a></li>
+                    <li><a href="seller.php"><i class="fas fa-user-alt"></i> Profile</a></li>
                     <!-- <li><a href="editprofile.php"><i class="fa fa-cog"></i>  Settings</a></li> -->
-                    <li><a href="../logout.php"><i class="fa fa-sign-out"></i> Log Out</a></li>
+                    <li><a href="../logout.php"><i class="fas fa-sign-out-alt"></i> Log Out</a></li>
                 </ul>
             </li>
 

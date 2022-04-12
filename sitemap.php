@@ -41,7 +41,7 @@ $_SESSION[page] = "sitemap";
                         <div class="col-md-offset-5 col-md-7 sitemap ">
                             <ul>
                                 <li><a href="index.php"><i class="fa fa-home"></i>&nbsp;&nbsp;&nbsp;&nbsp;HOME</a></li>
-                                <li><i class="fa fa-cutlery"></i>&nbsp;&nbsp;&nbsp;&nbsp;CUISINE&nbsp;&nbsp;<i class="fa fa-lock sitemapi" id="cuisine"></i>
+                                <li><i class="fas fa-utensils-alt"></i>&nbsp;&nbsp;&nbsp;&nbsp;CUISINE&nbsp;&nbsp;<i class="fa fa-lock sitemapi" id="cuisine"></i>
 
                                     <div class="activesub" id="activesub">
                                         <ul>

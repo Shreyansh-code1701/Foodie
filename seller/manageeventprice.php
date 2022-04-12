@@ -62,7 +62,7 @@ require_once 'sellerpati.php';
                                         <div class="form-group">
                                             <div class="input-group">
                                                 <div class="input-group-addon">
-                                                    <i  class="fa fa-cutlery"></i>
+                                                <i class="fas fa-utensils-alt"></i>
                                                 </div>
                                                 <select style="padding: 8px;" required="" name="sellerid" class="form-control" onchange="misscuis('missstoreevent',this.value); ">
                                                     <option value="">--Select Store Name--</option>
@@ -117,13 +117,13 @@ while ($row = mysql_fetch_array($get)) {
                                 <ul class="nav nav-tabs pull-right">
                                     <li class="active">
                                         <a href="#home-3" data-toggle="tab">
-                                            <i class="fa fa-laptop" ondblclick="dis('data','eventprice',1,'all','vachhe',0,'badhurec');recdis('recdata','eventprice',1,'all','vachhe',0,0,0);"></i>
+                                            <i class="fas fa-laptop" ondblclick="dis('data','eventprice',1,'all','vachhe',0,'badhurec');recdis('recdata','eventprice',1,'all','vachhe',0,0,0);"></i>
                                             DISPLAY
                                         </a>
                                     </li>
                                     <li class="">
                                         <a href="#about-3" data-toggle="tab">
-                                            <i class="fa fa-bitbucket"  ondblclick="recdis('recdata','eventprice',1,'all','vachhe',0,0,'badhu');"></i>
+                                            <i class="fas fa-recycle"  ondblclick="recdis('recdata','eventprice',1,'all','vachhe',0,0,'badhu');"></i>
                                             RECYCLE
                                         </a>
                                     </li>
@@ -139,7 +139,7 @@ while ($row = mysql_fetch_array($get)) {
                                                 <div class="input-group">
                                                     <input type="text" name="search" placeholder="Search here.." class="form-control" onkeyup="dis('data','eventprice',0,this.value,'vachhe',0);"/>
                                                     <div class="input-group-addon">
-                                                        <i  class="fa fa-search"></i>
+                                                        <i  class="fas fa-search"></i>
                                                     </div>
                                                 </div>
                                             </div>

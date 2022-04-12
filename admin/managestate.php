@@ -54,7 +54,7 @@ require_once 'adminpati.php';
                                             
                                             <input type="text" class="form-control" name="state" required="" pattern="^[a-z& ]+$" placeholder="Enter state"/>
                                             <div class="input-group-addon">
-                                                <i  class="fa fa-globe"></i>
+                                                <i  class="fas fa-building"></i>
                                             </div>
                                         </div>
                                     </div>
@@ -78,13 +78,13 @@ if ($er == 1)
                                 <ul class="nav nav-tabs pull-right">
                                     <li class="active">
                                         <a href="#home-3" data-toggle="tab">
-                                            <i class="fa fa-laptop" ondblclick="del('state','delete','<?php echo $p; ?>','<?php echo $pp; ?>','all');recycle('state','display','1','10');"></i>
+                                            <i class="fas fa-laptop" ondblclick="del('state','delete','<?php echo $p; ?>','<?php echo $pp; ?>','all');recycle('state','display','1','10');"></i>
                                             DISPLAY
                                         </a>
                                     </li>
                                     <li class="">
                                         <a href="#about-3" data-toggle="tab">
-                                            <i class="fa fa-bitbucket" ondblclick="fdel('state','delete','<?php echo $p; ?>','<?php echo $pp; ?>','all');"></i>
+                                            <i class="fas fa-recycle" ondblclick="fdel('state','delete','<?php echo $p; ?>','<?php echo $pp; ?>','all');"></i>
                                             RECYCLE
                                         </a>
                                     </li>
@@ -107,7 +107,7 @@ if ($er == 1)
                                                     </div>
                                                     <input type="text" name="search" placeholder="Search State Name" id="find" class="form-control" onkeyup="display('state','display','1','10');"/>
                                                     <div class="input-group-addon">
-                                                        <i  class="fa fa-search"></i>
+                                                        <i  class="fas fa-search"></i>
                                                     </div>
                                                 </div>
                                             </div>

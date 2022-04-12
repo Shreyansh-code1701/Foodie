@@ -125,7 +125,7 @@ require_once 'head.php';
                                 <div class="row">
 
                                     <div class="col-md-12 cartt">
-                                        &nbsp; &nbsp;<i class="fa fa-rupee"></i>&nbsp;&nbsp;&nbsp;
+                                        &nbsp; &nbsp;<i style="color: #232323;" class="far fa-rupee-sign"></i>&nbsp;&nbsp;&nbsp;
                                         <strong style="color: #232323;">PRICE</strong>
                                     </div>
 
@@ -213,7 +213,7 @@ require_once 'head.php';
                                 <div class="row">
 
                                     <div class="col-md-12 cartt">
-                                        &nbsp; &nbsp;<i class="fa fa-cutlery"></i>&nbsp;&nbsp;&nbsp;
+                                        &nbsp; &nbsp;<i style="color: #232323;" class="fas fa-utensils-alt"></i>&nbsp;&nbsp;&nbsp;
                                         <strong style="color: #232323;">CUISINE</strong>
                                     </div>
 
@@ -254,7 +254,7 @@ require_once 'head.php';
                                 <div class="row">
 
                                     <div class="col-md-12 cartt">
-                                        &nbsp; &nbsp;<i class="fa fa-bank"></i>&nbsp;&nbsp;&nbsp;
+                                        &nbsp; &nbsp;<i style="color: #232323;" class="fas fa-store"></i>&nbsp;&nbsp;&nbsp;
                                         <strong style="color: #232323;">STORE</strong>
                                     </div>
 
@@ -295,7 +295,7 @@ require_once 'head.php';
                                 <div class="row">
 
                                     <div class="col-md-12 cartt">
-                                        &nbsp; &nbsp;<i class="fa fa-bank"></i>&nbsp;&nbsp;&nbsp;
+                                        &nbsp; &nbsp;<i style="color: #232323;" class="fas fa-leaf"></i>&nbsp;&nbsp;&nbsp;
                                         <strong style="color: #232323;">TYPE</strong>
                                     </div>
 

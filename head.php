@@ -1,7 +1,7 @@
 
 <head>
 
-    <title>food locker | REAL TEST IS HEAR</title>
+    <title>Food Locker | REAL TEST IS HEAR</title>
     <meta charset="UTF-8">
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -14,17 +14,19 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
     <meta name="format-detection" content="telephone-no" />
     <link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.min.css" />
-
+    
 <!--    <link href='http://fonts.googleapis.com/css?family=Raleway:300,400,700,900' rel='stylesheet' type='text/css' />-->
 <!--    <link href='http://fonts.googleapis.com/css?family=Dosis:700' rel='stylesheet' type='text/css' />-->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
     <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap" rel="stylesheet" type='text/css'> 
 
     <link rel="stylesheet" href="css/plugins.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
     <link href="css/animate.css" type="text/css" rel="stylesheet"/>
 

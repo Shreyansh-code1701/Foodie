@@ -3,7 +3,7 @@ require_once 'connection.php';
 require_once 'sellersecure.php';
 
 
-$pr=mysql_query("select storeimage from store where storeid=$up[8]");
+$pr=mysql_query("select storeimage from store where storeid='$_SESSION[id]'");
 $prr=mysql_fetch_array($pr);
 $oldpath=$prr[0];
 
@@ -78,12 +78,12 @@ if (isset($_REQUEST[send]))
                         ?>
                         <form action="" method="post" enctype="multipart/form-data">
                        <div class="col-md-12">
-                           <h5 class="profile">SELLER BUSINESS EDIT PROFILE</h5>
+                           <h5 class="profile">SELLER BUSINESS EDIT PROFILE </h5>
                             <div class="panel">
                                 <div class="col-md-4">
                                     
                                         <?php
-                                            echo  $up."<br>";
+                                            #echo  $up."<br>";
                                             ?>
                                 </div>
                         <?php
@@ -118,7 +118,7 @@ if (isset($_REQUEST[send]))
                                                 <div class="input-group">
                                                     <input type="text" class="form-control" name="name" autofocus="" required="" value="<?php echo $row[9]; ?>" pattern="^[a-zA-Z@_- ]+$"/>
                                                     <div class="input-group-addon">
-                                                        <i  class="fa fa-user"></i>
+                                                    <i class="fas fa-store"></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -128,7 +128,7 @@ if (isset($_REQUEST[send]))
                                                 <div class="input-group">
                                                     <input type="text" class="form-control" name="address" autofocus="" required="" value="<?php echo $row[13]; ?>" pattern="^[a-zA-Z,/_- ]+$"/>
                                                     <div class="input-group-addon">
-                                                        <i  class="fa fa-user"></i>
+                                                    <i class="fas fa-address-card"></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -154,7 +154,7 @@ if (isset($_REQUEST[send]))
                                                         ?>
                                                     </select>
                                                     <div class="input-group-addon">
-                                                        <i  class="fa fa-globe"></i>
+                                                    <i class="fas fa-landmark"></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -179,7 +179,7 @@ while ($cit = mysql_fetch_array($city)) {
                                                         ?>
                                                     </select>
                                                     <div class="input-group-addon">
-                                                        <i  class="fa fa-globe"></i>
+                                                    <i class="fas fa-city"></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -204,7 +204,7 @@ while ($aa = mysql_fetch_array($area)) {
                                                         ?>
                                                     </select>
                                                     <div class="input-group-addon">
-                                                        <i  class="fa fa-globe"></i>
+                                                    <i class="fas fa-city"></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -214,12 +214,12 @@ while ($aa = mysql_fetch_array($area)) {
                                                 <div class="input-group">
                                                     <input type="email" class="form-control" name="email" required="" value="<?php echo $row[15]; ?>"/>
                                                     <div class="input-group-addon">
-                                                        <i  class="fa fa-envelope"></i>
+                                                    <i class="fas fa-envelope"></i>
                                                     </div>
                                                 </div>
                                             </div>
 
-                                            <div class="form-group">
+                                            <!-- <div class="form-group">
                                                 <label>Store map</label>
                                                 <div class="input-group">
                                                     <input type="text" class="form-control" name="storemap" required="" value="<?php echo $row[14]; ?>"/>
@@ -227,7 +227,7 @@ while ($aa = mysql_fetch_array($area)) {
                                                         <i  class="fa fa-phone"></i>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </div> -->
                                             
                                         </div>
                                         
@@ -240,7 +240,7 @@ while ($aa = mysql_fetch_array($area)) {
                                                 <div class="input-group">
                                                     <input type="text" class="form-control" name="mobile" required="" maxlength="10" value="<?php echo $row[16]; ?>" pattern="^[0-9]{10}+$"/>
                                                     <div class="input-group-addon">
-                                                        <i  class="fa fa-phone"></i>
+                                                    <i class="fas fa-phone-alt"></i>
                                                     </div>
                                                 </div>
                                             </div>  
@@ -250,7 +250,7 @@ while ($aa = mysql_fetch_array($area)) {
                                                 <div class="input-group">
                                                     <input type="text" class="form-control" name="website" required="" value="<?php echo $row[17]; ?>" pattern="^[a-zA-Z0-9/:.% ]+$"/>
                                                     <div class="input-group-addon">
-                                                        <i  class="fa fa-phone"></i>
+                                                    <i  class="fas fa-globe"></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -260,7 +260,7 @@ while ($aa = mysql_fetch_array($area)) {
                                                 <div class="input-group">
                                                     <input type="text" class="form-control" name="timeduration" required="" value="<?php echo $row[23]; ?>" pattern="^[0-9: ]+$"/>
                                                     <div class="input-group-addon">
-                                                        <i  class="fa fa-phone"></i>
+                                                    <i class="fas fa-alarm-clock"></i> 
                                                     </div>
                                                 </div>
                                             </div>
@@ -270,7 +270,7 @@ while ($aa = mysql_fetch_array($area)) {
                                                 <div class="input-group">
                                                     <input type="text" class="form-control" name="regno" required="" value="<?php echo $row[24]; ?>" pattern="^[a-z A_Z 0-9.- ]+$"/>
                                                     <div class="input-group-addon">
-                                                        <i  class="fa fa-phone"></i>
+                                                    <i class="fas fa-building"></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -280,7 +280,7 @@ while ($aa = mysql_fetch_array($area)) {
                                                 <div class="input-group">
                                                     <input type="text" class="form-control" name="since" required=""value="<?php echo $row[26]; ?>" pattern="^[0-9]+$"/>
                                                     <div class="input-group-addon">
-                                                        <i  class="fa fa-phone"></i>
+                                                    <i  class="fas fa-globe"></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -290,7 +290,7 @@ while ($aa = mysql_fetch_array($area)) {
                                                 <div class="input-group">
                                                     <input type="text" class="form-control" name="fax" required=""value="<?php echo $row[27]; ?>" pattern="^[0-9]+$"/>
                                                     <div class="input-group-addon">
-                                                        <i  class="fa fa-phone"></i>
+                                                    <i class="fas fa-fax"></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -342,7 +342,7 @@ while ($aa = mysql_fetch_array($area)) {
                                                         
                                                     </select>
                                                     <div class="input-group-addon">
-                                                        <i  class="fa fa-phone"></i>
+                                                    <i class="fas fa-turkey"></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -352,7 +352,7 @@ while ($aa = mysql_fetch_array($area)) {
                                     </div>
                             </div>
                            <div class="container">
-                               <button type="submit" name="send" class="btn btn-primary"><a href="#">Save&nbsp;&nbsp;&nbsp;<i class="fa fa-pencil"></i></a></button>
+                               <button type="submit" name="send" class="btn btn-primary"><a href="#">Save&nbsp;&nbsp;&nbsp;<i class="fas fa-save"></i></a></button>
                           </div>
                         </div>
                              

@@ -32,7 +32,7 @@
                 unset ($_SESSION[dis]);
                 unset ($_SESSION[offdis]);
   
-   header("location:http://localhost/foodie-main/userprofile.php");
+   header("location:http://localhost/food/userprofile.php");
 ?>
 
 <?php

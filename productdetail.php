@@ -523,13 +523,13 @@ if(isset($_REQUEST[addcart]))
                                             <?php
                                         }
                                         ?>
-                                        <div class="input-group-addon" style="background:#f8a631;"><i class="fa fa-user"></i></div>
+                                        <div class="input-group-addon"><i class="fas fa-burger-soda"></i></div>
                                     </div>
 
 
                                     <div class="co-md-12 text-center" >
-                                        <button type="submit" name="sendreview" class="btn sendbtn">Submit &nbsp;&nbsp;</button>
-                                        <button type="reset" class="btn sendbtn">Reset &nbsp;&nbsp;</button>
+                                        <button type="submit" name="sendreview" class="btn sendbtn">Submit</button>
+                                        <button type="reset" class="btn sendbtn">Reset</button>
                                     </div>
                                     </br>
 

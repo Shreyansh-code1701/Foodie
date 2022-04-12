@@ -48,13 +48,13 @@
 
                                             ?>
 
-                                                    <i style="color:#f8a631;" class="fa fa-star" id="<?php echo $i; ?>"></i>
+                                                    <i style="color:#f8a631;" class="fas fa-star" id="<?php echo $i; ?>"></i>
 
                                                 <?php
                                                 } else {
                                                 ?>
 
-                                                    <i style="color:#f8a631;" class="fa fa-star-o" id="<?php echo $i; ?>"></i>
+                                                    <i style="color:#f8a631;" class="far fa-star" id="<?php echo $i; ?>"></i>
                                             <?php
                                                 }
                                             }
@@ -85,7 +85,7 @@
                             while ($cu =  mysql_fetch_array($cuu)) {
 
                             ?>
-                                <li style="text-transform: capitalize;cursor: pointer;"><a><i class="fa fa-hand-o-right"></i>&nbsp;&nbsp;<?php echo $cu[1]; ?></a></li>
+                                <li style="text-transform: capitalize;cursor: pointer;"><a><i class="far fa-hand-point-right"></i>&nbsp;&nbsp;<?php echo $cu[1]; ?></a></li>
                             <?php
                             }
                             ?>
@@ -102,9 +102,10 @@
                         while ($fd = mysql_fetch_array($fdd)) {
                         ?>
                             <article class="post">
-                                <font style="text-transform: capitalize;"><a href="feedback.php"><?php echo $fd[4]; ?></a></font>
+                                
+                            <font style="text-transform: capitalize;"> <a href="feedback.php"><?php echo $fd[4]; ?></a></font>
                                 <div class="meta">
-                                    <span style="text-transform: capitalize;"><?php echo $fd[1]; ?></span> <span style="text-transform: capitalize;"><?php echo $fd[3]; ?></span>
+                                   <span style="text-transform: capitalize;"><?php echo $fd[1]; ?></span> <span style="text-transform: capitalize;"><?php echo $fd[3]; ?></span>
                                 </div>
                             </article>
                         <?php
@@ -116,10 +117,10 @@
 
                 <div class=" col-md-3 col-xs-12 col-sm-12">
                     <div class="ht-widget hw-popular-categories">
-                        <h3 class="widget-title" style="font-size: 15px;">HELP &</h3>
+                        <h3 class="widget-title" style="font-size: 15px;">HELP </h3>
                         <ul>
-                            <li><a href="faq.php"><i class="fa fa-hand-o-right"></i>&nbsp;&nbsp;FAQ</a></li>
-                            <li><a href="contact.php"><i class="fa fa-hand-o-right"></i>&nbsp;&nbsp;Contact</a></li>
+                            <li><a href="faq.php"><i class="far fa-hand-point-right"></i>&nbsp;&nbsp;FAQ</a></li>
+                            <li><a href="contact.php"><i class="far fa-hand-point-right"></i>&nbsp;&nbsp;Contact</a></li>
                         </ul>
                     </div>
                     <br />
@@ -127,9 +128,9 @@
                         <div class="ht-widget hw-popular-categories">
                             <h3 class="widget-title" style="font-size: 15px;">POLICY</h3>
                             <ul>
-                                <li><a href="policy.php#terms"><i class="fa fa-hand-o-right"></i>&nbsp;&nbsp;Terms & Condition</a></li>
-                                <li><a href="policy.php#private"><i class="fa fa-hand-o-right"></i>&nbsp;&nbsp;Private Policy</a></li>
-                                <li><a href="policy.php#Refunds"><i class="fa fa-hand-o-right"></i>&nbsp;&nbsp;Cancellations And Refunds</a></li>
+                                <li><a href="policy.php#terms"><i class="far fa-hand-point-right"></i>&nbsp;&nbsp;Terms & Condition</a></li>
+                                <li><a href="policy.php#private"><i class="far fa-hand-point-right"></i>&nbsp;&nbsp;Private Policy</a></li>
+                                <li><a href="policy.php#Refunds"><i class="far fa-hand-point-right"></i>&nbsp;&nbsp;Cancellations And Refunds</a></li>
                             </ul>
                         </div>
 
@@ -150,7 +151,7 @@
             <p class="caption"style="font-size:medium ">Always up to date about our new food</p>
             <form action="#" method="post" name="subemail" class="maru">
                 <input type="email" placeholder="Email" name="email" required="" />
-                <button type="submit" name="send"><i class="fa fa-paper-plane"></i></button>
+                <button type="submit" name="send"><i class="far fa-paper-plane"></i></button>
             </form>
             <?php
             if ($er == 1) {
@@ -164,11 +165,11 @@
         <div class="  col-md-4 col-sm-6 col-xs-6  ht-widget hw-subscribe payment">
             <h3 class="widget-title" style="color:#fff; margin-top: 5%;">SOCIAL LINKS</h3>
             <p class="caption" style="font-size:medium ">Connect with us.</p>
-            <a href="https://www.facebook.com/" target="_blank" title="facebook"><i class="fa fa-facebook "></i></a>
-            <a href="https://www.twitter.com/" target="_blank" title="twitter"><i class="fa fa-twitter"></i></a>
-            <a href="https://www.instagram.com/" target="_blank" title="instagram"><i class="fa fa-instagram"></i></a>
-            <a href="https://www.google-plus.com/" target="_blank" title="google-plus"><i class="fa fa-google-plus"></i></a>
-            <a href="https://www.linkedin.com/" target="_blank" title="linkedin"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" title="facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.twitter.com/" target="_blank" title="twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" title="instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.google-plus.com/" target="_blank" title="google-plus"><i class="fab fa-google-plus"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank" title="linkedin"><i class="fab fa-linkedin"></i></a>
 
         </div>
 
@@ -196,7 +197,7 @@
         <div class="container ">
             <div class="row">
                 <div class="col-md-11">
-                    <p class="text-center" style="font-size:13px; ">Copyright &copy; 2022 Food Locker All Rights Resevered</p>
+                    <p class="text-center" style="font-size:13px; ">Copyright<i class="far fa-copyright"></i> 2022 Food Locker All Rights Resevered</p>
                 </div>
                 <div class="col-md-1 text-right">
 

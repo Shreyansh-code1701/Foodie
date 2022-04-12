@@ -52,28 +52,28 @@ require_once 'head.php';
                 <div class="row" style="margin-top: 25%;">
                     <div class="col-md-3 col-sm-12 col-xs-12 text-center ">
                         <div class="aboutborder">
-                            <div><i class="fa fa-map-marker aboutimg" style="font-size: 50px; "></i></div>
+                            <div><i class="far fa-search aboutimg" style="font-size: 50px; "></i></div>
                             <div class="aboutdes"> 1.Search</div>
                             <p style="font-size: 18px;">Find restaurants that deliver to you by entering your address.</p>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-12 col-xs-12 text-center">
                         <div class="aboutborder">
-                            <div><i class="fa fa-cutlery aboutimg" style="font-size: 50px; "></i></div>
+                            <div><i class="fal fa-cocktail aboutimg"style="font-size: 50px; "></i></div>
                             <div class=" aboutdes "> 2. Choose</div>
                             <p style="font-size: 18px;">Browse hundreds of menus to find the food you like.</p>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-12 col-xs-12 text-center">
                         <div class="aboutborder">
-                            <div><i class="fa fa-money aboutimg" style="font-size: 50px;"></i></div>
+                            <div><i class="far fa-money-bill aboutimg" style="font-size: 50px;"></i></div>
                             <div class="aboutdes"> 3. Pay</div>
                             <p style="font-size: 18px;"> Pay fast or simply with cash on delivery.</p>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-12 col-xs-12 text-center ">
                         <div class="aboutborder">
-                            <div><i class="fa fa-truck aboutimg" style="font-size: 50px; "></i></div>
+                            <div><i class="far fa-truck aboutimg" style="font-size: 50px; "></i></div>
                             <div class="aboutdes"> 4. Enjoy </div>
                             <p style="font-size: 18px;"> Food is prepared & delivered to your door-step.</p>
                         </div>
@@ -81,7 +81,7 @@ require_once 'head.php';
                 </div>
 
                 <div class="col-md-12 col-sm-12 col-xs-12 text-center" style="margin-top: 5%; border-bottom: 1px solid #f8a631;">
-                    <i class="fa fa-hand-o-right"></i>&nbsp;&nbsp;<font style="font-size: 15px; font-weight: 600; ">On your mobile, tablet, desktop, foodlocker is a delicious experience. Just try and see for yourselves.</font>
+                <i class="far fa-hand-point-right"></i>&nbsp;&nbsp;<font style="font-size: 15px; font-weight: 600; ">On your mobile, tablet, desktop, foodlocker is a delicious experience. Just try and see for yourselves.</font>
                 </div>
             </div>
             <div class="row">

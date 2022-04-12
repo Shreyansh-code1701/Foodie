@@ -163,13 +163,13 @@ $bdate=date('Y-m-d');
                                 <ul class="nav nav-tabs pull-right">
                                     <li class="active">
                                         <a href="#home-3" data-toggle="tab">
-                                            <i class="fa fa-laptop" ondblclick="dis('data','addbanner',1,'all','vachhe',0,'badhurec');recdis('recdata','addbanner',1,'all','vachhe',0,0,0);"></i>
+                                            <i class="fas fa-laptop" ondblclick="dis('data','addbanner',1,'all','vachhe',0,'badhurec');recdis('recdata','addbanner',1,'all','vachhe',0,0,0);"></i>
                                             DISPLAY
                                         </a>
                                     </li>
                                     <li class="">
                                         <a href="#about-3" data-toggle="tab">
-                                            <i class="fa fa-bitbucket"  ondblclick="recdis('recdata','addbanner',1,'all','vachhe',0,0,'badhu');"></i>
+                                            <i class="fas fa-recycle"  ondblclick="recdis('recdata','addbanner',1,'all','vachhe',0,0,'badhu');"></i>
                                             RECYCLE
                                         </a>
                                     </li>
@@ -185,7 +185,7 @@ $bdate=date('Y-m-d');
                                                 <div class="input-group">
                                                     <input type="text" name="search" placeholder="Search here.." class="form-control" onkeyup="dis('data','addbanner',0,this.value,'vachhe',0);"/>
                                                     <div class="input-group-addon">
-                                                        <i  class="fa fa-search"></i>
+                                                        <i  class="fas fa-search"></i>
                                                     </div>
                                                 </div>
                                             </div>

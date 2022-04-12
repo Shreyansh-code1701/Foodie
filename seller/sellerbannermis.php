@@ -58,7 +58,7 @@ require_once 'sellerpati.php';
                                 </div>
                             <div class="col-md-12">
                                 <div class="col-md-2 sea" style="background: #eee; color: #333; padding:6px 5px 27px 5px;">
-                                    <i class="fa fa-search"></i><font style="font-size: 13px; ">&nbsp;ADVANCE  SEARCH </font>
+                                    <i class="fas fa-search"></i>&nbsp;&nbsp;ADVANCE  SEARCH 
                                         </div>
                                         <div class="col-md-2 sea">
                                             <input type="text" name="business" onkeyup="sellerbannerpack('sellerbannerpack','seller',this.value);" placeholder="Ex : Khatik Vishnu" class="form-control ptx"/>

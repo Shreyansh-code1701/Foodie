@@ -31,7 +31,7 @@ if (isset($_REQUEST[sendcontact])) {
                 <div class="container">
                     <div class="inner">
                         <div class="col-md-12 col-sm-12 col-xs- text-center " >
-                            <i class="fa fa-star" ></i>&nbsp;&nbsp;<font style="font-size:30px;">C</font><b style="color: #F8A631;">ONTACT</b>&nbsp; <font style="font-size:30px;">T</font><b style="color:#F8A631;">O</b>&nbsp;&nbsp;<font style="font-size:30px;">S</font><b style="color: #F8A631;">ELLER</b>&nbsp;&nbsp;<i class="fa fa-star"></i> 
+                            <p style="font-size:30px;">CONTACT TO SELLER</p>
                         </div>
 
                     </div>

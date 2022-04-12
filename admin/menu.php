@@ -34,39 +34,39 @@ require_once 'adminsecure.php';
             </div> -->
 
             <ul class="nav nav-pills nav-stacked custom-nav">
-                <li class="active"><a href="index.php"><i class="fa fa-home"></i> <span>Dashboard</span></a>
+                <li class="active"><a href="index.php"><i class="fas fa-home"></i> <span>Dashboard</span></a>
                 </li>
                 
-                <li class="menu-list"><a href="#"><i class="fa fa-map-marker"></i> <span>Manage Location</span></a>
+                <li class="menu-list"><a href="#"><i class="fas fa-map-marked-alt"></i> <span>Manage Location</span></a>
                     <ul class="sub-menu-list">
-                        <li><a href="managestate.php"> State</a></li>
-                        <li><a href="managecity.php"> City</a></li>
-                        <li><a href="managearea.php">Area</a></li>
+                        <li><a href="managestate.php"><i class="fas fa-building"></i> <span> State</span> </a></li>
+                        <li><a href="managecity.php"><i class="fas fa-city"></i><span> City</span></a></li>
+                        <li><a href="managearea.php"><i class="fas fa-map-marker-alt"></i><span> Area</span></a></li>
                     </ul>
                 </li>
-                <li class="menu-list"><a href="#"><i class="fa fa-user"></i> <span>Manage Seller</span></a>
+                <li class="menu-list"><a href="#"><i class="fas fa-users"></i> <span>Manage Seller</span></a>
                     <ul class="sub-menu-list">
-                        <li><a href="manageseller.php"> Seller Profile</a></li>
-                        <li><a href="managebusiness.php"> Seller Business</a></li>
-                        <li><a href="managesellerreview.php"> Seller Review</a></li>
+                        <li><a href="manageseller.php"><i class="fas fa-id-badge"></i> <span> Seller Profile</span> </a></li>
+                        <li><a href="managebusiness.php"><i class="fas fa-briefcase"></i> <span> Seller Business    </span> </a></li>
+                        <li><a href="managesellerreview.php"><i class="fas fa-star"></i><span> Seller Review</span></a></li>
                         
                     </ul>
                 </li>
            
                 
-                <li><a href="manageproductreview.php"><i class="fa fa-cutlery"></i> <span>Product Review</span></a></li>
+                <li><a href="manageproductreview.php"><i class="fas fa-burger-soda"></i> <span>Product Review</span></a></li>
                 
-                <li><a href="managestoretype.php"><i class="fa fa-cutlery"></i> <span>Manage Store Type</span></a></li>
+                <li><a href="managestoretype.php"><i class="fas fa-store"></i> <span>Manage Store Type</span></a></li>
                 
-                <li><a href="managemaincategory.php"><i class="fa fa-cutlery"></i> <span>Manage Category</span></a></li>
+                <li><a href="managemaincategory.php"><i class="fas fa-utensils-alt"></i> <span>Manage Category</span></a></li>
                
                 <!-- <li><a href="manageduration.php"><i class="fa  fa-cogs"></i> <span>Manage Duration</span></a></li> -->
                 
-                <li><a href="managesubscriber.php"><i class="fa  fa-cogs"></i> <span>Manage Email Subscriber</span></a></li>
+                <li><a href="managesubscriber.php"><i class="fas fa-envelope-open-text"></i> <span>Manage Email Subscriber</span></a></li>
                 
-                <li><a href="managecontact.php"><i class="fa  fa-cogs"></i> <span>Manage Contact Us</span></a></li>
+                <li><a href="managecontact.php"><i class="fas fa-address-book"></i> <span>Manage Contact Us</span></a></li>
                 
-                 <li><a href="managefeedback.php"><i class="fa  fa-cogs"></i> <span>Manage Feedback</span></a></li>
+                 <li><a href="managefeedback.php"><i class="fas fa-comment-alt-lines"></i>   <span>Manage Feedback</span></a></li>
                
                  <!-- <li><a href="managetimeperiod.php"><i class="fa  fa-cogs"></i> <span>Manage Time Period</span></a></li> -->
                 
@@ -76,27 +76,27 @@ require_once 'adminsecure.php';
                  
                  <!-- <li><a href="manageevent.php"><i class="fa  fa-cogs"></i> <span>Manage Event</span></a></li> -->
                  
-                  <li><a href="managehighlight.php"><i class="fa  fa-cogs"></i> <span>Manage Highlight</span></a></li>
+                  <li><a href="managehighlight.php"><i class="fas fa-concierge-bell"></i> <span>Manage Services</span></a></li>
                  
-                 <li><a href="managepayment.php"><i class="fa  fa-cogs"></i> <span>Manage Payment Method</span></a></li>
+                 <li><a href="managepayment.php"><i class="fal fa-credit-card"></i> <span>Manage Payment Method</span></a></li>
                  
                
                  
-                  <li><a href="managepackagebill.php"><i class="fa  fa-cogs"></i> <span>Manage Package Bill</span></a></li>
+                  <li><a href="managepackagebill.php"><i class="far fa-file-invoice-dollar"></i> <span>Manage Package Bill</span></a></li>
   
-                  <li><a href="managesellerrequest.php"><i class="fa  fa-cogs"></i> <span>Seller Request</span></a></li>
+                  <li><a href="managesellerrequest.php"><i class="fas fa-image"></i> <span>Manage Banner </span></a></li>
                   
-                  <li><a href="managebannerbill.php"><i class="fa  fa-cogs"></i> <span>Manage Banner Bill</span></a></li>
+                  <li><a href="managebannerbill.php"><i class="fal fa-file-invoice"></i> <span>Manage Banner Bill</span></a></li>
                   
                   <!-- <li><a href="expbusiness.php"><i class="fa  fa-cogs"></i> <span>Expire business alert</span></a></li> -->
                   
                   
                   
-                    <li class="menu-list"><a href="#"><i class="fa fa-user"></i> <span>Manage Seller MIS</span></a>
+                    <li class="menu-list"><a href="#"><i class="far fa-warehouse-alt"></i> <span>Manage Seller MIS</span></a>
                         
                     <ul class="sub-menu-list">
-                        <li><a href="packagemis.php"> Package MIS</a></li>
-                        <li><a href="bannermis.php">Banner MIS</a></li>
+                        <li><a href="packagemis.php"><i class="far fa-archive"></i> <span>Package MIS</span> </a></li>
+                        <li><a href="bannermis.php"><i class="far fa-image"></i> <span>Banner MIS</span> </a></li>
                         
                     </ul>
                 </li>

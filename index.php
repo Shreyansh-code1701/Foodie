@@ -82,7 +82,7 @@ require_once 'head.php';
                                             <div class="col-md-12">
                                                 <div class="row">
                                                     <div class="foo-wrapper">
-                                                        <i class="fa fa-map-marker" style="text-transform: capitalize;"></i>&nbsp; <?php echo $row[13]; ?>
+                                                        <i class="fas fa-map-marker-alt" style="text-transform: capitalize;"></i>&nbsp; <?php echo $row[13]; ?>
                                                     </div>
 
                                                 </div>
@@ -104,13 +104,13 @@ require_once 'head.php';
 
                                                         ?>
 
-                                                                <i style="color:#f8a631;" class="fa fa-star" id="<?php echo $i; ?>"></i>
+                                                                <i style="color:#f8a631;" class="fas fa-star" id="<?php echo $i; ?>"></i>
 
                                                             <?php
                                                             } else {
                                                             ?>
 
-                                                                <i style="color:#f8a631;" class="fa fa-star-o" id="<?php echo $i; ?>"></i>
+                                                                <i style="color:#f8a631;" class="far fa-star" id="<?php echo $i; ?>"></i>
                                                         <?php
                                                             }
                                                         }

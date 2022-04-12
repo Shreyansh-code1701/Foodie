@@ -29,63 +29,62 @@ require_once 'connection.php';
                 <ul>
                     <li class="menu-item-has-children">
                         <i class="sub-menu-toggle fa fa-chevron-down"></i>
-                        <a href="#"><i class="fa fa-cutlery"></i>&nbsp;&nbsp;SOUTH INDIAN</a>
-                        <ul>
+                        <a href="#"><i class="fas fa-utensils-alt"></i>&nbsp;&nbsp;SOUTH INDIAN</a>
+                        <!-- <ul>
                             <li><a href="#"><i class="fa fa-book"></i> Menu level 3</a></li>
                             <li><a href="#"><i class="fa fa-bullhorn"></i> Menu level 3</a></li>
                             <li><a href="#"><i class="fa fa-coffee"></i> Menu level 3</a></li>
                             <li><a href="#"><i class="fa fa-gear"></i> Menu level 3</a></li>
-                        </ul>
+                        </ul> -->
                     </li>
                     <li class="menu-item-has-children">
                         <i class="sub-menu-toggle fa fa-chevron-down"></i>
-                        <a href="#"><i class="fa fa-cutlery"></i>&nbsp;&nbsp;PUNJABI</a>
-                        <ul>
+                        <a href="#"><i class="fas fa-utensils-alt"></i>&nbsp;&nbsp;PUNJABI</a>
+                        <!-- <ul>
                             <li><a href="#"><i class="fa fa-book"></i> Menu level 3</a></li>
                             <li><a href="#"><i class="fa fa-bullhorn"></i> Menu level 3</a></li>
                             <li><a href="#"><i class="fa fa-coffee"></i> Menu level 3</a></li>
                             <li><a href="#"><i class="fa fa-gear"></i> Menu level 3</a></li>
-                        </ul>
+                        </ul> -->
                     </li>
                     <li class="menu-item-has-children">
                         <i class="sub-menu-toggle fa fa-chevron-down"></i>
-                        <a href="#"><i class="fa fa-cutlery"></i>&nbsp;&nbsp;CHINES</a>
-                        <ul>
+                        <a href="#"><i class="fas fa-utensils-alt"></i>&nbsp;&nbsp;CHINESE</a>
+                        <!-- <ul>
                             <li><a href="#"><i class="fa fa-book"></i> Menu level 3</a></li>
                             <li><a href="#"><i class="fa fa-bullhorn"></i> Menu level 3</a></li>
                             <li><a href="#"><i class="fa fa-coffee"></i> Menu level 3</a></li>
                             <li><a href="#"><i class="fa fa-gear"></i> Menu level 3</a></li>
-                        </ul>
+                        </ul> -->
                     </li>
                     <li class="menu-item-has-children">
                         <i class="sub-menu-toggle fa fa-chevron-down"></i>
-                        <a href="#"><i class="fa fa-cutlery"></i>&nbsp;&nbsp;ITALIAN</a>
-                        <ul>
+                        <a href="#"><i class="fas fa-utensils-alt"></i>&nbsp;&nbsp;ITALIAN</a>
+                        <!-- <ul>
                             <li><a href="#"><i class="fa fa-book"></i> Menu level 3</a></li>
                             <li><a href="#"><i class="fa fa-bullhorn"></i> Menu level 3</a></li>
                             <li><a href="#"><i class="fa fa-coffee"></i> Menu level 3</a></li>
                             <li><a href="#"><i class="fa fa-gear"></i> Menu level 3</a></li>
-                        </ul>
+                        </ul> -->
                     </li>
                     <li class="menu-item-has-children">
                         <i class="sub-menu-toggle fa fa-chevron-down"></i>
-                        <a href="#"><i class="fa fa-cutlery"></i>&nbsp;&nbsp;ICE-CREAM</a>
-                        <ul>
+                        <a href="#"><i class="fas fa-utensils-alt"></i>&nbsp;&nbsp;ICE-CREAM</a>
+                        <!-- <ul>
                             <li><a href="#"><i class="fa fa-book"></i> Menu level 3</a></li>
                             <li><a href="#"><i class="fa fa-bullhorn"></i> Menu level 3</a></li>
                             <li><a href="#"><i class="fa fa-coffee"></i> Menu level 3</a></li>
                             <li><a href="#"><i class="fa fa-gear"></i> Menu level 3</a></li>
-                        </ul>
+                        </ul> -->
                     </li>
                 </ul>
             </li>
-            <li><a href="event.php">EVENT</a></li>
-            <li><a href="blog.php">BLOG</a></li>
+            <li><a href="restaurant.php">RESTAURANT</a></li>
             <li><a href="contact.php">CONTACT</a></li>
             <li><a href="feedback.php">FEEDBACK</a></li>
             <li><a href="about.php">ABOUT</a></li>
-            <li><a href="policy.php">POLICY</a></li>
-            <li><a href="sitemap.php">SITE MAP</a></li>
+            <li><a href="services.php">SERVICES</a></li>
+            
     </div>
 
   
@@ -134,7 +133,7 @@ require_once 'connection.php';
                                             <?php $cs=  mysql_query("select * from maincategory where del=0 limit 0,5");
  while ($ro = mysql_fetch_array($cs))
      {                                       ?>
-                                            <li style="text-transform: capitalize;"><a href="filter.php?search=<?php echo $ro[1]; ?> "><font class="submenu" style="color: #232323;"><i class="fa fa-cutlery"></i>&nbsp;&nbsp; <?php echo $ro[1]; ?></font></a></li>
+                                            <li style="text-transform: capitalize;"><a href="filter.php?search=<?php echo $ro[1]; ?> "><font class="submenu" style="color: #232323;"><i class="fas fa-utensils-alt"></i>&nbsp;&nbsp; <?php echo $ro[1]; ?></font></a></li>
                                          <?php
      }
                                          ?>
@@ -145,7 +144,7 @@ require_once 'connection.php';
                                             <?php $cs=  mysql_query("select * from maincategory where del=0 limit 5,5");
  while ($ro1 = mysql_fetch_array($cs)) 
      {                                       ?>
-                                            <li style="text-transform: capitalize;"><a href="filter.php?search=<?php echo $ro1[1]; ?> "><font class="submenu" style="color: #232323;"><i class="fa fa-cutlery"></i>&nbsp;&nbsp; <?php echo $ro1[1]; ?></font></a></li>
+                                            <li style="text-transform: capitalize;"><a href="filter.php?search=<?php echo $ro1[1]; ?> "><font class="submenu" style="color: #232323;"><i class="fas fa-utensils-alt"></i>&nbsp;&nbsp; <?php echo $ro1[1]; ?></font></a></li>
                                          <?php
      }
                                          ?>
@@ -157,7 +156,7 @@ require_once 'connection.php';
                                             <?php $cs=  mysql_query("select * from maincategory where del=0 limit 10,5");
  while ($ro1 = mysql_fetch_array($cs)) 
      {                                       ?>
-                                            <li style="text-transform: capitalize;"><a href="filter.php?search=<?php echo $ro1[1]; ?> "><font class="submenu" style="color: #232323;"><i class="fa fa-cutlery"></i>&nbsp;&nbsp; <?php echo $ro1[1]; ?></font></a></li>
+                                            <li style="text-transform: capitalize;"><a href="filter.php?search=<?php echo $ro1[1]; ?> "><font class="submenu" style="color: #232323;"><i class="fas fa-utensils-alt"></i>&nbsp;&nbsp; <?php echo $ro1[1]; ?></font></a></li>
                                          <?php
      }
                                          ?>
@@ -168,7 +167,7 @@ require_once 'connection.php';
                                             <?php $cs=  mysql_query("select * from maincategory where del=0 limit 15,5");
  while ($ro1 = mysql_fetch_array($cs)) 
      {                                       ?>
-                                            <li style="text-transform: capitalize;"><a href="filter.php?search=<?php echo $ro1[1]; ?> "><font class="submenu" style="color: #232323;"><i class="fa fa-cutlery"></i>&nbsp;&nbsp; <?php echo $ro1[1]; ?></font></a></li>
+                                            <li style="text-transform: capitalize;"><a href="filter.php?search=<?php echo $ro1[1]; ?> "><font class="submenu" style="color: #232323;"><i class="fas fa-utensils-alt"></i>&nbsp;&nbsp; <?php echo $ro1[1]; ?></font></a></li>
                                          <?php
      }
                                          ?>
@@ -181,7 +180,7 @@ require_once 'connection.php';
                                             <?php $cs=  mysql_query("select * from store where del=0 limit 0,5");
  while ($ro1 = mysql_fetch_array($cs)) 
      {                                       ?>
-                                            <li style="text-transform: capitalize;"><a href="index.php?search=<?php echo $ro1[4]; ?> "><font class="submenu" style="color: #232323;"><i class="fa fa-cutlery"></i>&nbsp;&nbsp; <?php echo $ro1[4]; ?></font></a></li>
+                                            <li style="text-transform: capitalize;"><a href="index.php?search=<?php echo $ro1[4]; ?> "><font class="submenu" style="color: #232323;"><i class="fas fa-utensils-alt"></i>&nbsp;&nbsp; <?php echo $ro1[4]; ?></font></a></li>
                                          <?php
      }
                                          ?>
@@ -192,7 +191,7 @@ require_once 'connection.php';
                                             <?php $cs=  mysql_query("select * from store where del=0 limit 5,5");
  while ($ro1 = mysql_fetch_array($cs)) 
      {                                       ?>
-                                            <li style="text-transform: capitalize;"><a href="index.php?search=<?php echo $ro1[4]; ?> "><font class="submenu" style="color: #232323;"><i class="fa fa-cutlery"></i>&nbsp;&nbsp; <?php echo $ro1[4]; ?></font></a></li>
+                                            <li style="text-transform: capitalize;"><a href="index.php?search=<?php echo $ro1[4]; ?> "><font class="submenu" style="color: #232323;"><i class="fas fa-utensils-alt"></i>&nbsp;&nbsp; <?php echo $ro1[4]; ?></font></a></li>
                                          <?php
      }
                                          ?>
@@ -210,7 +209,7 @@ require_once 'connection.php';
                              <?php
                             if ($_SESSION['page'] == "food") {
                                 ?>
-                                <li><a href="filter.php" class="blog activemenu">FOOD</a></li>
+                                <li><a href="filter.php" class="activemenu blog">FOOD</a></li>
                                 <?php
                             } else {
                                 ?>
@@ -230,7 +229,7 @@ require_once 'connection.php';
                                 <?php
                             }
                             ?>
-                                 <?php
+                                 <!-- <?php
 if ($_SESSION['page'] == "bestseller") {
     ?>
 
@@ -241,7 +240,7 @@ if ($_SESSION['page'] == "bestseller") {
                                 <li><a href="bestseller.php">BEST SELLER</a></li>
                                 <?php
                             }
-                            ?>
+                            ?> -->
 
 
                         </ul>
@@ -296,7 +295,7 @@ if ($_SESSION['page'] == "services") {
                                 <?php
                             }
                             ?>
-                            <?php
+                            <!-- <?php
                             if ($_SESSION['page'] == "sitemap") {
                                 ?>
                                 <li><a href="sitemap.php" class="activemenu">SITE MAP</a></li>
@@ -306,7 +305,7 @@ if ($_SESSION['page'] == "services") {
                                 <li><a href="sitemap.php">SITE MAP</a></li>
                                 <?php
                             }
-                            ?>
+                            ?> -->
 
 
 

@@ -3,10 +3,10 @@
 
     $u = mysql_query("select * from user where userid like '$_SESSION[user]'");
     $uu = mysql_fetch_array($u);
-    
+
     $c = mysql_query("select count(cartid) from cart where userid like '$_SESSION[user]'");
     $cc = mysql_fetch_array($c);
-    
+
 ?>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
@@ -27,8 +27,8 @@
             "currency": "INR",
             "name": name,
             "description": "Test Transaction",
-            "image": "http://localhost/foodie-main/images/foodlocker.png",
-            "callback_url": "http://localhost/foodie-main/mybill.php",
+            "image": "http://localhost/food/images/foodlocker.png",
+            "callback_url": "http://localhost/food/mybill.php",
             "redirect": true,
             "handler": function (response){
                 console.log(response)
@@ -37,4 +37,4 @@
     var rzp1 = new Razorpay(options);
     rzp1.open();
     }
-</script>
+</script> 

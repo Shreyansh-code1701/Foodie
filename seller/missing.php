@@ -66,7 +66,7 @@ if ($_REQUEST[kona] == "form") {
    <div class="form-group">
                 <div class="input-group">
                     <div class="input-group-addon">
-                        <i  class="fa  fa-windows"></i>
+                    <i class="fas fa-burger-soda"></i>
                     </div>
                     <input type="text" class="form-control" name="productname" autofocus="" required="" pattern="^[a-z A-Z]+$" placeholder="Product Name"/>
 
@@ -77,7 +77,7 @@ if ($_REQUEST[kona] == "form") {
  <div class="form-group">
                 <div class="input-group">
                     <div class="input-group-addon">
-                        <i  class="fa fa-cutlery"></i>
+                    <i class="fas fa-utensils-alt"></i>
                     </div>
                     
                     <select name="maincategory" required="" class="form-control" id="misscuisine">
@@ -97,7 +97,7 @@ if ($_REQUEST[kona] == "form") {
   <div class="form-group">
                 <div class="input-group">
                     <div class="input-group-addon">
-                        <i  class="fa fa- fa-list-ol" style="font-size: 12px" ></i>
+                    <i class="fas fa-turkey"></i> 
                     </div>
                     <select name="foodtype" required="" class="form-control">
                         <option value="">--Select Type--</option>                                               
@@ -110,7 +110,7 @@ if ($_REQUEST[kona] == "form") {
  <div class="form-group">
                 <div class="input-group">
                     <div class="input-group-addon">
-                        <i  class="fa fa-rupee" style="font-size: 20px" ></i>
+                    <i class="fas fa-rupee-sign"></i>
                     </div>
                     <input type="text" class="form-control" name="price" required="" pattern="^[0-9 ]+$" placeholder="Product Price"/>
 
@@ -121,7 +121,7 @@ if ($_REQUEST[kona] == "form") {
             <div class="form-group">
                 <div class="input-group">
                     <div class="input-group-addon">
-                        <i  class="fa fa-book" ></i>
+                    <i class="fas fa-book"></i>
                     </div>
                     <textarea title="discription" rows="2" name="dis" required="" placeholder="Enter discription" pattern="^[a-zA-Z-&, ]+$"  class="form-control"></textarea>
                 </div>
@@ -131,7 +131,7 @@ if ($_REQUEST[kona] == "form") {
               <div class="form-group">
                 <div class="input-group">        
                     <div class="input-group-addon">
-                        <i  class="fa  fa-picture-o"></i>
+                    <i class="fas fa-image"></i>
                     </div>
                     <input type="file" class="form-control" name="productpic" required="" accept=".png, .jpg, .jpeg" />
                 </div>
@@ -173,7 +173,7 @@ if ($_REQUEST[kona] == "form") {
             <div class="form-group">
                 <div class="input-group">
                     <div class="input-group-addon">
-                        <i  class="fa fa-cutlery"></i>
+                    <i class="fas fa-utensils-alt"></i>
                     </div>
                     <select name="upmaincategory" required="" class="form-control">
                         <option value=""><?php echo $du[0]; ?></option>                                               
@@ -709,7 +709,7 @@ if ($_REQUEST[kona] == "form") {
             <div class="form-group">
                 <div class="input-group">
                     <div class="input-group-addon">
-                        <i  class="fa  fa-windows"></i>
+                    <i class="fas fa-image"></i>
                     </div>
                     <input type="text" class="form-control" name="bannername" autofocus="" required="" pattern="^[a-z0-9 ]+$" placeholder="Banner Name"/>
 
@@ -719,7 +719,7 @@ if ($_REQUEST[kona] == "form") {
             <div class="form-group">
                 <div class="input-group">
                     <div class="input-group-addon">
-                        <i  class="fa fa-cutlery"></i>
+                    <i class="fas fa-utensils"></i>
                     </div>
                     <select name="timeperiod" required="" class="form-control">
                         <option value="">--Select Package Time--</option>                                               
@@ -738,7 +738,7 @@ if ($_REQUEST[kona] == "form") {
             <div class="form-group">
                 <div class="input-group">        
                     <div class="input-group-addon">
-                        <i  class="fa  fa-picture-o"></i>
+                    <i class="fas fa-image"></i>
                     </div>
                     <!-- <input type="file" class="form-control" name="addbanner" required="" /> -->
                     <input type="file" name="addbanner" class="form-control" required="" accept=".pdf"/>
@@ -765,7 +765,7 @@ if ($_REQUEST[kona] == "form") {
          <div class="form-group">
                 <div class="input-group">
                     <div class="input-group-addon">
-                        <i  class="fa  fa-windows"></i>
+                    <i class="fas fa-image"></i>
                     </div>
                     <input type="text" class="form-control" name="upbannername" autofocus="" required="" pattern="^[a-z0-9 ]+$" placeholder="Banner Name"/>
 
@@ -775,7 +775,7 @@ if ($_REQUEST[kona] == "form") {
             <div class="form-group">
                 <div class="input-group">
                     <div class="input-group-addon">
-                        <i  class="fa fa-cutlery"></i>
+                    <i class="fas fa-utensils-alt"></i>
                     </div>
                     <select name="uptimeperiod" required="" class="form-control">
                         <option value="">--Select Package Time--</option>                                               
@@ -1212,7 +1212,7 @@ if($_REQUEST[konu]=='missbannerbill')
                                         <tr>
                                             <td colspan="2">Start Date : <?php echo $row[8]; ?></td>
                                             <td colspan="1">End Date : <?php echo $row[9]; ?></td>
-                                            <td>Mobile : 8758722336</td>
+                                            <td>Mobile : 1234567890</td>
                                         </tr>
 
                                         <tr>
@@ -1918,7 +1918,7 @@ if($_REQUEST[kona]=="sellbill")
                        
                        <tr>
                            <td colspan="2" style=" border: 1px dotted #f8a631 !important;text-align: center;">
-                               <strong>Mo :</strong><font>7874259262 , 8758722336</font>
+                               <strong>Mo :</strong><font>1234567890</font>
                            </td>
                        </tr>
                             
@@ -2203,7 +2203,7 @@ if ($_REQUEST[kona] == "form") {
                         ?>
                     </select>
                     <div class="input-group-addon">
-                        <i  class="fa fa-globe"></i>
+                    <i class="fas fa-utensils-alt"></i>
                     </div>
                 </div>
             </div>
@@ -2225,7 +2225,7 @@ if ($_REQUEST[kona] == "form") {
                         ?>
                     </select>
                     <div class="input-group-addon">
-                        <i  class="fa fa-globe"></i>
+                    <i class="fas fa-id-card"></i>
                     </div>
                 </div>
             </div>
@@ -2234,7 +2234,7 @@ if ($_REQUEST[kona] == "form") {
                 <div class="input-group">
                     <input type="text" class="form-control" name="offname"  required="" pattern="^[a-z A-Z]+$" placeholder="Enter Offer Name"/>
                     <div class="input-group-addon">
-                        <i  class="fa fa-globe"></i>
+                    <i class="fas fa-badge-percent"></i>
                     </div>
                 </div>
             </div>
@@ -2243,7 +2243,7 @@ if ($_REQUEST[kona] == "form") {
                 <div class="input-group" style="margin-top: 2%;">
                     <input type="date" class="form-control" name="sdate" required="" />
                     <div class="input-group-addon">
-                        <i  class="fa fa-globe"></i>
+                    <i class="fas fa-calendar-star"></i>
                     </div>
                 </div>
             </div>
@@ -2252,7 +2252,7 @@ if ($_REQUEST[kona] == "form") {
                 <div class="input-group" style="margin-top: 2%;">
                     <input type="date" class="form-control" name="edate" required="" />
                     <div class="input-group-addon">
-                        <i  class="fa fa-globe"></i>
+                    <i class="fas fa-calendar-star"></i>
                     </div>
                 </div>
             </div>
@@ -2261,7 +2261,7 @@ if ($_REQUEST[kona] == "form") {
                 <div class="input-group" style="margin-top: 2%;">
                     <input type="text" class="form-control" name="lprice" required="" pattern="^[0-9]+$" placeholder="Enter Low Price"/>
                     <div class="input-group-addon">
-                        <i  class="fa fa-globe"></i>
+                    <i class="fas fa-rupee-sign"></i>
                     </div>
                 </div>
             </div>
@@ -2270,7 +2270,7 @@ if ($_REQUEST[kona] == "form") {
                 <div class="input-group" style="margin-top: 2%;">
                     <input type="text" class="form-control" name="hprice" required="" pattern="^[0-9]+$" placeholder="Enter High Price"/>
                     <div class="input-group-addon">
-                        <i  class="fa fa-globe"></i>
+                    <i class="fas fa-rupee-sign"></i>
                     </div>
                 </div>
             </div>
@@ -2279,7 +2279,7 @@ if ($_REQUEST[kona] == "form") {
                 <div class="input-group" style="margin-top: 2%;">
                     <input type="text" class="form-control" name="rate" required="" pattern="^[0-9]+$" placeholder="Enter Offer Rate"/>
                     <div class="input-group-addon">
-                        <i  class="fa fa-globe"></i>
+                    <i class="fas fa-rupee-sign"></i>
                     </div>
                 </div>
             </div>
@@ -2723,7 +2723,7 @@ if ($_REQUEST[kona] == "form") {
                         ?>
                     </select>
                     <div class="input-group-addon">
-                        <i  class="fa fa-globe"></i>
+                    <i class="fas fa-store"></i>
                     </div>
                 </div>
             </div>
@@ -2735,7 +2735,7 @@ if ($_REQUEST[kona] == "form") {
                        
                     </select>
                     <div class="input-group-addon">
-                        <i  class="fa fa-globe"></i>
+                    <i class="fas fa-calendar-alt"></i> 
                     </div>
                 </div>
             </div>
@@ -2746,7 +2746,7 @@ if ($_REQUEST[kona] == "form") {
                 <div class="input-group">
                     <input type="text" class="form-control" name="price"  required="" pattern="^[0-9]+$" placeholder="Enter event price"/>
                     <div class="input-group-addon">
-                        <i  class="fa fa-globe"></i>
+                    <i class="fas fa-rupee-sign"></i>
                     </div>
                 </div>
             </div>
@@ -3285,7 +3285,7 @@ if ($_REQUEST[kona] == "form") {
                          
                      </select>
                      <div class="input-group-addon">
-                         <i  class="fa fa-globe"></i>
+                     <i class="fas fa-store"></i>
                      </div>
                  </div>
              </div>
@@ -3295,7 +3295,7 @@ if ($_REQUEST[kona] == "form") {
 
                      <input type="text" class="form-control" name="brochure" required="" pattern="^[a-z A-Z]+$" placeholder="Enter Brochure Name"/>
                      <div class="input-group-addon">
-                         <i  class="fa fa-globe"></i>
+                     <i class="fas fa-book-open"></i>
                      </div>
                  </div>
              </div>
@@ -3306,7 +3306,7 @@ if ($_REQUEST[kona] == "form") {
                      <!-- <input type="file" class="form-control" name="bpath" required="" /> -->
                      <input type="file" name="bpath" class="form-control" required="" accept=".pdf"/>
                      <div class="input-group-addon">
-                         <i  class="fa fa-globe"></i>
+                     <i class="fas fa-file"></i>     
                      </div>
                  </div>
              </div>

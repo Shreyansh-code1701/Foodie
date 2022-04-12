@@ -134,7 +134,7 @@ if($_REQUEST[kona]=="misssearch")
                                 <span>
                                     <a   href="productdetail.php?proid=<?php echo $row[2]; ?>"  style="text-transform:uppercase; font-size: 13px">Cuisine : <?php echo $row1[0]; ?></a>
                                 </span>
-                                <?php
+                                <!-- <?php
                                 $i = mysql_query("select * from likee where userid like '$_SESSION[user]' and productid = $row[2]");
                                 $gi = mysql_fetch_array($i);
                                 $f = 0;
@@ -150,7 +150,7 @@ if($_REQUEST[kona]=="misssearch")
                                     <?php
                                     if ($_SESSION[user] == "") {
                                         ?>
-                                        <!-- <font style="color: #fff; font-size: 13px;cursor: pointer;"> <i class="fa fa-heart-o animated flash" style="color: #eee; font-size: 20px;"></i>&nbsp;Like</font> -->
+                                        <font style="color: #fff; font-size: 13px;cursor: pointer;"> <i class="fa fa-heart-o animated flash" style="color: #eee; font-size: 20px;"></i>&nbsp;Like</font>
                                         <?php
                                     } else {
                                         if ($f == 2) {
@@ -164,7 +164,7 @@ if($_REQUEST[kona]=="misssearch")
                                         }
                                     }
                                     ?>
-                                </span>
+                                </span> -->
                             </div>
                         </div>
                     </div>
@@ -174,7 +174,7 @@ if($_REQUEST[kona]=="misssearch")
                     <div class="content-wrapper col-md-12 col-sm-12 col-xs-12 " style="border: 1px dotted #f8a631;">
 
                         <div class="col-md-12 col-sm-12 col-xs-12">
-                            <font class="" style="font-size: 17px; color: #232323; font-weight: 600; line-height:1px; text-transform: capitalize;"><?php echo $row[3]; ?></font>
+                            <font class="" style="font-size: 18px; color: #232323; font-weight: 600; line-height:1px; text-transform: capitalize;"><?php echo $row[3]; ?></font>
                         </div>
                         <div class="col-md-6 col-sm-6 col-xs-6">
 
@@ -222,7 +222,7 @@ if($_REQUEST[kona]=="misssearch")
                                     
                                     ?>
                                     
-                                    <i  style="color:#f8a631;" class="fa fa-star" id="<?php echo $i; ?>"></i>
+                                    <i  style="color:#f8a631;" class=" w3-tiny fas fa-star" id="<?php echo $i; ?>"></i>
                                     
                                     <?php
                                         }
@@ -230,7 +230,7 @@ if($_REQUEST[kona]=="misssearch")
                                         {
                                      ?>
                                     
-                                     <i  style="color:#f8a631;" class="fa fa-star-o" id="<?php echo $i; ?>"></i>
+                                     <i  style="color:#f8a631;" class=" w3-tiny far fa-star" id="<?php echo $i; ?>"></i>
                                     <?php
                                         }
                                     }
@@ -241,11 +241,11 @@ if($_REQUEST[kona]=="misssearch")
                             <div class="row">
                                 <div class="col-md-6 col-sm-6 col-xs-6">
 
-                                    <a href="product.php" onclick="misscart('cart',<?php echo $row[2]; ?>,1);" class="btn sendbtn" >Add &nbsp;<i class="fa fa-plus"></i></a>
+                                    <a href="product.php" onclick="misscart('cart',<?php echo $row[2]; ?>,1);" class="btn sendbtn" >Add &nbsp;<i class="far fa-cart-plus"></i></a>
 
                                 </div>
                                 <div class="col-md-6 col-sm-6 col-xs-6">
-                                    <a href="productdetail.php?proid=<?php echo $row[2]; ?>"><button class="btn sendbtn" >Info &nbsp;<i class="fa fa-info"></i></button></a>
+                                    <a href="productdetail.php?proid=<?php echo $row[2]; ?>"><button class="btn sendbtn" >Info &nbsp;<i class="far fa-info-circle"></i></button></a>
 
                                 </div>
                             </div>

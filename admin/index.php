@@ -50,7 +50,7 @@ $pac = mysql_fetch_array($package);
                                     <div class="row">
                                         
                                         <div class="col-xs-4">
-                                            <i class="fa fa-money"></i>
+                                        <i class="fas fa-building"></i>
                                         </div>
                                         <div class="col-xs-8">
                                             <span class="state-title">Total State </span>
@@ -66,7 +66,7 @@ $pac = mysql_fetch_array($package);
                                     <div class="row">
                                          
                                         <div class="col-xs-4">
-                                            <i class="fa fa-tag"></i>
+                                        <i class="fas fa-city"></i>
                                         </div>
                                         <div class="col-xs-8">
                                             <span class="state-title"> Total City  </span>
@@ -82,7 +82,7 @@ $pac = mysql_fetch_array($package);
                                     <div class="row">
                                          
                                         <div class="col-xs-4">
-                                            <i class="fa fa-map-marker"></i>
+                                        <i class="fas fa-map-marker-alt"></i>
                                         </div>
                                         <div class="col-xs-8">
                                             <span class="state-title"> Total Area </span>
@@ -98,7 +98,7 @@ $pac = mysql_fetch_array($package);
                                     <div class="row">
                                          
                                         <div class="col-xs-4">
-                                            <i class="fa fa-eye"></i>
+                                        <i class="far fa-file-invoice"></i>
                                         </div>
                                         <div class="col-xs-8">
                                             <span class="state-title"> Total Package Bill </span>

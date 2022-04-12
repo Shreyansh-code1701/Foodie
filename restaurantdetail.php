@@ -106,19 +106,22 @@ if(isset($_REQUEST[event]))
                 <?php
                     $k=  mysql_query("select * from store where storeid='$_SESSION[id]'");
                     $kk=  mysql_fetch_array($k);
-                ?>
+                ?> <br><br>
                 <div class="living_box" style="height: 631px; border-radius: 10px;">
 			    <img src="seller/<?php echo $kk[27]; ?>" style="width: 100%;height: 300px;"  class="" alt=""/>
 			
                             <img src="seller/<?php echo $kk[13]; ?>" class="img-circle" style="height: 200px;width: 200px;margin-top: -120px;border: 3px solid #f8a631;" alt=""/>
 				
                             <div class="living_desc desc1">
-                                    <h3 style="text-transform: capitalize"><?php echo $kk[4]; ?><span style="font-size: 15px;"> ( <?php echo $kk[2]; ?> ) </span></h3>
+                                    <h3 style="text-transform: capitalize; font-weight:900px;"><?php echo $kk[4]; ?><span style="font-size: 15px; font-weight:900px; "> ( <?php echo $kk[2]; ?> ) </span></h3>
                                     <p style="font-size: 13px;"><?php echo $kk[8]; ?></p>
                                 <a href="http://<?php echo $kk[12]; ?>"><p style="font-size: 13px;"><?php echo $kk[12]; ?></p></a>
                                 <p style="font-size: 13px;"><?php echo $kk[10]; ?></p>
                                 <p style="font-size: 13px;"><?php echo $kk[11]; ?></p>
                                 <p id="ratedekho"></p>
+                                
+                                
+                                                        
 				
 				<div class="clearfix"></div>
 				</div>
@@ -162,9 +165,9 @@ if(isset($_REQUEST[event]))
                                <a href="#hc-tab-recipes" aria-controls="hc-tab-recipes" role="tab" data-toggle="tab">Review </a>
                            </li>
                            
-                           <li role="presentation" onclick="storepanel('<?php echo $_SESSION[id]; ?>','event',0);">
+                           <!-- <li role="presentation" onclick="storepanel('<?php echo $_SESSION[id]; ?>','event',0);">
                                <a href="#hc-tab-bookmarks" aria-controls="hc-tab-bookmarks" role="tab" data-toggle="tab">Event</a>
-                           </li>
+                           </li> -->
                            
                            <li role="presentation" onclick="storepanel('<?php echo $_SESSION[id]; ?>','brochure',0);">
                                <a href="#hc-tab-bookmarks" aria-controls="hc-tab-bookmarks" role="tab" data-toggle="tab">Brochure</a>

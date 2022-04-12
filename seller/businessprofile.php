@@ -142,7 +142,7 @@ require_once 'sellersecure.php';
                                     </div>
                             </div>
                            <div class="container">
-                               <a href="businesseditprofile.php" class="btn" style="background-color:#424F63; ">Edit Profile&nbsp;&nbsp;&nbsp;<i class="fa fa-pencil"></i></a>
+                               <a href="businesseditprofile.php" class="btn" style="background-color:#424F63; ">Edit Profile&nbsp;&nbsp;&nbsp;<i class="fas fa-edit"></i></a>
                           </div>
                         </div>
                              

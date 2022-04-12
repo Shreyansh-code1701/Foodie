@@ -28,8 +28,8 @@ require_once 'adminsecure.php';
           ?>
             <li >
                 <a href="#" onclick=""  class="btn btn-default dropdown-toggle info-number" data-toggle="dropdown">
-                    <i class="fa fa-envelope-o"></i>
-                    <span class="badge" id="feed" ><?php echo $fb[0]; ?></span>
+                <i class="fas fa-comment-alt-edit"></i>                
+                 <span class="badge" id="feed" ><?php echo $fb[0]; ?></span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-head pull-right body" id="feedid" >
                     
@@ -38,7 +38,7 @@ require_once 'adminsecure.php';
             
             <li>
                 <a href="#" class="btn btn-default dropdown-toggle info-number" data-toggle="dropdown">
-                    <i class="fa fa-envelope-o"></i>
+                <i class="fas fa-store"></i>
                     <span class="badge" id="store"><?php echo $s[0]; ?></span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-head pull-right body" id="storeid" style=" border-radius:5px;">
@@ -49,7 +49,7 @@ require_once 'adminsecure.php';
             
             <li>
                 <a href="#" class="btn btn-default dropdown-toggle info-number" data-toggle="dropdown">
-                    <i class="fa fa-envelope-o"></i>
+                    <i class="fas fa-hamburger"></i>
                     <span class="badge" id="reviewp"><?php echo $p[0]; ?></span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-head pull-right" id="reviewid">
@@ -60,7 +60,7 @@ require_once 'adminsecure.php';
             
             <li>
                 <a href="#" class="btn btn-default dropdown-toggle info-number" data-toggle="dropdown">
-                    <i class="fa fa-envelope-o"></i>
+                <i class="fas fa-store-alt"></i>
                     <span class="badge" id="reviews"><?php echo $r[0]; ?></span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-head pull-right" id="reviewstoreid">
@@ -80,9 +80,9 @@ require_once 'adminsecure.php';
                     <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-usermenu pull-right">
-                    <li><a href="adminprofile.php"><i class="fa fa-user"></i>  Profile</a></li>
+                    <li><a href="adminprofile.php"><i class="fas fa-user-alt"></i>    Profile</a></li>
                     <!-- <li><a href="editprofile.php"><i class="fa fa-cog"></i>  Settings</a></li> -->
-                    <li><a href="../logout.php"><i class="fa fa-sign-out"></i> Log Out</a></li>
+                    <li><a href="../logout.php"><i class="fas fa-sign-out-alt"></i> Log Out</a></li>
                 </ul>
             </li>
 

@@ -58,7 +58,7 @@ require_once 'sellerpati.php';
                                 </div>
                             <div class="col-md-12">
                                 <div class="col-md-4 sea" style="background: #eee; color: #333; padding: 17px;">
-                                            <i class="fa fa-search"></i>&nbsp;&nbsp; ADVANCE SEARCH
+                                            <i class="fas fa-search"></i>&nbsp;&nbsp; ADVANCE SEARCH
                                         </div>
                                         <div class="col-md-2 sea">
                                             <input type="text" name="business" onkeyup="sellerseapack('sellerseapack','business',this.value);" placeholder="Ex : Navjivan Hotel" class="form-control ptx"/>

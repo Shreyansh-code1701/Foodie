@@ -143,7 +143,7 @@ if ($_REQUEST[kona] == "cart") {
                         <font style="color: #fff;text-transform: capitalize;"><?php echo $row[0]; ?></font>
                 </div>
                 <div class="col-md-2">
-                    <i class="fa fa-trash-o" style="cursor: pointer; " title="click to remove from cart" onclick="misscart('cart','<?php echo $ss[5]; ?>',0);"></i>
+                <i class="far fa-trash-alt" style="cursor: pointer; " title="click to remove from cart" onclick="misscart('cart','<?php echo $ss[5]; ?>',0);"></i>
                 </div>
             </div>
 
@@ -267,10 +267,10 @@ if ($_REQUEST[kona] == "confirmcart") {
 
     </div>
     <div class="col-md-12 " style="padding:5px;">
-        <div class="col-md-offset-8 col-md-2"><i class="fa fa-caret-left" style="font-size:30px;vertical-align: middle; margin-right: 2px; color: #f8a631;"></i><a href="filter.php" class="cartbtn">Continue Shopping</a></div>
+        <div class="col-md-offset-8 col-md-2"><i class="far fa-caret-left" style="font-size:30px;vertical-align: middle; margin-right: 2px; color: #f8a631;"></i><a href="filter.php" class="cartbtn">Continue Shopping</a></div>
         <div class="col-md-2">
 
-            <a href="checkout.php" class="cartbtn">Check Out</a><i class="fa fa-caret-right" style="font-size:30px;vertical-align: middle; margin-left: 2px;color: #f8a631;"></i>
+            <a href="checkout.php" class="cartbtn">Check Out</a><i class="far fa-caret-right" style="font-size:30px;vertical-align: middle; margin-left: 2px;color: #f8a631;"></i>
 
         </div>
     </div>

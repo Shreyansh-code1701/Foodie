@@ -38,7 +38,7 @@ require_once 'toppati.php';
                                 <ul class="nav nav-tabs pull-right">
                                     <li class="active">
                                         <a href="#home-3" data-toggle="tab">
-                                            <i class="fa fa-laptop" ondblclick="fdel('subscriber','delete','<?php echo $p; ?>','<?php echo $pp; ?>','<?php echo $row[0]; ?>');recycle('subscriber','display','1','10');"></i>
+                                            <i class="fas fa-laptop" ondblclick="fdel('subscriber','delete','<?php echo $p; ?>','<?php echo $pp; ?>','<?php echo $row[0]; ?>');recycle('subscriber','display','1','10');"></i>
                                             DISPLAY
                                         </a>
                                     </li>
@@ -62,7 +62,7 @@ require_once 'toppati.php';
                                                     </div>
                                                     <input type="text" name="search" placeholder="Search Email" id="find" class="form-control" onkeyup="display('subscriber','display','1','10');"/>
                                                     <div class="input-group-addon">
-                                                        <i  class="fa fa-search"></i>
+                                                        <i  class="fas fa-search"></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -85,8 +85,8 @@ require_once 'toppati.php';
                                 <ul class="nav nav-tabs pull-right">
                                     <li class="active">
                                         <a href="#home-3" data-toggle="tab">
-                                            <i class="fa fa-laptop" ondblclick="del('state','delete','<?php echo $p; ?>','<?php echo $pp; ?>','all');recycle('state','display','1','10');"></i>
-                                            DISPLAY
+                                        <i class="fas fa-comment-alt" ondblclick="del('state','delete','<?php echo $p; ?>','<?php echo $pp; ?>','all');recycle('state','display','1','10');"></i>
+                                            MESSAGE
                                         </a>
                                     </li>
                                     
@@ -100,7 +100,7 @@ require_once 'toppati.php';
                                                 <div class="input-group">
                                                     <textarea rows="5" class="form-control" name="mail" autofocus="" required="" style="resize:none;" placeholder="Enter Message"></textarea>
                                                     <div class="input-group-addon">
-                                                        <i  class="fa fa-globe"></i>
+                                                    <i class="far fa-comment-alt-edit"></i>
                                                     </div>
                                                 </div>
                                             </div>

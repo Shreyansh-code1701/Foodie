@@ -208,7 +208,7 @@ if(isset($_REQUEST[send]))
                                                             ?>
                                                         </select>
                                                         <div class="input-group-addon">
-                                                            <i  class="fa fa-globe"></i>
+                                                        <i class="fas fa-store"></i>                   
                                                         </div>
                                                     </div>
                                                 </div>
@@ -228,8 +228,8 @@ if(isset($_REQUEST[send]))
                                                             ?>
                                                         </select>
                                                         <div class="input-group-addon">
-                                                            <i  class="fa fa-globe"></i>
-                                                        </div>
+                                                        <i class="fas fa-alarm-clock"></i>         
+                                                       </div>
                                                     </div>
                                                 </div>
                                                     
@@ -239,7 +239,7 @@ if(isset($_REQUEST[send]))
                                                         <div class="input-group">
                                                             <input type="text" class="form-control" name="name" required="" pattern="^[a-z_- ]+$" placeholder="Enter Store Name"/>
                                                             <div class="input-group-addon">
-                                                                <i  class="fa fa-globe"></i>
+                                                            <i class="fas fa-id-card"></i>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -259,7 +259,7 @@ if(isset($_REQUEST[send]))
                                                                 ?>
                                                             </select>
                                                             <div class="input-group-addon">
-                                                                <i  class="fa fa-globe"></i>
+                                                            <i class="fas fa-landmark"></i>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -270,7 +270,7 @@ if(isset($_REQUEST[send]))
                                                                
                                                             </select>
                                                             <div class="input-group-addon">
-                                                                <i  class="fa fa-globe"></i>
+                                                            <i class="fas fa-city"></i>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -281,7 +281,7 @@ if(isset($_REQUEST[send]))
                                                                
                                                             </select>
                                                             <div class="input-group-addon">
-                                                                <i  class="fa fa-globe"></i>
+                                                            <i class="fas fa-city"></i>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -292,7 +292,7 @@ if(isset($_REQUEST[send]))
 
                                                             <textarea  rows="3"  class="form-control" title="Address" name="address" required="" pattern="^[a-zA-Z/-, ]+$" placeholder="Enter Address"></textarea>
                                                             <div class="input-group-addon">
-                                                                <i  class="fa fa-globe"></i>
+                                                            <i class="fas fa-address-card"></i>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -312,7 +312,7 @@ if(isset($_REQUEST[send]))
                                                         <div class="input-group">
                                                             <input type="email" class="form-control"  name="email" required="" placeholder="Enter Email"/>
                                                             <div class="input-group-addon">
-                                                                <i  class="fa fa-globe"></i>
+                                                            <i class="fas fa-envelope"></i>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -336,7 +336,7 @@ if(isset($_REQUEST[send]))
                                                         <div class="input-group">
                                                             <input type="tel" class="form-control"  name="mobile" maxlength="10"  required="" pattern="^[0-9]+$" placeholder="Enter Mobile No"/>
                                                             <div class="input-group-addon">
-                                                                <i  class="fa fa-globe"></i>
+                                                            <i class="fas fa-phone-alt"></i>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -346,7 +346,7 @@ if(isset($_REQUEST[send]))
                                                     <div class="input-group">
                                                         <input type="text" class="form-control" name="website"   pattern="^[a-zA-Z0-9@.-_ ]+$" placeholder="Enter Website"/>
                                                         <div class="input-group-addon">
-                                                            <i  class="fa fa-globe"></i>
+                                                            <i  class="fas fa-globe"></i>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -366,7 +366,7 @@ if(isset($_REQUEST[send]))
                                                         <!-- <input type="file" name="storeimage" required="" class="form-control" title="Store Image" /> -->
                                                         <input type="file" name="storeimage" class="form-control" required="" accept=".png, .jpg, .jpeg"/>
                                                     <div class="input-group-addon">
-                                                            <i  class="fa fa-globe"></i>
+                                                        <i class="fas fa-image"></i>
                                                         </div>
                                                     </div>
                                                     <?php
@@ -387,7 +387,7 @@ if(isset($_REQUEST[send]))
                                                         <!-- <input type="file" name="visitingcard" required="" class="form-control" title="visitingcard" /> -->
                                                         <input type="file" name="visitingcard" class="form-control" required="" accept=".png, .jpg, .jpeg"/>
                                                     <div class="input-group-addon">
-                                                            <i  class="fa fa-globe"></i>
+                                                    <i class="fas fa-image"></i>
                                                         </div>
                                                     </div>
                                                     <?php
@@ -407,7 +407,7 @@ if(isset($_REQUEST[send]))
                                                     <div class="input-group">
                                                         <input type="text" class="form-control" name="timeduration" required=""  pattern="^[a-zA-Z0-9-:, ]+$" placeholder="Enter opening and closing time"/>
                                                         <div class="input-group-addon">
-                                                            <i  class="fa fa-globe"></i>
+                                                        <i class="fas fa-alarm-clock"></i>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -417,7 +417,7 @@ if(isset($_REQUEST[send]))
                                                     <div class="input-group">
                                                         <input type="text" class="form-control" name="registration" required="" pattern="^[a-z_- ]+$" placeholder="Enter Registration"/>
                                                         <div class="input-group-addon">
-                                                            <i  class="fa fa-globe"></i>
+                                                        <i class="fas fa-building"></i>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -429,7 +429,7 @@ if(isset($_REQUEST[send]))
                                                     <div class="input-group">
                                                         <input type="text" name="since" class="form-control" required="" pattern="^[0-9]+$" placeholder="Enter Since"/>
                                                         <div class="input-group-addon">
-                                                            <i  class="fa fa-globe"></i>
+                                                            <i  class="fas fa-globe"></i>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -438,7 +438,7 @@ if(isset($_REQUEST[send]))
                                                     <div class="input-group">
                                                         <input type="text" name="fax" class="form-control"  required="" pattern="^[0-9 ]+$" placeholder="Enter Fax"/>
                                                         <div class="input-group-addon">
-                                                            <i  class="fa fa-globe"></i>
+                                                        <i class="fas fa-fax"></i>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -448,7 +448,7 @@ if(isset($_REQUEST[send]))
                                                     <div class="input-group">
                                                         <input type="date" name="regdate" class="form-control"  required="" />
                                                         <div class="input-group-addon">
-                                                            <i  class="fa fa-globe"></i>
+                                                        <i class="fas fa-calendar"></i>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -464,7 +464,7 @@ if(isset($_REQUEST[send]))
                                                            
                                                         </select>
                                                         <div class="input-group-addon">
-                                                            <i  class="fa fa-globe"></i>
+                                                        <i class="fas fa-turkey"></i>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -476,7 +476,7 @@ if(isset($_REQUEST[send]))
                                                         <!-- <input type="file" class="form-control" required="" name="coverphoto" title="Cover Photo" /> -->
                                                         <input type="file" name="coverphoto" class="form-control" required="" accept=".png, .jpg, .jpeg"/>
                                                     <div class="input-group-addon">
-                                                            <i  class="fa fa-globe"></i>
+                                                    <i class="fas fa-image"></i>
                                                         </div>
                                                     </div>
                                                      <?php

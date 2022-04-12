@@ -11,7 +11,7 @@
                         <font id="error"  style="padding-left: 120px;">
                         </font>
                             
-                        <i class="fa fa-times" onclick="loginbox('close')"></i>
+                        <i class="fas fa-times" onclick="loginbox('close')"></i>
                     </div>
                     <div class="row"  style="background: #fff;border-bottom: 10px solid #f8a631;">
                         
@@ -22,14 +22,14 @@
                                 <div class="form-group">
                                     <div class="col-md-12 input-group" >
                                         <input type="text" name="user" id="user" placeholder="Enter Your UserID" value="<?php echo $_COOKIE[cookuser]; ?>" autofocus="" required=""  pattern='^[a-zA-Z0-9@_-. ]+$'    class="form-control " /> 
-                                        <div class="input-group-addon" style="background:#f8a631;"><i class="fa fa-user-plus    "></i></div>
+                                        <div class="input-group-addon"><i class="fas fa-user-circle"></i></div>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <div class="col-md-12 input-group" >
                                         <input type="password" name="pass" id="password" placeholder="Enter the Password" value="<?php echo $_COOKIE[cookpass]; ?>" required=""  pattern='^[a-zA-Z0-9-,/?()*&%$#! ]{5,20}+$'    class="form-control " /> 
-                                        <div class="input-group-addon" style="background:#f8a631;" title="Show Password" id="showpass">
-                                            <i class="fa fa-lightbulb-o" title="Show Password" id="showpass"  style="padding:0px 4.5px 0px 4.5px;;"></i>
+                                        <div class="input-group-addon" title="Show Password" id="showpass">
+                                        <i class="fas fa-lock-alt" title="Show Password" id="showpass"  style="padding:0px 4.5px 0px 4.5px;;"></i>
                                         </div>
                                     </div>
                                 </div>                               
@@ -43,8 +43,8 @@
                                     </div>
                                 </div>
                                 <div class="col-md-12 text-center  input-group text-center">
-                                     <button type="button" name="login" title="Send" class="btn loginbtn" onclick="loginerr();" style="outline: 0;">Submit &nbsp;&nbsp;<i class="fa fa-rocket" ></i></button>&nbsp;&nbsp;
-                                    <button type="reset" title="clear" name="clear"class="btn loginbtn" style="outline: 0;">Reset &nbsp;&nbsp;<i class="fa fa-trash-o" ></i></button>
+                                     <button type="button" name="login" title="Send" class="btn loginbtn" onclick="loginerr();" style="outline: 0;">Submit &nbsp;&nbsp;</button>&nbsp;&nbsp;
+                                    <button type="reset" title="clear" name="clear"class="btn loginbtn" style="outline: 0;">Reset &nbsp;&nbsp;</button>
                                 </div>
                             </div>
 
@@ -53,7 +53,7 @@
                       
                    
                         <div class="col-md-12">
-                            <font class="note">NOTE : If you have entered wrong User ID or Password continue 2 times then you will blocked for 5 minutes.</font>
+                            <p class="note">NOTE : If you have entered wrong User ID or Password continue 2 times then you will blocked for 5 minutes.</p>
                         
                         </div>
                         
@@ -67,15 +67,13 @@
 
 <div class="row toppati" style="margin: 0px;">
     <div class=" col-md-5 col-sm-12 col-xs-12  hidden-xs" style="margin-top: 0.9%;">
-        <i class="fa fa-envelope" ></i><font title="Email Address">&nbsp;foodlocker111@gmail.com</font>&nbsp;&nbsp;
-        <i class="fa fa-mobile" style="font-size: 17px;"></i><font title="Tollfree no">&nbsp;1800 -123- 456</font>
+        <i class="fas fa-envelope" ></i><font title="Email Address">&nbsp;foodlocker111@gmail.com</font>&nbsp;&nbsp;
+        <i class="fas fa-phone-alt" style="font-size: 17px;"></i><font title="Tollfree no">&nbsp;1234567890</font>
     </div>
     
     <div class=" col-md-2 col-sm-12 col-xs-12 ">
-        <div id="google_translate_element"></div>
     </div>
     <div class=" col-md-2 col-sm-12 col-xs-12 ">
-        <div id="google_translate_element"></div>
     </div>  
     
     <!-- <div class=" col-md-offset-1 col-md-2  col-sm-12 col-xs-12 follow " style="margin-top: 0.5%;">
@@ -91,16 +89,16 @@
         {
         ?>
         <!-- <a href="cart.php"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;CART(0)</a>&nbsp;&nbsp;&nbsp;&nbsp; -->
-        <a href="product.php"><i class="fa fa-shopping-cart "></i>&nbsp;&nbsp;Cart</a>&nbsp;&nbsp;&nbsp;&nbsp;
-         <a href="myaccount.php"><i class="fa fa-user "></i>&nbsp;&nbsp;My Account</a>&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="logout.php"><i class="fa fa-power-off "></i>&nbsp;&nbsp;Sign out</a>
+        <a href="product.php"><i class="far fa-shopping-cart"></i>&nbsp;&nbsp;Cart</a>&nbsp;&nbsp;&nbsp;&nbsp;
+         <a href="myaccount.php"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;My Account</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="logout.php"><i class="fas fa-sign-out-alt"></i>&nbsp;&nbsp;Sign out</a>
         <?php
         }
         else
         {
          ?>
-        <a href="registration.php"><i class="fa fa-user-plus "></i>&nbsp;&nbsp;Create Account</a>&nbsp;&nbsp;<font style="color:#232323;">OR</font>&nbsp;&nbsp;
-        <a href="#" onclick="loginbox('open');" id="showlogin"><i class="fa fa-sign-in"></i>&nbsp;&nbsp;Sign In</a>
+        <a href="registration.php"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;Create Account</a>&nbsp;&nbsp;<font style="color:#232323;">OR</font>&nbsp;&nbsp;
+        <a href="#" onclick="loginbox('open');" id="showlogin"><i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;Sign In</a>
         <?php
         }
          ?>

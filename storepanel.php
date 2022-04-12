@@ -188,7 +188,7 @@ require_once 'connection.php';
                         <div class="col-md-10">
                             <form  action="" method="post" name="contact" class="form-group maru"  >
                                 <div class=" input-group" style="margin-bottom: 3%;">
-                                    <div class="input-group-addon" style="background:#f8a631;"><i class="fa fa-user"></i></div>
+                                    
                                     <?php
                                     if($_SESSION[user]=="")
                                     {
@@ -205,12 +205,13 @@ require_once 'connection.php';
                                     <?php
                                     }
                                     ?>
+                                    <div class="input-group-addon"><i class="fas fa-user"></i></div>
                                 </div>
                                 
                                     
                                 <div class="co-md-12 text-center" >
-                                    <button type="submit" name="send" class="btn sendbtn" style="outline: 0;">Submit &nbsp;&nbsp;<i  class="fa fa-rocket"></i></button>
-                                    <button type="reset" class="btn sendbtn" style="outline: 0;">Reset &nbsp;&nbsp;<i class="fa fa-trash-o"></i></button>
+                                    <button type="submit" name="send" class="btn sendbtn" style="outline: 0;">Submit</button>
+                                    <button type="reset" class="btn sendbtn" style="outline: 0;">Reset</button>
                                 </div>
                                 </br>
     
@@ -219,18 +220,7 @@ require_once 'connection.php';
                 </div>
 
                 <div class="col-md-3 ">
-                          <!-- review star   -->
-                          <div class=" ht-widget hw-popular-categories" >
-                            <font class="widget-title" style="font-size: 15px; text-transform: capitalize;">Review  <?php echo $sell[0]; ?></font>
-                        </div>
-                          <div>
-
-                                <div id="sratedekho">
-
-                                </div>
-
-                            </div> 
-                        
+                         
                 </div>
                 
                 <div class="col-md-4">

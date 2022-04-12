@@ -46,10 +46,11 @@ ob_start();
                                 <div style="float: left;">
                                     SELLER  PACKAGE BILL
                                 </div>
-
+                                
                                 <div class="col-md-offset-5 col-md-4 col-sm-10 col-xs-10">
-
+                                               
                                     <select style="padding: 8px;" class="form-control" onchange="missuserbill('missuserbill',this.value);">
+
                                         <option>--Select Store Name--</option>
                                         <?php
                                         $get = mysql_query("select * from store where userid like '$_SESSION[user]'");

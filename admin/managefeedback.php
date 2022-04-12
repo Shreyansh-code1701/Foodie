@@ -38,7 +38,7 @@ require_once 'toppati.php';
                                 <ul class="nav nav-tabs pull-right">
                                     <li class="active">
                                         <a href="#home-3" data-toggle="tab">
-                                            <i class="fa fa-laptop" ondblclick="fdel('feedback','delete','<?php echo $p; ?>','<?php echo $pp; ?>','<?php echo $row[0]; ?>');recycle('feedback','display','1','10');"></i>
+                                            <i class="fas fa-laptop" ondblclick="fdel('feedback','delete','<?php echo $p; ?>','<?php echo $pp; ?>','<?php echo $row[0]; ?>');recycle('feedback','display','1','10');"></i>
                                             DISPLAY
                                         </a>
                                     </li>
@@ -62,7 +62,7 @@ require_once 'toppati.php';
                                                     </div>
                                                     <input type="text" name="search" placeholder="Search User Name" id="find" class="form-control" onkeyup="display('feedback','display','1','10');"/>
                                                     <div class="input-group-addon">
-                                                        <i  class="fa fa-search"></i>
+                                                        <i  class="fas fa-search"></i>
                                                     </div>
                                                 </div>
                                             </div>
