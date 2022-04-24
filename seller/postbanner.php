@@ -50,7 +50,7 @@ $bdate=date('Y-m-d');
     if($er3!=1 && $er4!=1)
     {
         
-          $int=mysql_query("insert into addbanner values($sell[3],$_REQUEST[timeperiod],0,'$_REQUEST[bannername]','$path1','$bdate','0000-00-00','0000-00-00',0,0)");
+          $int=mysql_query("insert into addbanner values($sell[3],$_REQUEST[timeperiod],0,'$_REQUEST[bannername]','$path1','$bdate','2022-04-25','2022-04-27',1,0)");
       
            move_uploaded_file($_FILES[addbanner][tmp_name], $path2);
          
@@ -163,13 +163,13 @@ $bdate=date('Y-m-d');
                                 <ul class="nav nav-tabs pull-right">
                                     <li class="active">
                                         <a href="#home-3" data-toggle="tab">
-                                            <i class="fas fa-laptop" ondblclick="dis('data','addbanner',1,'all','vachhe',0,'badhurec');recdis('recdata','addbanner',1,'all','vachhe',0,0,0);"></i>
+                                            <i class="fa fa-laptop" ondblclick="dis('data','addbanner',1,'all','vachhe',0,'badhurec');recdis('recdata','addbanner',1,'all','vachhe',0,0,0);"></i>
                                             DISPLAY
                                         </a>
                                     </li>
                                     <li class="">
                                         <a href="#about-3" data-toggle="tab">
-                                            <i class="fas fa-recycle"  ondblclick="recdis('recdata','addbanner',1,'all','vachhe',0,0,'badhu');"></i>
+                                            <i class="fa fa-bitbucket"  ondblclick="recdis('recdata','addbanner',1,'all','vachhe',0,0,'badhu');"></i>
                                             RECYCLE
                                         </a>
                                     </li>
@@ -185,7 +185,7 @@ $bdate=date('Y-m-d');
                                                 <div class="input-group">
                                                     <input type="text" name="search" placeholder="Search here.." class="form-control" onkeyup="dis('data','addbanner',0,this.value,'vachhe',0);"/>
                                                     <div class="input-group-addon">
-                                                        <i  class="fas fa-search"></i>
+                                                        <i  class="fa fa-search"></i>
                                                     </div>
                                                 </div>
                                             </div>

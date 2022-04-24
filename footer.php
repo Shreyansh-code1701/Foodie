@@ -96,7 +96,7 @@
 
                 <div class="col-xs-12 col-sm-3">
                     <div class="ht-widget hw-posts">
-                        <h3 class="widget-title" style="font-size: 15px;">FEEDBACK CONTACT</h3>
+                        <h3 class="widget-title" style="font-size: 15px;">FEEDBACK</h3>
                         <?php
                         $fdd =  mysql_query("SELECT * FROM feedback order by feedbackid desc LIMIT 0,5");
                         while ($fd = mysql_fetch_array($fdd)) {
@@ -201,7 +201,7 @@
                 </div>
                 <div class="col-md-1 text-right">
 
-                    <a href="#0" class="cd-top"><i class="fa fa-sort-up " title="Bottom To Top" style="font-size: 37px;color: #232323; "></i></a>
+                    <a href="#0" class="cd-top"><i class="fa fa-sort-up " title="Bottom To Top" style="font-size: 50px;color:#758283; "></i></a>
                 </div>
 
             </div>

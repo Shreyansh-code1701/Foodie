@@ -604,63 +604,54 @@ if ($_REQUEST[kona] == "addform") {
         <div class="input-group">
             <input type="text" name="name" style="padding: 15px;" value="<?php echo $name[0]; ?>" required="" pattern='^[a-zA-Z  ]+$' class="form-control" />
             <div class="input-group-addon regi">
-                <i class="fa fa-user-plus"></i>
+            <i class="fas fa-user"></i>
             </div>
         </div>
     </div>
+
     <div class="form-group">
+
+        <label class="mylbm">State</label>
+        <div class="input-group">
+            <select  name="state" class="form-control" onchange="getcity('city',this.value);getcity('area', 0)">
+                <option value="">-Select State-</option>
+                <?php
+                $state = mysql_query("select * from state where del=0");
+                while ($row = mysql_fetch_array($state)) {
+                ?>
+
+                    <option value="<?php echo $row[0]; ?>"><?php echo $row[1]; ?></option>
+                <?php
+                }
+                ?>
+
+            </select>
+            <div class="input-group-addon regi">
+                <i class="fas fa-building"></i>
+            </div>
+        </div>
+
+    </div>
         <label class="mylbm">City</label>
         <div class="input-group">
-            <select required="" name="city" class="form-control">
-                <option value="">-Select City-</option>
-                <?php
-                $city = mysql_query("select * from city where del=0  ");
-                while ($row = mysql_fetch_array($city)) {
-
-
-                    if ($row[1] == $ss[1]) {
-                ?>
-                        <option value="<?php echo $row[1]; ?>" selected=""><?php echo $row[2]; ?></option>
-                    <?php
-                    } else {
-
-
-                    ?>
-                        <option value="<?php echo $row[1]; ?>"><?php echo $row[2]; ?></option>
-                <?php
-                    }
-                }
-                $_SESSION[city] = $row[1];
-                ?>
+            <select  name="city" class="form-control" id="city" onchange="getcity('area',this.value);">
+                <option>-Select City-</option>
             </select>
-            <div class="input-group-addon regi"><i class="fa fa-globe "></i></div>
+            <div class="input-group-addon regi">
+                <i class="fas fa-city"></i>
+            </div>
         </div>
     </div>
-
-    <div class="form-group">
         <label class="mylbm">Area</label>
         <div class="input-group">
-            <select required="" name="area" class="form-control">
-                <option value="">-Select Area-</option>
-                <?php
-                $area = mysql_query("select * from area where del=0");
-                while ($row2 = mysql_fetch_array($area)) {
-
-
-                    if ($row2[1] == $ss[2]) {
-                ?>
-                        <option value="<?php echo $row2[1]; ?>" selected=""><?php echo $row2[2]; ?></option>
-                    <?php
-                    } else {
-                    ?>
-                        <option value="<?php echo $row2[1]; ?>"><?php echo $row2[2]; ?></option>
-                <?php
-                    }
-                }
-                ?>
+            <select  name="area" class="form-control" id="area">
+                <option>-Select Area-</option>
             </select>
-            <div class="input-group-addon regi"><i class="fa fa-globe "></i></div>
+            <div class="input-group-addon regi">
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
         </div>
+
     </div>
 
     <div class="form-group">
@@ -676,7 +667,7 @@ if ($_REQUEST[kona] == "addform") {
     <div class="form-group">
         <label class="mylbm">Contact</label>
         <div class="input-group">
-            <input type="tel" name="contact" placeholder="Fill Your Mobile No" style="padding: 15px;" minlength="10" value="<?php echo $ss[6]; ?>" required="" pattern='^[0-9]{10}$' class="form-control" />
+            <input type="tel" name="contact" placeholder="Fill Your Mobile No" style="padding: 15px;" maxlength="10" value="<?php echo $ss[6]; ?>" required="" pattern='^[0-9]{10}$' class="form-control" />
             <div class="input-group-addon regi">
                 <i class="fa fa-home"></i>
             </div>
@@ -684,11 +675,11 @@ if ($_REQUEST[kona] == "addform") {
     </div>
 
     <div class="form-group">
-        <label class="mylbm">Pine Code</label>
+        <label class="mylbm">Pin Code</label>
         <div class="input-group">
-            <input type="text" name="pincode" placeholder="Fill Your Area Pine Code" style="padding: 15px;" required="" value="<?php echo $ss[7]; ?>" pattern='^[0-9 ]+$' class="form-control" />
+            <input type="text" name="pincode" maxlength="6" placeholder="Fill Your Area Pine Code" style="padding: 15px;" required="" value="<?php echo $ss[7]; ?>" pattern='^[0-9 ]+$' class="form-control" />
             <div class="input-group-addon regi">
-                <i class="fa fa-user-plus"></i>
+            <i class="fas fa-map-pin"></i>
             </div>
         </div>
     </div>
@@ -858,7 +849,7 @@ if ($_REQUEST[kona] == "missbill") {
                     <td colspan="2" style="text-align: right;">
                         Total QTY :<font><?php echo $q; ?></font><br />
                         Grand Total : <font><?php echo $ftot; ?></font><br />
-                        <i class="fa fa-truck"></i>&nbsp;Shipping charge : &nbsp;&#8377;&nbsp;100 &nbsp;/-<?php $ftot = $ftot + 100 ?><br />
+                        <i class="fas fa-truck"></i>&nbsp;Delivery charge : &nbsp;&#8377;&nbsp;100 &nbsp;/-<?php $ftot = $ftot + 100 ?><br />
                     </td>
                 </tr>
 

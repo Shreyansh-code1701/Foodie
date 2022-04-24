@@ -41,7 +41,7 @@ if ($_REQUEST[tbl] == "state")
         <thead >
         <th>No</th>
         <th>State Name</th>
-        <th></th>
+        <th>Delete</th>
 
     </thead>
     <?php
@@ -51,10 +51,10 @@ if ($_REQUEST[tbl] == "state")
         {
         $c++;
         ?>
-    <tr ondblclick="restore('state','restore','<?php echo $p; ?>','<?php echo $pp; ?>','<?php echo $row[0]; ?>');display('state','display','1','10');">
+    <tr >
             <td><?php echo $c; ?></td>
             <td><?php echo $row[1]; ?></td>
-            <td><i class="fa fa-trash-o  " style="opacity:0; cursor: crosshair;" ondblclick="fdel('state','delete','<?php echo $p; ?>','<?php echo $pp; ?>','<?php echo $row[0]; ?>')"></i></td>
+            <td onclick="restore('state','restore','<?php echo $p; ?>','<?php echo $pp; ?>','<?php echo $row[0]; ?>');display('state','display','1','10');"><i class="fas fa-trash-alt"></i></td>
             
         </tr>
         <?php

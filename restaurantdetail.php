@@ -165,9 +165,9 @@ if(isset($_REQUEST[event]))
                                <a href="#hc-tab-recipes" aria-controls="hc-tab-recipes" role="tab" data-toggle="tab">Review </a>
                            </li>
                            
-                           <!-- <li role="presentation" onclick="storepanel('<?php echo $_SESSION[id]; ?>','event',0);">
+                           <li role="presentation" onclick="storepanel('<?php echo $_SESSION[id]; ?>','event',0);">
                                <a href="#hc-tab-bookmarks" aria-controls="hc-tab-bookmarks" role="tab" data-toggle="tab">Event</a>
-                           </li> -->
+                           </li>
                            
                            <li role="presentation" onclick="storepanel('<?php echo $_SESSION[id]; ?>','brochure',0);">
                                <a href="#hc-tab-bookmarks" aria-controls="hc-tab-bookmarks" role="tab" data-toggle="tab">Brochure</a>

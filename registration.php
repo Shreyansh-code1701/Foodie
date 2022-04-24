@@ -346,7 +346,7 @@ if(isset($_REQUEST[send]))
                                                             <option>-Select Area-</option>
                                                         </select>
                                                         <div class="input-group-addon regi">
-                                                        <i class="far fa-map-marker-alt"></i>
+                                                        <i class="fas fa-map-marker-alt"></i>
                                                         </div>
                                                     </div>
                                                 </div>

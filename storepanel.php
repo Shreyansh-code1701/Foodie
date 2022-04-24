@@ -219,11 +219,11 @@ require_once 'connection.php';
                         </div>
                 </div>
 
-                <div class="col-md-3 ">
+                <!-- <div class="col-md-3 ">
                          
-                </div>
+                </div> -->
                 
-                <div class="col-md-4">
+                <div class="col-md-7">
                             <div class=" ht-widget hw-popular-categories" >
                             <font class="widget-title" style="font-size: 15px; text-transform: capitalize;">Review  <?php echo $sell[0]; ?></font>
                         </div>
@@ -390,7 +390,7 @@ if($_REQUEST[idd]!="" && $_REQUEST[str]=="open")
                             <div class="col-md-offset-1 col-md-10" style="margin-top:5%;background: #eee;margin-bottom: 5%;">   
                                     
                                     <?php
-                                        $eb =mysql_query("select ss.storename,ss.storeid,ee.price,e.* from store ss,eventprice ee,event e,storeevent s where s.eventid = e.eventid and e.eventid=ee.eventid and ss.storeid=s.storeid and ss.storeid=$_SESSION[id] and e.eventid=$_REQUEST[idd]");
+                                        $eb =mysql_query("select ss.storename,ss.storeid,ee.price,e.* from store ss,eventprice ee,event e,storeevent s where s.eventid = e.eventid and e.eventid=ee.eventid and ss.storeid=s.storeid and ss.storeid='$_SESSION[id]' and e.eventid='$_REQUEST[idd]'");
                                       $ebb = mysql_fetch_array($eb);
                                         
                                         $_SESSION[eventid]=$ebb[3];
@@ -400,15 +400,15 @@ if($_REQUEST[idd]!="" && $_REQUEST[str]=="open")
                                 <div class="form-group">
                                     <div class="col-md-12 input-group" >
                                         <input type="text" name="storename" value="<?php echo $ebb[0]; ?>" style="background:#fff;" disabled="" class="form-control " /> 
-                                        <div class="input-group-addon" style="background:#f8a631;"><i class="fa fa-user-plus    "></i></div>
+                                        <div class="input-group-addon"><i class="fas fa-store"></i></div>
                                     </div>
                                 </div>
                                 
                                 <div class="form-group">
                                     <div class="col-md-12 input-group" >
                                         <input type="text" name="eventname"  value="<?php echo $ebb[4]; ?>"  style="background:#fff;" disabled="" class="form-control " /> 
-                                        <div class="input-group-addon" style="background:#f8a631;" >
-                                            <i class="fa fa-gift" style="padding:0px 4.5px 0px 4.5px;font-size: 12px;"></i>
+                                        <div class="input-group-addon" >
+                                            <i class="fas fa-gift" ></i>
                                         </div>
                                     </div>
                                 </div> 
@@ -416,8 +416,8 @@ if($_REQUEST[idd]!="" && $_REQUEST[str]=="open")
                                 <div class="form-group">
                                     <div class="col-md-12 input-group" >
                                         <input type="text" name="price" value="<?php echo $ebb[2]; ?>"  style="background:#fff;" disabled=""  class="form-control " /> 
-                                        <div class="input-group-addon" style="background:#f8a631;" >
-                                            <i class="fa fa-rupee" style="padding:0px 4.5px 0px 4.5px;font-size: 12px;"></i>
+                                        <div class="input-group-addon" >
+                                            <i class="fa fa-rupee" ></i>
                                         </div>
                                     </div>
                                 </div>
@@ -425,8 +425,8 @@ if($_REQUEST[idd]!="" && $_REQUEST[str]=="open")
                                 <div class="form-group">
                                     <div class="col-md-12 input-group" >
                                         <input type="date" name="date" required=""  style="background:#fff;" class="form-control " /> 
-                                        <div class="input-group-addon" style="background:#f8a631;" >
-                                            <i class="fa  fa-calendar" style="padding:0px 4.5px 0px 4.5px;font-size: 10px;"></i>
+                                        <div class="input-group-addon" >
+                                            <i class="fa  fa-calendar"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -434,15 +434,15 @@ if($_REQUEST[idd]!="" && $_REQUEST[str]=="open")
                                 <div class="form-group">
                                     <div class="col-md-12 input-group" >
                                         <textarea type="text" row="4" name="message"  style="background:#fff;" placeholder="Enter Detail" required=""   class="form-control " ></textarea> 
-                                        <div class="input-group-addon" style="background:#f8a631;" >
-                                            <i class="fa fa-bars"  style="padding:0px 4.5px 0px 4.5px;font-size: 10px;"></i>
+                                        <div class="input-group-addon" >
+                                            <i class="fa fa-bars" ></i>
                                         </div>
                                     </div>
                                 </div> 
                                 
                                 <div class="col-md-12 input-group text-center">
-                                     <button type="submit" name="event" title="Send" class="btn inquirybtn">Confirm &nbsp;&nbsp;<i class="fa fa-rocket" ></i></button>&nbsp;&nbsp;
-                                    <button type="reset" title="clear" name="clear"class="btn inquirybtn">Reset &nbsp;&nbsp;<i class="fa fa-trash-o" ></i></button>
+                                     <button type="submit" name="event" title="Send" class="btn">Confirm</button>&nbsp;&nbsp;
+                                    <button type="reset" title="clear" name="clear"class="btn">Reset</button>
                                 </div>
                                 
                             </div>

@@ -64,7 +64,7 @@ require_once 'sellersecure.php';
 
             <li><a href="addcusine.php"><i class="fas fa-utensils-alt"></i><span> Include Cuisine </span></a></li>
 
-            <!-- <li><a href="addevent.php"><i class="fa  fa-cutlery"></i> <span> Include Event </span></a></li> -->
+            <li><a href="addevent.php"><i class="fas fa-calendar-alt"></i> <span> Include Event </span></a></li>
 
             <li><a href="managebrochure.php"><i class="fas fa-book-open"></i> <span>Add Brochure</span></a></li>
 

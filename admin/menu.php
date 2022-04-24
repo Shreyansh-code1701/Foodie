@@ -82,7 +82,7 @@ require_once 'adminsecure.php';
                  
                
                  
-                  <li><a href="managepackagebill.php"><i class="far fa-file-invoice-dollar"></i> <span>Manage Package Bill</span></a></li>
+                  <!-- <li><a href="managepackagebill.php"><i class="far fa-file-invoice-dollar"></i> <span>Manage Package Bill</span></a></li> -->
   
                   <li><a href="managesellerrequest.php"><i class="fas fa-image"></i> <span>Manage Banner </span></a></li>
                   

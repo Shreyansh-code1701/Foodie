@@ -25,7 +25,7 @@
 
     <link rel="stylesheet" href="css/plugins.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
     <link href="css/animate.css" type="text/css" rel="stylesheet"/>

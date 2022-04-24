@@ -82,14 +82,7 @@ if ($_REQUEST[kona] == "form") {
                     
                     <select name="maincategory" required="" class="form-control" id="misscuisine">
                     <option value="">--Select Cuisine--</option>                                               
-                    <?php
-                        $mc = mysql_query("select * from maincategory where del=0");
-                        while ($mcc = mysql_fetch_array($mc)) {
-                            ?>
-                            <option value="<?php echo $mcc[0]; ?>"><?php echo $mcc[1]; ?></option>
-                            <?php
-                        }
-                        ?>
+                    
                     </select>
                 </div>
             </div>
@@ -711,7 +704,7 @@ if ($_REQUEST[kona] == "form") {
                     <div class="input-group-addon">
                     <i class="fas fa-image"></i>
                     </div>
-                    <input type="text" class="form-control" name="bannername" autofocus="" required="" pattern="^[a-z0-9 ]+$" placeholder="Banner Name"/>
+                    <input type="text" class="form-control" name="bannername" autofocus="" required="" pattern="^[a-zA-Z0-9 ]+$" placeholder="Banner Name"/>
 
                 </div>
             </div>
@@ -741,7 +734,7 @@ if ($_REQUEST[kona] == "form") {
                     <i class="fas fa-image"></i>
                     </div>
                     <!-- <input type="file" class="form-control" name="addbanner" required="" /> -->
-                    <input type="file" name="addbanner" class="form-control" required="" accept=".pdf"/>
+                    <input type="file" name="addbanner" class="form-control" required="" accept=".png, .jpg, .jpeg"/>
                 </div>
                 <?php
                    if($er4==1)
@@ -767,7 +760,7 @@ if ($_REQUEST[kona] == "form") {
                     <div class="input-group-addon">
                     <i class="fas fa-image"></i>
                     </div>
-                    <input type="text" class="form-control" name="upbannername" autofocus="" required="" pattern="^[a-z0-9 ]+$" placeholder="Banner Name"/>
+                    <input type="text" class="form-control" name="upbannername" autofocus="" required="" pattern="^[a-z A_Z0-9 ]+$" placeholder="Banner Name"/>
 
                 </div>
             </div>
@@ -895,7 +888,7 @@ if ($_REQUEST[kona] == "data") {
                     <td><?php echo $row[5]; ?></td>
                     <td><?php echo $row[6]; ?></td>
                     <td><?php echo $row[7]; ?></td>
-                    <td>
+                    <td onclick=>
                         <?php
                         if($row[8]==0)
                         {
@@ -1212,7 +1205,8 @@ if($_REQUEST[konu]=='missbannerbill')
                                         <tr>
                                             <td colspan="2">Start Date : <?php echo $row[8]; ?></td>
                                             <td colspan="1">End Date : <?php echo $row[9]; ?></td>
-                                            <td>Mobile : 1234567890</td>
+                                            <td>Mobile :</td>
+                                            <!-- <?php echo $row[9]; ?>  -->
                                         </tr>
 
                                         <tr>
@@ -1430,7 +1424,7 @@ if ($_REQUEST[konu] == "feedbackstore") {
         <th>Store Name</th>
         <th>Member Name</th>
         <th>Message</th>
-        <th></th>
+        <th>Delete</th>
     <?php
     $se = mysql_query("select storeid from store where userid like '$_SESSION[user]'");
     while ($see = mysql_fetch_array($se)) {
@@ -1443,7 +1437,7 @@ if ($_REQUEST[konu] == "feedbackstore") {
                     <td style="text-transform: capitalize;"><?php echo $scc[4]; ?></td>
                     <td style="text-transform: capitalize;"><?php echo $scc[2]; ?></td>
                     <td style="text-transform: capitalize;"><?php echo $scc[3]; ?></td>
-                    <td><i class="fa  fa-trash-o" style="cursor: pointer;"  ondblclick="if(confirm('Are You Sure You Wont To  Permanataly DELETE')){missstore('feedbackstore','delete',<?php echo $scc[1]; ?>)}"></i></td>
+                    <td><i class="fas fa-trash-alt" style="cursor: pointer;"  onclick="if(confirm('Are You Sure You Wont To  Permanataly DELETE')){missstore('feedbackstore','delete',<?php echo $scc[1]; ?>)}"></i></td>
                                                    
                 </tr>
             <?php
@@ -2240,7 +2234,8 @@ if ($_REQUEST[kona] == "form") {
             </div>
 
             <div class="form-group">
-                <div class="input-group" style="margin-top: 2%;">
+            <label for="">Start Date</label>
+                <div class="input-group" style="margin-top: 2%;">  
                     <input type="date" class="form-control" name="sdate" required="" />
                     <div class="input-group-addon">
                     <i class="fas fa-calendar-star"></i>
@@ -2249,6 +2244,7 @@ if ($_REQUEST[kona] == "form") {
             </div>
 
             <div class="form-group">
+            <label for="">End Date</label>
                 <div class="input-group" style="margin-top: 2%;">
                     <input type="date" class="form-control" name="edate" required="" />
                     <div class="input-group-addon">
@@ -2277,9 +2273,9 @@ if ($_REQUEST[kona] == "form") {
 
             <div class="form-group">
                 <div class="input-group" style="margin-top: 2%;">
-                    <input type="text" class="form-control" name="rate" required="" pattern="^[0-9]+$" placeholder="Enter Offer Rate"/>
+                    <input type="text" class="form-control" name="rate" required="" pattern="^[0-9]+$" placeholder="Enter Offer Discount"/>
                     <div class="input-group-addon">
-                    <i class="fas fa-rupee-sign"></i>
+                    <i class="fas fa-badge-percent"></i>
                     </div>
                 </div>
             </div>
@@ -3372,6 +3368,7 @@ if ($_REQUEST[kona] == "data") {
             <th>Store Name</th>
             <th>Brochure Name</th>
             <th>Photo</th>
+            <th>Delete</th>
            
         <?php
         $c = 0;
@@ -3384,11 +3381,12 @@ if ($_REQUEST[kona] == "data") {
         while ($row = mysql_fetch_array($data)) {
             $c++;
             ?>
-                <tr  ondblclick="dis('data','brochure',1,'all','vachhe','<?php echo $row[2]; ?>',0);recdis('recdata','brochure',1,'all','vachhe',0,0,0);">
+                <tr  >
                     <td><?php echo $c; ?></td>
                     <td><?php echo $row[0]; ?></td>
                     <td><?php echo $row[3]; ?></td>
                     <td><?php echo $row[4]; ?></td>
+                    <td onclick="dis('data','brochure',1,'all','vachhe','<?php echo $row[2]; ?>',0);recdis('recdata','brochure',1,'all','vachhe',0,0,0);"><i class="fas fa-trash-alt"></i></td>
                    
                 </tr>
 
@@ -3512,8 +3510,8 @@ if ($_REQUEST[kona] == "recdata") {
             <th>No</th>
             <th>Store Name</th>
             <th>Brochure Name</th>
-            <th>Photo</th>
-            <th></th>
+            <th>Brochure</th>
+            <th>Delete</th>
         <?php
         $c=0;
             $data = mysql_query("select s.storename,b.* from store s,brochure b where s.storeid=b.storeid and b.del=1 and userid like'$_SESSION[user]' limit $st,$pp ");
@@ -3530,7 +3528,8 @@ if ($_REQUEST[kona] == "recdata") {
                     <td><?php echo $row[3]; ?></td>
                     <td><?php echo $row[4]; ?></td>
                                  
-                    <td><i class="fa fa-trash-o  " style="opacity:0; cursor: crosshair;"  ondblclick="recdis('recdata','brochure',1,'all','vachhe',0,'<?php echo $row[2]; ?>',0);"></i></td>
+                    <td><i class="fas fa-trash-alt"  onclick="recdis('recdata','brochure',1,'all','vachhe',0,'<?php echo $row[2]; ?>',0);"></i></td>
+                    
                 </tr>
 
 

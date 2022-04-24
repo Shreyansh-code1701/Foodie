@@ -493,7 +493,7 @@ if(isset($_REQUEST[send]))
                                                 
                                                 <div class="row">
                                                    <div class="form-group">
-                                                    <label>&nbsp;&nbsp;&nbsp;High Light</label>
+                                                    <label>&nbsp;&nbsp;&nbsp;Services</label>
                                                     <div class="input-group">
                                                         <?php
                                                         $hh=mysql_query("select * from highlight where del=0");

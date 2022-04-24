@@ -25,7 +25,7 @@ require_once 'head.php';
             <div class="container">
                 <div class="inner">
                     <div class="col-md-12 col-sm-12 col-xs- text-center ">
-                        <font style="font-size:30px;">Services By Food Locker</font>
+                        <font style="font-size:30px;">Who we serve?</font>
                     </div>
 
                 </div>
@@ -36,17 +36,16 @@ require_once 'head.php';
         <div class="container " style="border-bottom:1px dotted #f8a631; padding-bottom: 10px;">
 
             <BR></br>
-            <div class="col-md-6" <font><i class=" fa fa-hand-o-right"> </i>&nbsp;<b style="color: #F8A631;">Late Night Delivery</b></font><br><br>
-                <p> <strong> Food Locker</strong> is the best way to find <b>Late Night restaurants that deliver to you.</b> looking for breakfast,
-                    lunch, dinner or late night snack, FooDLockeR has it all. Read restaurants reviews,
-                    browse restaurants menus and easily order online from any restaurant with no extra charge!!!
-                    The best way to find Late Night delivery restaurants that deliver to you,
-                    is by entering your address in the search box above, and making a search.
-                    You can also click on one of the city links below.<br><br>
-                    Order Online Directly From the Restaurant Menu</p>
+            <div class="col-md-6" <font><strong style="font-size:25px;">Customers</strong></font><br><br>
+            <p>
+                With thousands of restaurants,<br>
+                convenience stores, pet stores,<br>
+                grocery stores, and more at your fingertips,<br>
+                FoodLocker delivers the best of your neighborhood on-demand.<br>
+            </p>
             </div>
             <div class="col-md-offset-2 col-md-4">
-                <img src="images/let night.jpg" class="img img-responcive" />
+                <img src="images/download.jfif" class="img img-responcive" />
             </div>
 
         </div>
@@ -55,43 +54,19 @@ require_once 'head.php';
 
             <BR></br>
             <div class="col-md-6">
-                <font><i class=" fa fa-hand-o-right"> </i>&nbsp;<b style="color: #F8A631; font-size: 14px;"> Home Delivery</b></font><br><br>
-                <p> <strong> Food Locker</strong> in the shopping cart, <b>will receive an Estimated Delivery Date.</b> Home Delivery Date Please note that this is not a guaranteed delivery date for your order.
-                    Some areas may take longer due to the frequency of deliveries to the
-                    delivery zip code. Our system calculates this estimated date considering
-                    the total amount of time to process your order including: packaging,
-                    transit time to the delivery provider, and transit time to the delivery
-                    address.</p>
-            </div>
-            <div class="col-md-offset-2 col-md-4">
-                <img src="images/fast.png" class="img img-responcive" />
-            </div>
+                <font><strong style="font-size:25px;">Sellers</strong></font><br><br>
+                <p>
 
-        </div>
-
-
-
-        <div class="container " style="border-bottom:1px dotted #f8a631; padding-bottom: 10px;">
-
-            <BR></br>
-            <div class="col-md-6">
-                <font><i class=" fa fa-hand-o-right"></i>&nbsp;<b style="color: #F8A631; font-size: 16px;"> Live Solution</b></font><br><br>
-                <p> <strong> Food Locker </strong>This document (the Privacy Policy) describes the Live the Solution (We or Us or Our)
-                    policy regarding personal information, ongoing communication, site security and overall site
-                    usage of Website. Those provisions apply solely to online activities
-                    and are not necessarily applicable to practices we may engage in outside of our Website. Use
-                    of the Website signifies your agreement to the terms and conditions of use set forth in this
-                    document. If you do not agree to these terms, you may not access or otherwise use this Website.
+                    Reach new customers, market your store, and<br>
+                    grow your business by offering delivery, <br>
+                    pickup, and direct online ordering with FoodLocker.<br>
                 </p>
             </div>
             <div class="col-md-offset-2 col-md-4">
-                <img src="images/solution.png" class="img img-responcive" />
+                <img src="images/sellers.jpg" class="img img-responcive" />
             </div>
 
         </div>
-
-
-
 
         <?php
         require_once 'footer.php';

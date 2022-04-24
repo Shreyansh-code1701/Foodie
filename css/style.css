@@ -9193,11 +9193,9 @@ to
 .contactstore
 {
     background-color: #f8a631;
-    margin-top: 35%;
     margin-left: 10px;
     vertical-align:middle;
-    padding: 10 px;
-    border-radius:2px;
+    border-radius:25px;
 }
 
 .contactstore a

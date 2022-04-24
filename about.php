@@ -47,34 +47,27 @@ require_once 'head.php';
                         around them. Delivering in Delhi, Bangalore, Chennai, Mumbai, Hyderabad and over 100 other cities.<br>
                         Foodlocker has the widest reach in India.<br>
                         We believe food is a pleasure and food ordering should be fast and definitely a fun experience. Ordering<br>
-                        with Foodlocker is as easy as a 4-step recipe. </p>
+                        with Foodlocker is as easy as a 3-step. </p>
                 </div>
                 <div class="row" style="margin-top: 25%;">
-                    <div class="col-md-3 col-sm-12 col-xs-12 text-center ">
-                        <div class="aboutborder">
-                            <div><i class="far fa-search aboutimg" style="font-size: 50px; "></i></div>
-                            <div class="aboutdes"> 1.Search</div>
-                            <p style="font-size: 18px;">Find restaurants that deliver to you by entering your address.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-12 col-xs-12 text-center">
+                    <div class="col-md-4 col-sm-12 col-xs-12 text-center">
                         <div class="aboutborder">
                             <div><i class="fal fa-cocktail aboutimg"style="font-size: 50px; "></i></div>
-                            <div class=" aboutdes "> 2. Choose</div>
+                            <div class=" aboutdes "> 1. Choose</div>
                             <p style="font-size: 18px;">Browse hundreds of menus to find the food you like.</p>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-12 col-xs-12 text-center">
+                    <div class="col-md-4 col-sm-12 col-xs-12 text-center">
                         <div class="aboutborder">
                             <div><i class="far fa-money-bill aboutimg" style="font-size: 50px;"></i></div>
-                            <div class="aboutdes"> 3. Pay</div>
-                            <p style="font-size: 18px;"> Pay fast or simply with cash on delivery.</p>
+                            <div class="aboutdes"> 2. Pay</div>
+                            <p style="font-size: 18px;"> Pay through online system  or simply with cash on delivery.</p>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-12 col-xs-12 text-center ">
+                    <div class="col-md-4 col-sm-12 col-xs-12 text-center ">
                         <div class="aboutborder">
                             <div><i class="far fa-truck aboutimg" style="font-size: 50px; "></i></div>
-                            <div class="aboutdes"> 4. Enjoy </div>
+                            <div class="aboutdes"> 3. Enjoy </div>
                             <p style="font-size: 18px;"> Food is prepared & delivered to your door-step.</p>
                         </div>
                     </div>
@@ -88,9 +81,9 @@ require_once 'head.php';
                 <div class="col-sm-12 text-center" style="margin-top: 5%;">
                     <h2 class="restaurant-section" style=""> A selection of top restaurants</h2>
                     <div class="restaurant-logos text-center">
-                        <img alt="Ammi&#39;s Biryani" class="imgbw" src="images/restaurantlogo/box8.png" title="Box8" />
+                        <!-- <img alt="Ammi&#39;s Biryani" class="imgbw" src="images/restaurantlogo/box8.png" title="Box8" /> -->
                         <img alt="BOX8" class="imgbw" src="images/restaurantlogo/dominos.png" title="dominos" />
-                        <img alt="Domino&#39;s Pizza" class="imgbw" src="images/restaurantlogo/pandahead.png" title="Pandahead" />
+                        <!-- <img alt="Domino&#39;s Pizza" class="imgbw" src="images/restaurantlogo/pandahead.png" title="Pandahead" /> -->
                         <img alt="Pizza Hut" class="imgbw" src="images/restaurantlogo/pioneer.jpg" title="Pioneer" />
                         <img alt="Subway" class="imgbw" src="images/restaurantlogo/pizzahut.png" title="pizzahut" />
                         <img alt="Subway" class="imgbw" src="images/restaurantlogo/subway.jpg" title="Subway" />

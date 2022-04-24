@@ -3,95 +3,97 @@ require_once 'connection.php';
 require_once 'sellersecure.php';
 
 
-$pb=  mysql_query("select count(*) from bannerbill");
+$pb =  mysql_query("select count(*) from bannerbill");
 
 
 ?>
 <!DOCTYPE html>
 <html lang="en">
 
-    <?php
-    require_once 'head.php';
-    ?>
+<?php
+require_once 'head.php';
+?>
 
-    <body class="sticky-header">
+<body class="sticky-header">
 
-        <section>
+    <section>
+
+        <?php
+        require_once 'menu.php';
+        ?>
+
+        <div class="main-content">
+
 
             <?php
-            require_once 'menu.php';
+            require_once 'toppati.php';
+
+            require_once 'sellerpati.php';
             ?>
 
-            <div class="main-content" >
 
 
-                <?php
-                require_once 'toppati.php';
-                
-                require_once 'sellerpati.php';
-                ?>
-                
-                
-                
 
-                <div class="wrapper">
-                    <div class="row states-info">
-                        <div class="col-md-4">
-                            <div class="panel red-bg">
-                                <div class="panel-body">
-                                    <div class="row">
-                                        <?php
-                                        $pk= mysql_query("SELECT count(cuisineid) from cuisine where storeid=$_SESSION[id]");
-                                        $pp= mysql_fetch_array($pk);
-                                        ?>
-                                        <div class="col-xs-4">
+            <div class="wrapper">
+                <div class="row states-info">
+                    <div class="col-md-4">
+                        <div class="panel red-bg">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <?php
+                                    $pk = mysql_query("SELECT count(cuisineid) from cuisine where storeid='$_SESSION[id]'");
+                                    $pp = mysql_fetch_array($pk);
+                                    ?>
+                                    <div class="col-xs-4">
                                         <i class="fas fa-utensils-alt"></i>
-                                        </div>
-                                        <div class="col-xs-8">
-                                            <span class="state-title"> Total Cuisine </span>
-                                            <h4> <?php echo $pp[0] ?></h4>
-                                        </div>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <span class="state-title"> Total Cuisine </span>
+                                        <h4> <?php echo $pp[0] ?></h4>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="panel blue-bg">
-                                <div class="panel-body">
-                                    <div class="row">
-                                        <div class="col-xs-4">
-                                        <i class="fas fa-burger-soda"></i>                                        </div>
-                                        <div class="col-xs-8">
-                                            <span class="state-title">  Copy Sold Today  </span>
-                                            <h4>0</h4>
-                                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="panel blue-bg">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-xs-4">
+                                        <i class="fas fa-burger-soda"></i>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <span class="state-title"> Copy Sold Today </span>
+                                        <h4>0</h4>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="panel green-bg">
-                                <div class="panel-body">
-                                    <div class="row">
+                    </div>
+                    <div class="col-md-4">
+                        <div class="panel green-bg">
+                            <div class="panel-body">
+                                <div class="row">
                                     <!-- <?php
-                                    $cs = mysql_query("select count(s.userid,s.storeid,t.*) from bill b,transaction t,store s where  s.storeid=p.storeid and b.billid=t.billid and s.userid like $_SESSION[user] ");
-                                    $bdd = mysql_fetch_array($cs);
-                                    ?> -->
-                                        <div class="col-xs-4">
-                                        <i class="fas fa-bags-shopping"></i>                                        </div>
-                                        <div class="col-xs-8">
-                                            <span class="state-title"> Total Order  </span>
-                                            <h4 <?php echo $bdd[2]; ?>></h4>
-                                        </div>
+                                            $cs = mysql_query("select count(s.userid,s.storeid,t.*) from bill b,transaction t,store s where  s.storeid=p.storeid and b.billid=t.billid and s.userid like '$_SESSION[user]' ");
+                                            $bdd = mysql_fetch_array($cs);
+                                            ?> -->
+                                    <div class="col-xs-4">
+                                        <i class="fas fa-bags-shopping"></i>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <span class="state-title"> Total Order </span>
+                                        <h4 <?php echo $bdd[2]; ?>>0</h4>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                       
                     </div>
 
-                    <div class="row">
-                        <!-- <div class="col-md-8">
+                </div>
+
+                <div class="row">
+                    <!-- <div class="col-md-8">
                             <section class="panel">
                                 <header class="panel-heading">
                                     Area Chart
@@ -108,8 +110,8 @@ $pb=  mysql_query("select count(*) from bannerbill");
                                 </div>
                             </section>
                         </div> -->
-                        <div class="col-md-4">
-                            <!-- <div class="wdgt-profile">
+                    <div class="col-md-4">
+                        <!-- <div class="wdgt-profile">
                                 <div class="profile">
                                     <img src="images/gallery/wdgt-img.jpg" alt=""/>
                                     <div class="profile-social">
@@ -150,11 +152,11 @@ $pb=  mysql_query("select count(*) from bannerbill");
                                     <span>Creative Designer</span>
                                 </div>
                             </div> -->
-                        </div>
                     </div>
+                </div>
 
 
-                    <!-- <div class="row">
+                <!-- <div class="row">
                         <div class="col-md-4">
                              <div class="panel widget-info-one">
                                 <div class="avatar-img">
@@ -373,10 +375,10 @@ $pb=  mysql_query("select count(*) from bannerbill");
                         </div>
                     </div> -->
 
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="panel">
-                                <!-- <header class="panel-heading">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="panel">
+                            <!-- <header class="panel-heading">
                                     Chat
                                 </header> 
                                 <div class="panel-body">
@@ -457,10 +459,10 @@ $pb=  mysql_query("select count(*) from bannerbill");
                                         </form>
                                     </div>
                                 </div> -->
-                            </div>
                         </div>
+                    </div>
 
-                        <!-- <div class="col-md-6">
+                    <!-- <div class="col-md-6">
                             <section class="panel post-wrap pro-box">
                                 <aside class="post-highlight purple v-align">
                                     <div class="panel-body">
@@ -516,22 +518,23 @@ $pb=  mysql_query("select count(*) from bannerbill");
                                 </div>
                             </div>
                         </div> -->
-                    </div>
                 </div>
-
-                <?php
-                // require_once 'footer.php';
-                ?>
-
             </div>
 
-        </section>
+            <?php
+            // require_once 'footer.php';
+            ?>
 
-       <?php
-               require_once 'javascript.php';
-        ?>
+        </div>
 
-    </body>
+    </section>
 
-    <!-- Mirrored from adminex.themebucket.net/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Jan 2016 15:17:02 GMT -->
+    <?php
+    require_once 'javascript.php';
+    ?>
+
+</body>
+
+<!-- Mirrored from adminex.themebucket.net/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Jan 2016 15:17:02 GMT -->
+
 </html>
